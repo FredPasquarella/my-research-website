@@ -1,7 +1,7 @@
 project:
   type: website
 website:
-  title: "My Research Website"
+  title: "Fred J Pasquarella"
   navbar:
     left:
       - text: "Home"
@@ -10,11 +10,13 @@ website:
         href: about.qmd
       - text: "Research"
         href: research.qmd
+      - text: "Presentations"
+        href: presentations.qmd
       - text: "Contact"
         href: contact.qmd
 format:
   html:
-    theme: cosmo  # Other options: flatly, spacelab, etc.
+    theme: yeti  # Other options i like: cosmo, flatly, spacelab
     css: styles.css  # Optional custom styles
 
 editor: visual

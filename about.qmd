@@ -3,7 +3,3 @@ title: "About"
 ---
 
 This site is a way for me to share my research.
-
-```{r}
-1 + 1
-```

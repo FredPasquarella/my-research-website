@@ -1,0 +1,12 @@
+---
+title: "Research"
+---
+
+# Research Projects
+## Project 1
+- **Title**: [Project Title](https://example.com)
+- **Description**: Summary of the project.
+
+## Project 2
+- **Title**: Another Project
+- **Description**: Another summary.

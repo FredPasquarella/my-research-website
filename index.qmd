@@ -1,11 +1,11 @@
 ---
-title: "my-research-website"
+title: "Fred J Pasquarella"
 ---
 
-This is a Quarto website.
+# Welcome
+I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For over 7 years, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+## Quick Links
+- [Research Projects](research.qmd)
+- [About Me](about.qmd)
+- [Contact](contact.qmd)

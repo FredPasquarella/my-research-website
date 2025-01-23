@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site is a way for me to share my research.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fred J Pasquarella",
+    "section": "",
+    "text": "I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For over 7 years, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.\n\n\n\nResearch Projects\nAbout Me\nContact"
+  },
+  {
+    "objectID": "index.html#quick-links",
+    "href": "index.html#quick-links",
+    "title": "Fred J Pasquarella",
+    "section": "",
+    "text": "Research Projects\nAbout Me\nContact"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Title: Project Title\nDescription: Summary of the project.\n\n\n\n\n\nTitle: Another Project\nDescription: Another summary."
+  },
+  {
+    "objectID": "research.html#project-1",
+    "href": "research.html#project-1",
+    "title": "Research",
+    "section": "",
+    "text": "Title: Project Title\nDescription: Summary of the project."
+  },
+  {
+    "objectID": "research.html#project-2",
+    "href": "research.html#project-2",
+    "title": "Research",
+    "section": "",
+    "text": "Title: Another Project\nDescription: Another summary."
+  }
+]

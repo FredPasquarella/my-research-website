@@ -1,3 +1,11 @@
 ---
-title: "contact"
+title: "Contact Me"
 ---
+
+## Contact Me
+
+If you'd like to connect or have questions about my research or work, feel free to reach out through the following:
+
+📧 Email: [fredpasquarella\@gmail.com](mailto:fredpasquarella@gmail.com)\
+🌐 LinkedIn: [linkedin.com/in/fred-pasquarella](https://www.linkedin.com/in/fred-pasquarella/)\
+

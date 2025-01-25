@@ -1,5 +1,17 @@
 ---
-title: "About"
+title: "About This Website"
 ---
 
-This site is a way for me to share my research.
+Welcome to my personal website! This platform serves as a hub to share my research, professional work, and contributions to the field. My goal is to make my findings, presentations, and teaching materials accessible to colleagues, students, and anyone with an interest in advancing knowledge.
+
+Here, you'll find:
+
+-   Details about my **research projects** and their impact.
+
+-   **Presentations** and materials from conferences and workshops.
+
+-   Resources for **teaching** and professional development.
+
+I'm passionate about healthcare and data science and committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests.
+
+Thank you for visiting!

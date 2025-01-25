@@ -2,11 +2,46 @@
 title: "Research"
 ---
 
-# Research Projects
-## Project 1
-- **Title**: [Project Title](https://example.com)
-- **Description**: Summary of the project.
+# Publications
 
-## Project 2
-- **Title**: Another Project
-- **Description**: Another summary.
+### [Follow-up Care Offers and Acceptance in Crisis Line Suicide Prevention Services](assets/publications/2024_suicide_fu.pdf)
+
+*Fulginiti, A., Doyle, M., Miller, S., Lee, S., & Pasquarella, F. J.*
+
+**Abstract**:
+
+*Background:* Prior work has explored the impact of follow-up calls in a crisis line context, but no research has investigated the offer and acceptance of follow-up care. Aims: To identify caller/call characteristics associated with whether a caller is offered and accepts follow-up services.
+
+*Methods:* This cross-sectional study included data from 55,594 callers to a member center of the 988 Suicide & Crisis Lifeline (988) between 2017 and 2019. Logistic regression analyses were conducted to examine associations between caller/call characteristics and two follow-up outcomes.
+
+*Results:* Black callers and those with higher suicide capability and intent had greater odds of being offered and accepting follow-up. Longer call duration was also associated with higher odds of being offered and accepting follow-up. Higher suicidal desire uniquely increased the odds of offers, whereas a higher level of buffers uniquely decreased the odds of offers.
+
+*Limitations:* Data were collected from a single 988-member center and cannot be generalized.
+
+*Conclusions:* That one-third of callers do not accept follow-up highlights the need to understand reasons for not accepting follow-up. That callers with higher risk profiles are offered and accept follow-up at higher rates is reassuring and underscores the benefit of tailoring follow-up interventions for higher-risk callers.
+
+### [Planning and Implementing an Organizational Health Assessment in a Community Mental Health Setting](assets/publications/2022_org_health_assessment.pdf)
+
+*Lee, S., Pasquarella, F. J., De La Peza, D., Lizano, E. L., & Santoro, K.*
+
+**Abstract**: The workforce is the essential driver behind mental health service provision and the most valuable asset to any community mental health organization. To build and retain a stable and healthy workforce, systematic recruitment and retention strategies are needed. An organizational health assessment is a valuable tool in developing targeted organizational interventions to create a positive work environment and retain an engaged workforce. Starting in 2017, a large community mental health organization in Southern California implemented such an assessment to drive actionable steps to improve employee experience and decrease turnover. This case study describes the development and implementation of a low-cost organizational health assessment through five phases: development of the assessment, data collection, analysis, metrics and data visualization, and dissemination of findings and development of interventions. Key lessons learned include the importance of utilizing the findings and achieving staff and leadership buy-in.
+
+### [An Examination of Work Engagement's Antecedents and Consequences in a Sample of U.S. Community Mental Health Providers](assets/publications/2021_work_engagement.pdf)
+
+*Pasquarella, F. J., Lizano, E. L., Lee, S., & De La Peza, D.*
+
+**Abstract**: The study examined the relationship between job demands and resources, work engagement, and turnover intentions in a community mental health context. Using path analysis, we tested a conceptual model where we hypothesized that job demands (pressure to produce and role ambiguity) had a negative relationship to work engagement (H1) and resources (team commitment, supervisor relationship, and connection to organizational mission) were positively related to engagement (H2). Furthermore, greater engagement would be related to lower intention to leave the job (H3). Additionally, we hypothesized that there was an indirect effect of job demands and resources on turnover intention mediated via engagement (H4). The study used cross-sectional data collected in 2018 from a sample of N = 170 mental health providers employed in a community mental health center in the Southwest region of the United States. The study findings suggest that the job demands tested, pressure to produce and role ambiguity, were negatively related to engagement (H1). Of the job resources tested, only team commitment and connection to mission were positively related to engagement (H2). Work engagement was negatively related to intention to leave (H3). There were indirect effects of job demands and job resources (pressure to produce, role ambiguity and connection to the organization mission) on intention to leave mediated through engagement (H4). The findings suggest that managers and administrators in community mental health organizations may help promote a more stable workforce by bolstering the resources that lead to greater work engagement and mitigating the job demands that reduce engagement.
+
+### [Managing Substance Use for Client with Serious Mental Illness: Knowledge, Attitude, and Training Challenges Among Outpatient Behavioral Health Providers in California, Ohio, and New York](assets/2021_su_smi.pdf)
+
+*Kelly, E., Pasquarella, F. J., Davis, L., Hunt, A., Lee, S., Fairhurst, S., ... Brekke, J. S.*
+
+**Abstract**:
+
+*Purpose:* Individuals with serious mental illness have high rates of substance use. The most commonly used substances among this population are alcohol and cannabis, and whether clinical providers delivering mental health services feel adequately prepared to address substance use is unclear. While information about the effects of alcohol are well established, the effects of cannabis are less well known and staff may feel less confident in their abilities to assess its use and may rely on more informal sources to learn about it.
+
+*Methods:* Mental health agencies in three states (California, Ohio, and New York) surveyed their staff (n =717) to explore their knowledge, training, and expertise in assessment of substance use generally as well as cannabis and alcohol specifically.
+
+*Results:* Overall, providers felt more prepared to address their clients' alcohol use than cannabis use. In between-state comparisons, California providers felt significantly less well prepared to assess, discuss, and refer their clients to treatment compared to Ohio and New York providers. Using a series of multi-categorical mediation models, we confirmed that deficits in training for these specific substances largely accounted for between-state differences in assessment, capacity, and treatment.
+
+*Conclusions:* Substance use training to address the service needs of individuals with co-occurring disorders is insufficient and a significant need exists for systemic changes to workforce training of community mental health providers.

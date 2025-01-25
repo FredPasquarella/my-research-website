@@ -1,11 +1,14 @@
 ---
-title: "Fred J Pasquarella"
+title: "Welcome"
 ---
 
-# Welcome
-I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For over 7 years, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
+![My Profile Picture](assets/images/headshot.jpg){width="200px"}
+
+My name is Fred J. Pasquarella and I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For over 7 years, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
 
 ## Quick Links
-- [Research Projects](research.qmd)
-- [About Me](about.qmd)
-- [Contact](contact.qmd)
+
+-   [Reseach Publications](research.qmd)
+-   [Reseach Presentations](presentations.qmd)
+-   [About Me](about.qmd)
+-   [Contact](contact.qmd)

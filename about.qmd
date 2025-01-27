@@ -6,12 +6,14 @@ Welcome to my personal website! This platform serves as a hub to share my resear
 
 Here, you'll find:
 
--   Details about my **research projects** and their impact.
+-   Details about my [**reseach publications**](research.qmd).
 
--   **Presentations** and materials from conferences and workshops.
+-   [**Presentations**](presentations.qmd) and materials from conferences and workshops.
 
 -   Resources for **teaching** and professional development.
 
 I'm passionate about healthcare and data science and committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests.
 
-Thank you for visiting!
+### Resume
+
+### CV

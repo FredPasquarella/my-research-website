@@ -4,18 +4,41 @@ title: "Presentations"
 
 # Research Presentations
 
-Pasquarella, F. J., ... Lee, S. (2025). Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting. Poster presented at 2025 Society of Social Work Research Conference. Seattle, WA.
+### [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf)
 
-Pasquarella, F. J., ... Lee, S. (2025). Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data. Presentation at 2025 Society of Social Work Research Conference. Seattle, WA.
+*Pasquarella, F. J., Aubry, A., Berger, S., Drake,B., Patel, P., Schueler, C., & Lee, S.*
 
-Lizano, E., Bergen, C., Kay, B., Pasquarella, F. J., & Lee, S. (2025). The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals. Poster presented at 2025 Society of Social Work Research Conference. Seattle, WA.
+Poster presented at the 2025 Society of Social Work Research Conference in Seattle, WA.
 
-Lee, S. & Pasquarella, F. J. (2024). Intersection of Evaluation and Data Analytics: Case Study from a Community-based Organization. Poster presented at the American Evaluation Association. Portland, OR. 
+### [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf)
+
+*Pasquarella, F. J., Aubry, A., Berger, S., Drake,B., Patel, P., Schueler, C., & Lee, S.*\
+Paper presented at the 2025 Society of Social Work Research Conference in Seattle, WA.
+
+### [The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals](assets/presentations/sswr_2025_qualitative_telehealth.pdf.pdf)
+
+*Lizano, E., Bergen, C., Kay, B., Pasquarella, F. J., & Lee, S.* Poster presented at 2025 Society of Social Work Research Conference. Seattle, WA.
+
+### [Intersection of Evaluation and Data Analytics: Case Study from a Community-based Organization](assets/presentations/aea_2024_data_science_eval.pdf)
+*Lee, S. & Pasquarella, F. J.*
+Poster presented at the 2024 American Evaluation Association. Portland, OR.
+
+
 
 Lee, S., Pasquarella, F. J., Lee, G., & Humble, J. (2023). Tale of Two Stories: Staff and Resident Experiences in Crisis Residential Treatment Programs. Poster. 2023 American Evaluation Association Conference. Indianapolis, IN.
 
-Lee, S., Pasquarella, F. J., De La Peza,  D., Lizano, E. L.,  & Santoro, K. (2023). Planning and Implementing and Organizational Health Assessment at a Community Mental Health Center. 2023 Society of Social Work Research Conference. Phoenix, AZ.
+Lee, S., Pasquarella, F. J., De La Peza, D., Lizano, E. L., & Santoro, K. (2023). Planning and Implementing and Organizational Health Assessment at a Community Mental Health Center. 2023 Society of Social Work Research Conference. Phoenix, AZ.
 
-Lee, S., Pasquarella, F. J., & Harwood, M. (2022). From Room to Zoom: Evaluating the Implementation and Use of Telehealth Services. 2022 American Evaluation Association Conference. New Orleans, LA. 
+Lee, S., Pasquarella, F. J., & Harwood, M. (2022). From Room to Zoom: Evaluating the Implementation and Use of Telehealth Services. 2022 American Evaluation Association Conference. New Orleans, LA.
 
 Pasquarella, F. J., Lizano, E. L., Lee, S., & De La Peza, D. (2022). An examination of work engagement's antecedents and consequences in a sample of U.S. community mental health providers. 2022 Society of Social Work Research Conference. Washington, D.C.
+
+Pasquarella, F. J., & Johnson, G. L. (April, 2015). Structural Equation Model of Political Instability, Religiosity, and Progressive Values. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
+
+Pasquarella, F. J., & Preston, K. (April, 2015). Reliability Differences Between Response Formats of Rotter's Locus of Control. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
+
+Pasquarella, F. J., & Miller, A. (2012). Give Me a Clue: A Curious Study. Poster presented at SACNAS National Research Conference, Seattle, WA.
+
+Miller, A., & Pasquarella, F. J., (2012). Give Me a Clue: A Curious Study. Paper presented at California State University 26th Annual Statewide Student Research Competition, Long Beach, CA.
+
+Pasquarella, F. J. (2012). Predicting Suicidal Behaviors Among the Youth. Poster presented at California State University, Dominguez Hills Research Showcase at the Presidential and Premiere Scholarship Competition, Carson, CA.

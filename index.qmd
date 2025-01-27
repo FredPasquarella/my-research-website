@@ -2,13 +2,40 @@
 title: "Welcome"
 ---
 
-![My Profile Picture](assets/images/headshot.jpg){width="200px"}
+![](assets/images/headshot.jpg){width="200px"}
 
 My name is Fred J. Pasquarella and I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For over 7 years, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
 
-## Quick Links
+Check the [About Me](about.qmd) page to learn more about me. You can find my contact information [here](contact.qmd)
 
--   [Reseach Publications](research.qmd)
--   [Reseach Presentations](presentations.qmd)
--   [About Me](about.qmd)
--   [Contact](contact.qmd)
+:::: {.grid}
+
+::: g-col-6
+## Latest Research
+
+I am excited to share that my latest research, titled "*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*," has been accepted for publication in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
+
+*Check out all my [Reseach Publications](research.qmd) here.*
+:::
+
+::: {.g-col-6}
+
+## Latest Presentation
+
+I'm pleased to share that I recently presented my latest research at the Society for [Social Work and Research (SSWR) 2025 Annual Conference](https://sswr.org/2025-conference-home), held from January 15th to 19th in Seattle, Washington.
+
+At the conference, I showcased a poster titled "The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals," which delved into the challenges and adaptations faced by providers during this significant shift in service delivery.
+
+Additionally, I presented a paper on [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf), exploring how different telehealth modalities impact client engagement.
+
+I also shared a poster titled [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf), which examined the factors influencing providers' choices and experiences in implementing telehealth services.
+
+These studies were conducted as part of an annual research project I led during my agency's APA-accredited psychology doctoral internship program.
+
+Engaging with fellow professionals at the conference provided valuable insights and fostered discussions on enhancing mental health service delivery in evolving contexts.
+
+*Check out all my [Reseach Presentations](presentations.qmd) here.*
+
+:::
+
+::::

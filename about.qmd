@@ -16,7 +16,7 @@ Here, you'll find:
 
 -   Resources for **teaching** and professional development.
 
-I am committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests. Please feel free to reach out to me—my contact information is available [here](contact.qmd).
+I am committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests. Please feel free to reach out to me---my contact information is available [here](contact.qmd).
 
 ### Resume
 

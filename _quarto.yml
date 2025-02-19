@@ -3,6 +3,9 @@ project:
   output-dir: docs
 website:
   title: "Fred J Pasquarella"
+  search: true
+  page-footer: "© 2024 Fred Pasquarella | All Rights Reserved"
+  description: "A website showcasing research, presentations, and academic work by Fred Pasquarella."
   navbar:
     left:
       - text: "Home"
@@ -18,7 +21,11 @@ website:
 format:
   html:
     theme: yeti  # Other options i like: cosmo, flatly, spacelab
+    fontsize: 1.1em
     css: styles.css  # Optional custom styles
+    toc: true
+    number-sections: true
+    fig-align: center
 
 editor: visual
 

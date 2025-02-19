@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -111,7 +111,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#contact-me" id="toc-contact-me" class="nav-link active" data-scroll-target="#contact-me"><span class="header-section-number">1</span> Contact Me</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -132,12 +140,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="contact-me" class="level2">
-<h2 class="anchored" data-anchor-id="contact-me">Contact Me</h2>
-<p>If you’d like to connect or have questions about my research or work, feel free to reach out through the following:</p>
-<p>📧 Email: <a href="mailto:fredpasquarella@gmail.com">fredpasquarella@gmail.com</a><br>
-🌐 LinkedIn: <a href="https://www.linkedin.com/in/fred-pasquarella/">linkedin.com/in/fred-pasquarella</a><br>
-</p>
+<section id="contact-me" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="contact-me"><span class="header-section-number">1</span> Contact Me</h2>
+<p>If you’d like to reach out, please fill out the form below, and I’ll get back to you as soon as possible.</p>
+<form action="https://formspree.io/f/xgvorpaa" method="POST">
+<p><label for="name">Name:</label><br> <input type="text" id="name" name="name" required=""><br><br></p>
+<p><label for="email">Email:</label><br> <input type="email" id="email" name="email" required=""><br><br></p>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="5" required=""></textarea>
+<p><br><br></p>
+<button type="submit">
+Send
+</button>
+</form>
 
 
 </section>
@@ -377,6 +392,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">© 2024 Fred Pasquarella | All Rights Reserved</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

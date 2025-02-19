@@ -1,10 +1,12 @@
 ---
-title: "Welcome"
+title: "Welcome to My Research Website "
 ---
+
+I am Fred J. Pasquarella, a research, program evaluation, and data analytics professional. This website serves as a hub for my research, presentations, and academic work.
 
 ![](assets/images/headshot.jpg){width="200px"}
 
-My name is Fred J. Pasquarella and I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For nearly a decade, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
+I am a data-driven research leader with over a decade of experience in community mental health, workforce evaluation, and service optimization. At Didi Hirsch Mental Health Services, I led research and analytics initiatives that drive data-informed decisions, improve service delivery, and enhance workforce engagement. My expertise spans program evaluation, implementation science, and health informatics, with a focus on bridging research and practice.
 
 You can find my contact information [here](contact.qmd).
 
@@ -12,7 +14,7 @@ You can find my contact information [here](contact.qmd).
 ::: g-col-6
 ## Latest Research
 
-I am excited to share that my latest research, titled "[*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*](https://link.springer.com/article/10.1007/s11414-024-09925-z)," has been published in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
+I am excited to share that my latest research, titled "[*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*](https://link.springer.com/article/10.1007/s11414-024-09925-z){target="_blank"}," has been published in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
 
 *Check out all my [Reseach Publications](research.qmd) here.*
 :::
@@ -20,13 +22,13 @@ I am excited to share that my latest research, titled "[*Telemental health and r
 ::: g-col-6
 ## Latest Presentation
 
-I'm pleased to share that I recently presented my latest research at the Society for [Social Work and Research (SSWR) 2025 Annual Conference](https://sswr.org/2025-conference-home), held from January 15th to 19th in Seattle, Washington.
+I'm pleased to share that I recently presented my latest research at the Society for [Social Work and Research (SSWR) 2025 Annual Conference](https://sswr.org/2025-conference-home){target="_blank"}, held from January 15th to 19th in Seattle, Washington.
 
 At the conference, I showcased a poster titled "The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals," which delved into the challenges and adaptations faced by providers during this significant shift in service delivery.
 
-Additionally, I presented a paper on [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf), exploring how different telehealth modalities impact client engagement.
+Additionally, I presented a paper on [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf){target="_blank"}, exploring how different telehealth modalities impact client engagement.
 
-I also shared a poster titled [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf), which examined the factors influencing providers' choices and experiences in implementing telehealth services.
+I also shared a poster titled [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf){target="_blank"}, which examined the factors influencing providers' choices and experiences in implementing telehealth services.
 
 These studies were conducted as part of an annual research project I led during my agency's APA-accredited psychology doctoral internship program.
 

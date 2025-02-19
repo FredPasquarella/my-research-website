@@ -1,18 +1,22 @@
 ---
-title: "About This Website"
+title: "About"
 ---
 
 Welcome to my personal website! This platform serves as a hub to share my research, professional work, and contributions to the field. My goal is to make my findings, presentations, and teaching materials accessible to colleagues, students, and anyone with an interest in advancing knowledge.
 
+I am a Director of Research and Evaluation specializing in mental health service delivery, workforce engagement, and healthcare data science. My work focuses on using data-driven insights to improve mental health services, support provider well-being, and enhance organizational effectiveness. I am passionate about bridging research and practice to create meaningful change in community mental health settings.
+
+You can view my CV here for more details on my professional experience and research contributions.
+
 Here, you'll find:
 
--   Details about my [**reseach publications**](research.qmd).
+-   Details about my [**research publications**](research.qmd).
 
 -   [**Presentations**](presentations.qmd) and materials from conferences and workshops.
 
 -   Resources for **teaching** and professional development.
 
-I'm passionate about healthcare and data science and committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests.
+I am committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests. Please feel free to reach out to me—my contact information is available [here](contact.qmd).
 
 ### Resume
 

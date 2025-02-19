@@ -2,13 +2,11 @@
 title: "Presentations"
 ---
 
-# Research Presentations
+# Professional Presentations
 
 ### [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf)
 
-*Pasquarella, F. J., Aubry, A., Berger, S., Drake,B., Patel, P., Schueler, C., & Lee, S.*
-
-Poster presented at the 2025 Society of Social Work Research Conference in Seattle, WA.
+*Pasquarella, F. J., Aubry, A., Berger, S., Drake,B., Patel, P., Schueler, C., & Lee, S.* Poster presented at the 2025 Society of Social Work Research Conference in Seattle, WA.
 
 ### [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf)
 
@@ -17,23 +15,31 @@ Paper presented at the 2025 Society of Social Work Research Conference in Seattl
 
 ### [The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals](assets/presentations/sswr_2025_qualitative_telehealth.pdf.pdf)
 
-*Lizano, E., Bergen, C., Kay, B., Pasquarella, F. J., & Lee, S.* Poster presented at 2025 Society of Social Work Research Conference. Seattle, WA.
+*Lizano, E., Bergen, C., Kay, B., Pasquarella, F. J., & Lee, S.* Poster presented at 2025 Society of Social Work Research Conference in Seattle, WA.
 
 ### [Intersection of Evaluation and Data Analytics: Case Study from a Community-based Organization](assets/presentations/aea_2024_data_science_eval.pdf)
-*Lee, S. & Pasquarella, F. J.*
-Poster presented at the 2024 American Evaluation Association. Portland, OR.
 
+*Lee, S. & Pasquarella, F. J.* Poster presented at the 2024 American Evaluation Association in Portland, OR.
 
+### [The Impact of Trauma-Informed Care Training on Staff Perception and Attitudes in a Communinty Mental Health Context](assets/presentations/sswr_2024_tic_training.pdf)
 
-Lee, S., Pasquarella, F. J., Lee, G., & Humble, J. (2023). Tale of Two Stories: Staff and Resident Experiences in Crisis Residential Treatment Programs. Poster. 2023 American Evaluation Association Conference. Indianapolis, IN.
+*Pasquarella, F. J., Cunningham, B., Der Sarkissian, A., Gonzalez, S., Salamat, M., Makanui, K., Miller, S., Lee, S.* Poster presented at the 2024 Society of Social Work Research Conference in Washington, D.C.
 
-Lee, S., Pasquarella, F. J., De La Peza, D., Lizano, E. L., & Santoro, K. (2023). Planning and Implementing and Organizational Health Assessment at a Community Mental Health Center. 2023 Society of Social Work Research Conference. Phoenix, AZ.
+### [Tale of Two Stories: Staff and Resident Experiences in Crisis Residential Treatment Programs](assets/presentations/aea_2023_crt_eval.pdf)
 
-Lee, S., Pasquarella, F. J., & Harwood, M. (2022). From Room to Zoom: Evaluating the Implementation and Use of Telehealth Services. 2022 American Evaluation Association Conference. New Orleans, LA.
+*Lee, S., Pasquarella, F. J., Lee, G., & Humble, J.* Poster presented at the 2023 American Evaluation Association Conference in Indianapolis, IN.
 
-Pasquarella, F. J., Lizano, E. L., Lee, S., & De La Peza, D. (2022). An examination of work engagement's antecedents and consequences in a sample of U.S. community mental health providers. 2022 Society of Social Work Research Conference. Washington, D.C.
+### [Planning and Implementing and Organizational Health Assessment at a Community Mental Health Center](assets/presentations/sswr_2023_org_health_assessment.pdf)
 
-Pasquarella, F. J., & Johnson, G. L. (April, 2015). Structural Equation Model of Political Instability, Religiosity, and Progressive Values. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
+Lee, S., Pasquarella, F. J., De La Peza, D., Lizano, E. L., & Santoro, K. Presented at the 2023 Society of Social Work Research Conference in Phoenix, AZ.
+
+### [From Room to Zoom: Evaluating the Implementation and Use of Telehealth Services](assets/presentations/aea_2022_telehealth_eval.pdf)
+
+*Lee, S., Pasquarella, F. J., & Harwood, M.* Presented at the 2022 American Evaluation Association Conference in New Orleans, LA.
+
+# Academic Presentaions
+
+Pasquarella, F. J., & Johnson, G. L. (April, 2015). [Structural Equation Model of Political Instability, Religiosity, and Progressive Values](assets/presentation/wpa_2015_politics_religion.pdf). Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
 
 Pasquarella, F. J., & Preston, K. (April, 2015). Reliability Differences Between Response Formats of Rotter's Locus of Control. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
 

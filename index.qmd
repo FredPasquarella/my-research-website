@@ -4,22 +4,20 @@ title: "Welcome"
 
 ![](assets/images/headshot.jpg){width="200px"}
 
-My name is Fred J. Pasquarella and I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For over 7 years, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
+My name is Fred J. Pasquarella and I am a research, program evaluation, and data analytics professional with experience managing and leading teams. For nearly a decade, I worked collaboratively across a large community mental health organization to promote the use of data and analytics to drive quality improvement efforts, leveraged technology to make processes more efficient, conducted substantial evaluations and analyses, improved data access and data management, and facilitated the development of systematic key performance reports and dashboards.
 
-Check the [About Me](about.qmd) page to learn more about me. You can find my contact information [here](contact.qmd)
+You can find my contact information [here](contact.qmd).
 
-:::: {.grid}
-
+::: grid
 ::: g-col-6
 ## Latest Research
 
-I am excited to share that my latest research, titled "*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*," has been accepted for publication in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
+I am excited to share that my latest research, titled "[*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*](https://link.springer.com/article/10.1007/s11414-024-09925-z)," has been published in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
 
 *Check out all my [Reseach Publications](research.qmd) here.*
 :::
 
-::: {.g-col-6}
-
+::: g-col-6
 ## Latest Presentation
 
 I'm pleased to share that I recently presented my latest research at the Society for [Social Work and Research (SSWR) 2025 Annual Conference](https://sswr.org/2025-conference-home), held from January 15th to 19th in Seattle, Washington.
@@ -35,7 +33,5 @@ These studies were conducted as part of an annual research project I led during 
 Engaging with fellow professionals at the conference provided valuable insights and fostered discussions on enhancing mental health service delivery in evolving contexts.
 
 *Check out all my [Reseach Presentations](presentations.qmd) here.*
-
 :::
-
-::::
+:::

@@ -23,8 +23,6 @@ format:
     theme: yeti  # Other options i like: cosmo, flatly, spacelab
     fontsize: 1.1em
     css: styles.css  # Optional custom styles
-    toc: true
-    number-sections: true
     fig-align: center
 
 editor: visual

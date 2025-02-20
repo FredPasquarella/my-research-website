@@ -1,43 +1,91 @@
 ---
 title: "Presentations"
+toc: true
+toc-depth: 2
+toc-location: right
 ---
 
-# Professional Presentations
+# 📢 Professional Presentations
 
-### [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf){target="_blank"}
+:::: {.grid .g-4}
 
-*Pasquarella, F. J., Aubry, A., Berger, S., Drake,B., Patel, P., Schueler, C., & Lee, S.* Poster presented at the 2025 Society of Social Work Research Conference in Seattle, WA.
+::: {.g-col-6}
+::: {.card}
+### **Navigating Telemental Health: Provider Perceptions and Decision-Making**  
+📄 **Poster | SSWR 2025 | Seattle, WA**  
+👥 *Pasquarella, F. J., Aubry, A., Berger, S., Drake, B., Patel, P., Schueler, C., & Lee, S.*  
+📄 [View Presentation](assets/presentations/sswr_2025_tmh_perceptions.pdf){target="_blank"}
+:::
+:::
 
-### [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf){target="_blank"}
+::: {.g-col-6}
+::: {.card}
+### **Analyzing Telemental Health Service Modality Effects on Engagement**  
+📄 **Paper | SSWR 2025 | Seattle, WA**  
+👥 *Pasquarella, F. J., Aubry, A., Berger, S., Drake, B., Patel, P., Schueler, C., & Lee, S.*  
+📄 [View Presentation](assets/presentations/sswr_2025_tmh_engagement.pdf){target="_blank"}
+:::
+:::
 
-*Pasquarella, F. J., Aubry, A., Berger, S., Drake,B., Patel, P., Schueler, C., & Lee, S.*\
-Paper presented at the 2025 Society of Social Work Research Conference in Seattle, WA.
+::: {.g-col-6}
+::: {.card}
+### **The Catch-22 of Telehealth: A Qualitative Study on Work & Well-being**  
+📄 **Poster | SSWR 2025 | Seattle, WA**  
+👥 *Lizano, E., Bergen, C., Kay, B., Pasquarella, F. J., & Lee, S.*  
+📄 [View Presentation](assets/presentations/sswr_2025_qualitative_telehealth.pdf){target="_blank"}
+:::
+:::
 
-### [The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals](assets/presentations/sswr_2025_qualitative_telehealth.pdf.pdf){target="_blank"}
+::: {.g-col-6}
+::: {.card}
+### **Intersection of Evaluation and Data Analytics: A Community Case Study**
 
-*Lizano, E., Bergen, C., Kay, B., Pasquarella, F. J., & Lee, S.* Poster presented at 2025 Society of Social Work Research Conference in Seattle, WA.
+📄 **Poster | AEA 2024 | Portland, OR**  
+👥 *Lee, S. & Pasquarella, F. J.*  
+📄 [View Presentation](assets/presentations/aea_2024_data_science_eval.pdf){target="_blank"}
+:::
+:::
 
-### [Intersection of Evaluation and Data Analytics: Case Study from a Community-based Organization](assets/presentations/aea_2024_data_science_eval.pdf){target="_blank"}
+::: {.g-col-6}
+::: {.card}
+### **Impact of Trauma-Informed Care Training in Community Mental Health**  
+📄 **Poster | SSWR 2024 | Washington, D.C.**  
+👥 *Pasquarella, F. J., Cunningham, B., Der Sarkissian, A., Gonzalez, S., Salamat, M., Makanui, K., Miller, S., Lee, S.*  
+📄 [View Presentation](assets/presentations/sswr_2024_tic_training.pdf){target="_blank"}
+:::
+:::
 
-*Lee, S. & Pasquarella, F. J.* Poster presented at the 2024 American Evaluation Association in Portland, OR.
+::: {.g-col-6}
+::: {.card}
+### **Tale of Two Stories: Staff & Resident Experiences in Crisis Treatment**  
+📄 **Poster | AEA 2023 | Indianapolis, IN**  
+👥 *Lee, S., Pasquarella, F. J., Lee, G., & Humble, J.*  
+📄 [View Presentation](assets/presentations/aea_2023_crt_eval.pdf){target="_blank"}
+:::
+:::
 
-### [The Impact of Trauma-Informed Care Training on Staff Perception and Attitudes in a Communinty Mental Health Context](assets/presentations/sswr_2024_tic_training.pdf){target="_blank"}
+::: {.g-col-6}
+::: {.card}
+### **Planning and Implementing and Organizational Health Assessment at a Community Mental Health Center**  
+📄 **Paper | SSWR 2023 | Phoenix, AZ**  
+👥 *Lee, S., Pasquarella, F. J., De La Peza, D., Lizano, E. L., & Santoro, K.*  
+📄 [View Presentation](assets/presentations/sswr_2023_org_health_assessment.pdf){target="_blank"}
+:::
+:::
 
-*Pasquarella, F. J., Cunningham, B., Der Sarkissian, A., Gonzalez, S., Salamat, M., Makanui, K., Miller, S., Lee, S.* Poster presented at the 2024 Society of Social Work Research Conference in Washington, D.C.
+::: {.g-col-6}
+::: {.card}
+### **From Room to Zoom: Evaluating the Implementation and Use of Telehealth Services**  
+📄 **Paper | AEA 2022 | New Orleans, LA**
+👥 *Lee, S., Pasquarella, F. J., & Harwood, M.*
+📄 [View Presentation](assets/presentations/aea_2022_telehealth_eval.pdf){target="_blank"}
+:::
+:::
 
-### [Tale of Two Stories: Staff and Resident Experiences in Crisis Residential Treatment Programs](assets/presentations/aea_2023_crt_eval.pdf){target="_blank"}
+:::: 
 
-*Lee, S., Pasquarella, F. J., Lee, G., & Humble, J.* Poster presented at the 2023 American Evaluation Association Conference in Indianapolis, IN.
 
-### [Planning and Implementing and Organizational Health Assessment at a Community Mental Health Center](assets/presentations/sswr_2023_org_health_assessment.pdf){target="_blank"}
-
-Lee, S., Pasquarella, F. J., De La Peza, D., Lizano, E. L., & Santoro, K. Presented at the 2023 Society of Social Work Research Conference in Phoenix, AZ.
-
-### [From Room to Zoom: Evaluating the Implementation and Use of Telehealth Services](assets/presentations/aea_2022_telehealth_eval.pdf){target="_blank"}
-
-*Lee, S., Pasquarella, F. J., & Harwood, M.* Presented at the 2022 American Evaluation Association Conference in New Orleans, LA.
-
-# Academic Presentaions
+# ✏️ Academic Presentations
 
 Pasquarella, F. J., & Johnson, G. L. (April, 2015). [Structural Equation Model of Political Instability, Religiosity, and Progressive Values](assets/presentation/wpa_2015_politics_religion.pdf){target="_blank"}. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
 

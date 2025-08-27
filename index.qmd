@@ -10,7 +10,7 @@ I am a data-driven research leader with over a decade of experience in community
 
 You can find my contact information [here](contact.qmd).
 
-::: grid
+::::: grid
 ::: g-col-6
 ## Latest Research
 
@@ -34,6 +34,6 @@ These studies were conducted as part of an annual research project I led during 
 
 Engaging with fellow professionals at the conference provided valuable insights and fostered discussions on enhancing mental health service delivery in evolving contexts.
 
-*Check out all my [Reseach Presentations](presentations.qmd) here.*
+*Check out all my [Research Presentations](presentations.qmd) here.*
 :::
-:::
+:::::

@@ -82,7 +82,7 @@ toc-location: right
 
 # Academic Presentations
 
-Pasquarella, F. J., & Johnson, G. L. (April, 2015). [Structural Equation Model of Political Instability, Religiosity, and Progressive Values](assets/presentation/wpa_2015_politics_religion.pdf){target="_blank"}. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
+Pasquarella, F. J., & Johnson, G. L. (April, 2015). [Structural Equation Model of Political Instability, Religiosity, and Progressive Values](assets/presentations/wpa_2015_politics_religion.pdf){target="_blank"}. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
 
 Pasquarella, F. J., & Preston, K. (April, 2015). Reliability Differences Between Response Formats of Rotter's Locus of Control. Poster presented at Western Psychological Association's 95th Annual Convention, Las Vegas, NV.
 

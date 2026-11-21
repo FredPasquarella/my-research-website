@@ -1,0 +1,122 @@
+---
+title: "Elementary Statistics"
+subtitle: "A guided pathway through statistical reasoning"
+description: "Proposed Elementary Statistics learning sequence and planned interactive activities in psychology and behavioral science."
+toc: true
+toc-depth: 2
+---
+
+[← Back to Teaching](../../teaching.qmd)
+
+::: {.course-intro}
+
+**Sample course design · Resources in development**
+
+Statistics helps us ask better questions about the world, examine data thoughtfully, and understand how much confidence to place in a conclusion. This learning hub will bring together concise explanations, guided practice, and interactive demonstrations based on examples from psychology, behavioral health, and everyday research.
+
+The sequence is adapted from my **proposed Elementary Statistics (PSYC 210) sample syllabus** for Cerritos College. It is a teaching-design sample, **not an active or officially adopted course**. Topics, software, assignments, and scheduling would be finalized with the department before instruction.
+
+:::
+
+## How to use this hub
+
+The structure below is a **course roadmap**, not a completed lesson library. As materials are developed, each topic will have a short explanation, an example to work through, a simulation or practice activity where it adds instructional value, and a way to check your understanding.
+
+For actual enrolled students, course announcements, graded assignments, and feedback would remain in **Canvas**. No student data or grades are collected on this public site.
+
+## Learning pathway
+
+:::: {.grid .course-pathway}
+::: {.g-col-12 .g-col-md-6}
+::: {.site-card}
+
+### 1. Asking questions and describing data
+
+*Weeks 1–4 · Planned*
+
+Research questions; observational versus experimental studies; populations and samples; levels of measurement; sampling bias; graphs, center, variability, standard deviation, and z-scores.
+
+**Planned demonstration:** Explore how distribution shape and outliers change the mean, median, and spread.
+
+:::
+:::
+::: {.g-col-12 .g-col-md-6}
+::: {.site-card}
+
+### 2. Probability and sampling
+
+*Weeks 5–6 · Planned*
+
+Basic and conditional probability, independence, normal distributions, sampling distributions, the central limit theorem, and standard error.
+
+**First interactive prototype:** Draw repeated samples, compare distributions of sample means, and examine the effects of sample size.
+
+:::
+:::
+::: {.g-col-12 .g-col-md-6}
+::: {.site-card}
+
+### 3. Estimation and inference
+
+*Weeks 7–8 · Planned*
+
+Point estimates, confidence intervals, hypothesis testing, p-values, Type I and II errors, introductory effect size, and statistical power.
+
+**Planned demonstrations:** Repeated-sample interval coverage and relationships between sample size, effect size, variability, and power.
+
+:::
+:::
+::: {.g-col-12 .g-col-md-6}
+::: {.site-card}
+
+### 4. Comparing groups
+
+*Weeks 9–12 · Planned*
+
+One-sample, independent-samples, and paired-samples t-tests; one-way ANOVA; assumptions and selected nonparametric alternatives.
+
+**Planned practice:** Choose a comparison method, examine assumptions, and explain the result in context.
+
+:::
+:::
+::: {.g-col-12 .g-col-md-6}
+::: {.site-card}
+
+### 5. Categorical and quantitative relationships
+
+*Weeks 13–15 · Planned*
+
+Chi-square tests, correlation, confounding and causation, simple linear regression, prediction, residuals, and extrapolation.
+
+**Planned demonstration:** Explore how outliers and changing patterns affect correlation and regression.
+
+:::
+:::
+::: {.g-col-12 .g-col-md-6}
+::: {.site-card}
+
+### 6. Applying and communicating results
+
+*Weeks 16–18 · Planned*
+
+Integrating methods, selecting analyses, communicating practical importance and limitations, presenting an applied project, and reviewing course concepts.
+
+**Planned practice:** Translate statistical output into an appropriately qualified, accessible explanation.
+
+:::
+:::
+::::
+
+## Laboratory and project structure
+
+In the sample syllabus, students use statistical software for applied questions, with **eight designated laboratory reports** distributed through the course. The proposed software is R with step-by-step support; jamovi is a possible alternative, depending on departmental decisions. No prior programming experience is assumed.
+
+The sample applied project uses a public, de-identified, or simulated dataset. Students develop a research question, visualize and summarize the data, justify an analysis, interpret uncertainty, and discuss limitations. No collection of sensitive personal data is required.
+
+## Materials and accessibility
+
+The proposed course uses the freely accessible [OpenStax *Introductory Statistics 2e*](https://openstax.org/details/books/introductory-statistics-2e) as a textbook reference. Any resources added here will aim to work in standard browsers, including on smaller screens, with keyboard-operable controls, readable explanations, and accessible alternatives when appropriate.
+
+**Development status:** No interactive lessons are linked as finished resources yet. The first planned lesson focuses on **sampling distributions and the central limit theorem (Week 6)**.
+
+[Read about the teaching approach](../../teaching.qmd#teaching-approach) · [Explore publications](../../research.qmd)

@@ -40,16 +40,13 @@ Under the existing `main` → `/docs` arrangement, a content change will not app
 
 Do not assume the new check workflow publishes changes. In particular, commits pushed with the default GitHub Actions `GITHUB_TOKEN` do not trigger a GitHub Pages build for branch-based publishing.
 
-### Planned, separate deployment upgrade (not yet implemented)
+### Phase 2 publishing workflow (proposed; not live yet)
 
-After the build check has been validated and the owner approves the cutover:
+The proposed `.github/workflows/quarto-pages.yml` workflow prepares a GitHub Pages artifact on pull requests **without deploying it**. After a separately approved cutover, merges to `main` will render and deploy the Quarto website automatically.
 
-1. Add a GitHub Pages deployment workflow using the rendered artifact and GitHub's supported Pages actions.
-2. Verify that custom-domain handling and deployment permissions are correct.
-3. Change GitHub Pages **Source** from **Deploy from a branch** to **GitHub Actions**, as part of an explicitly approved release.
-4. Verify the live website and retain a documented rollback procedure.
+**Do not merge the publishing workflow or change GitHub Pages Source until the owner explicitly approves the cutover.** The existing publishing source remains **Deploy from a branch → main /docs** for now.
 
-Until that separately approved change, keep using the existing `docs/` publishing arrangement.
+See [DEPLOYMENT.md](DEPLOYMENT.md) for the exact cutover sequence, domain and HTTPS checks, deployment verification, and rollback instructions.
 
 ## Rollback
 

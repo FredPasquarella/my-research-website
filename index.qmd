@@ -1,39 +1,82 @@
 ---
-title: "Welcome to My Research Website "
+title: "Fred J. Pasquarella"
+subtitle: "Research, evaluation, and statistics education"
+description: "Fred J. Pasquarella's research, evaluation, publications, and teaching resources."
 ---
 
-I am Fred J. Pasquarella, a research, program evaluation, and data analytics professional. This website serves as a hub for my research, presentations, and academic work.
+:::: {.grid .site-hero}
+::: {.g-col-12 .g-col-md-8}
 
-![](assets/images/headshot.jpg){width="200px"}
+**RESEARCH • EVALUATION • TEACHING**{.hero-kicker}
 
-I am a data-driven research leader with over a decade of experience in community mental health, workforce evaluation, and service optimization. At Didi Hirsch Mental Health Services, I led research and analytics initiatives that drive data-informed decisions, improve service delivery, and enhance workforce engagement. My expertise spans program evaluation, implementation science, and health informatics, with a focus on bridging research and practice.
+## Connecting evidence with practical decisions
 
-You can find my contact information [here](contact.qmd).
+I am a research and evaluation leader with graduate training in quantitative psychology. My work centers on using thoughtful measurement, sound analysis, and clear communication to support community mental health services and the people who provide them.
 
-::::: grid
-::: g-col-6
-## Latest Research
+I also mentor doctoral psychology interns in applied research and am developing approachable, interactive resources for learning statistics.
 
-I am excited to share that my latest research, titled "[*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*](https://link.springer.com/article/10.1007/s11414-024-09925-z){target="_blank"}," has been published in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
+[Explore my research](research.qmd){.btn .btn-primary} [Explore teaching](teaching.qmd){.btn .btn-outline-primary}
 
-*Check out all my [Reseach Publications](research.qmd) here.*
 :::
+::: {.g-col-12 .g-col-md-4}
 
-::: g-col-6
-## Latest Presentation
+![Portrait of Fred J. Pasquarella](assets/images/headshot.jpg){.site-portrait}
 
-I'm pleased to share that I recently presented my latest research at the Society for [Social Work and Research (SSWR) 2025 Annual Conference](https://sswr.org/2025-conference-home){target="_blank"}, held from January 15th to 19th in Seattle, Washington.
-
-At the conference, I showcased a poster titled "The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals," which delved into the challenges and adaptations faced by providers during this significant shift in service delivery.
-
-Additionally, I presented a paper on [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf){target="_blank"}, exploring how different telehealth modalities impact client engagement.
-
-I also shared a poster titled [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf){target="_blank"}, which examined the factors influencing providers' choices and experiences in implementing telehealth services.
-
-These studies were conducted as part of an annual research project I led during my agency's APA-accredited psychology doctoral internship program.
-
-Engaging with fellow professionals at the conference provided valuable insights and fostered discussions on enhancing mental health service delivery in evolving contexts.
-
-*Check out all my [Research Presentations](presentations.qmd) here.*
 :::
-:::::
+::::
+
+## Explore my work
+
+:::: {.grid .site-card-grid}
+::: {.g-col-12 .g-col-md-4}
+::: {.site-card}
+
+### Research & evaluation
+
+Applied research, outcome measurement, and data-informed improvement in behavioral health and human services.
+
+[Research overview](research.qmd)
+
+:::
+:::
+::: {.g-col-12 .g-col-md-4}
+::: {.site-card}
+
+### Publications & presentations
+
+Peer-reviewed scholarship and conference materials on workforce well-being, service delivery, and mental health programs.
+
+[Publications](research.qmd) · [Presentations](presentations.qmd)
+
+:::
+:::
+::: {.g-col-12 .g-col-md-4}
+::: {.site-card}
+
+### Teaching & mentorship
+
+Instruction in research methods, statistics, and measurement, with new interactive learning resources in development.
+
+[Teaching portfolio](teaching.qmd)
+
+:::
+:::
+::::
+
+## Featured research
+
+**Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders** (2025)
+
+This collaborative study examines mental health professionals' experiences during the transition to remote work and care, including implications for service delivery and workforce well-being.
+
+[Read the publication](https://doi.org/10.1007/s11414-024-09925-z) · [Browse more research](research.qmd)
+
+## Teaching resources in development
+
+I am designing an introductory statistics learning collection with guided explanations, interactive demonstrations, and practice activities. The first topics include distributions, sampling variability, confidence intervals, and statistical inference. These materials are being developed and are not yet published as completed lessons.
+
+[See the teaching portfolio and resource plan](teaching.qmd)
+
+## Connect
+
+For research, evaluation, or teaching inquiries, visit the [contact page](contact.qmd).

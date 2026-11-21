@@ -1,0 +1,77 @@
+name: Quarto Pages deployment
+
+# A PR validates the exact build/package path; it never deploys.
+# Production publishing begins only after the owner approves the cutover,
+# selects GitHub Actions under Settings > Pages, and merges this workflow.
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Production runs are serialized; PRs do not block production deployments.
+concurrency:
+  group: quarto-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Render and package Quarto site
+    if: github.repository == 'FredPasquarella/my-research-website'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
+
+      - name: Render website
+        run: quarto render
+
+      - name: Validate rendered site and domain
+        shell: bash
+        run: |
+          set -euo pipefail
+          for page in index about research presentations contact; do
+            test -s "docs/${page}.html"
+          done
+          test -s CNAME
+          test -s docs/CNAME
+          cmp CNAME docs/CNAME
+          grep -Fxq "www.fredjpasquarella.com" docs/CNAME
+
+      - name: Package website for GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs/
+
+  deploy:
+    name: Deploy approved main branch
+    needs: build
+    if: github.repository == 'FredPasquarella/my-research-website' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Publish packaged website
+        id: deployment
+        uses: actions/deploy-pages@v4

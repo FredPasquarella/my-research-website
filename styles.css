@@ -110,3 +110,46 @@ select:focus-visible {
     padding: 1.15rem;
   }
 }
+
+
+/* Teaching hub and course roadmap components. */
+.featured-course,
+.course-intro {
+  border: 1px solid #c8dce2;
+  background: #f2f7f8;
+  border-radius: 0.9rem;
+  padding: 1.6rem;
+  margin: 1.1rem 0 2rem;
+}
+
+.featured-course h3 {
+  margin-top: 0.4rem;
+  color: #173647;
+}
+
+.featured-course p:last-child,
+.course-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.course-label {
+  color: #28556a;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+.course-pathway .site-card {
+  margin-bottom: 0.7rem;
+}
+
+.course-pathway .site-card p {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+  .featured-course,
+  .course-intro {
+    padding: 1.15rem;
+  }
+}

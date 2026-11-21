@@ -1,0 +1,51 @@
+name: Quarto site checks
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Checks only: this workflow never publishes the website or pushes commits.
+permissions:
+  contents: read
+
+concurrency:
+  group: quarto-check-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    name: Render and verify website
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
+
+      - name: Render Quarto website
+        run: quarto render
+
+      - name: Check required pages and custom domain
+        shell: bash
+        run: |
+          set -euo pipefail
+          for page in index about research presentations contact; do
+            test -s "docs/${page}.html"
+          done
+          test -s docs/CNAME
+          grep -Fxq "www.fredjpasquarella.com" docs/CNAME
+
+      - name: Save rendered website for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: quarto-site-preview
+          path: docs/
+          if-no-files-found: error
+          retention-days: 14

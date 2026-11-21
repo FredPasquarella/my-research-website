@@ -1,82 +1,86 @@
 ---
 title: "Fred J. Pasquarella"
 subtitle: "Research, evaluation, and statistics education"
-description: "Fred J. Pasquarella's research, evaluation, publications, and teaching resources."
+description: "Applied research, program evaluation, and teaching resources by Fred J. Pasquarella."
 ---
 
-:::: {.grid .site-hero}
-::: {.g-col-12 .g-col-md-8}
+:::: {.editorial-hero}
+::: {.editorial-hero__copy}
 
-**RESEARCH • EVALUATION • TEACHING**{.hero-kicker}
+<span class="editorial-kicker">Research · Evaluation · Education</span>
 
-## Connecting evidence with practical decisions
+## Connecting research and understanding.
 
-I am a research and evaluation leader with graduate training in quantitative psychology. My work centers on using thoughtful measurement, sound analysis, and clear communication to support community mental health services and the people who provide them.
+I lead research and evaluation work in community mental health, drawing on graduate training in quantitative psychology. My interests include measurement, applied analysis, effective services, and clear communication of what evidence can—and cannot—tell us.
 
-I also mentor doctoral psychology interns in applied research and am developing approachable, interactive resources for learning statistics.
+I also mentor doctoral psychology interns and am developing accessible resources to help students learn statistical reasoning through meaningful examples and guided practice.
 
-[Explore my research](research.qmd){.btn .btn-primary} [Explore teaching](teaching.qmd){.btn .btn-outline-primary}
+::: {.editorial-actions}
+[Explore Elementary Statistics](courses/elementary-statistics/index.qmd)
+
+[Explore research](research.qmd)
+:::
 
 :::
-::: {.g-col-12 .g-col-md-4}
+::: {.editorial-hero__portrait}
 
-![Portrait of Fred J. Pasquarella](assets/images/headshot.jpg){.site-portrait}
+![Portrait of Fred J. Pasquarella](assets/images/headshot.jpg)
 
 :::
 ::::
 
-## Explore my work
+## Research and teaching
 
-:::: {.grid .site-card-grid}
-::: {.g-col-12 .g-col-md-4}
-::: {.site-card}
+:::: {.editorial-feature-grid}
+::: {.editorial-feature}
 
 ### Research & evaluation
 
-Applied research, outcome measurement, and data-informed improvement in behavioral health and human services.
+Applied research, outcome measurement, and evaluation to inform behavioral health programs and organizational decisions.
 
-[Research overview](research.qmd)
+[Explore research](research.qmd)
 
 :::
-:::
-::: {.g-col-12 .g-col-md-4}
-::: {.site-card}
+::: {.editorial-feature}
 
 ### Publications & presentations
 
-Peer-reviewed scholarship and conference materials on workforce well-being, service delivery, and mental health programs.
+Peer-reviewed research and conference materials on workforce well-being, mental health service delivery, and program evaluation.
 
-[Publications](research.qmd) · [Presentations](presentations.qmd)
+[View publications](research.qmd) · [Browse presentations](presentations.qmd)
 
 :::
-:::
-::: {.g-col-12 .g-col-md-4}
-::: {.site-card}
+::: {.editorial-feature}
 
 ### Teaching & learning
 
-Explore the proposed Elementary Statistics course pathway and future interactive lessons, alongside my teaching and mentorship experience.
+A proposed Elementary Statistics learning pathway, with interactive lessons in development, and a portfolio of research instruction and mentorship.
 
-[Elementary Statistics hub](courses/elementary-statistics/index.qmd) · [Teaching portfolio](teaching.qmd)
+[Explore teaching](teaching.qmd)
 
-:::
 :::
 ::::
 
-## Featured research
+## Featured publication
 
-**Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders** (2025)
+::: {.editorial-spotlight}
 
-This collaborative study examines mental health professionals' experiences during the transition to remote work and care, including implications for service delivery and workforce well-being.
+<span class="section-kicker">Peer-reviewed research · 2025</span>
 
-[Read the publication](https://doi.org/10.1007/s11414-024-09925-z) · [Browse more research](research.qmd)
+<div class="spotlight-title">Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals’ experiences during COVID-19 stay-at-home orders</div>
+
+Lizano, Bergen, Smith, Pasquarella, and Lee examine how the rapid shift to remote work and services shaped mental health professionals’ experiences, with implications for workforce well-being and clinical care.
+
+[Read the publication](https://doi.org/10.1007/s11414-024-09925-z) · [See all publications](research.qmd)
+
+:::
 
 ## Teaching resources in development
 
-I am designing an introductory statistics learning collection with guided explanations, interactive demonstrations, and practice activities. The first topics include distributions, sampling variability, confidence intervals, and statistical inference. These materials are being developed and are not yet published as completed lessons.
+The first collection will support **Elementary Statistics** through short explanations, worked examples, interactive demonstrations, and guided interpretation. The course roadmap is available now as a proposed instructional design; individual simulations are not yet published.
 
-[Explore the course pathway](courses/elementary-statistics/index.qmd) · [Teaching and mentorship](teaching.qmd)
+[View the Elementary Statistics pathway](courses/elementary-statistics/index.qmd) · [Read about my teaching approach](teaching.qmd#teaching-approach)
 
-## Connect
+## Contact
 
-For research, evaluation, or teaching inquiries, visit the [contact page](contact.qmd).
+For research, evaluation, and teaching inquiries, use the [contact page](contact.qmd).

@@ -49,6 +49,7 @@ jobs:
             test -s "docs/${page}.html"
           done
           test -s CNAME
+          test -s docs/courses/elementary-statistics/index.html
           test -s docs/CNAME
           cmp CNAME docs/CNAME
           grep -Fxq "www.fredjpasquarella.com" docs/CNAME

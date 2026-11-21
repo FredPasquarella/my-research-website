@@ -1,23 +1,35 @@
 ---
 title: "About"
+subtitle: "Research leadership, quantitative psychology, and teaching"
+description: "Background and professional interests of Fred J. Pasquarella."
+toc: true
+toc-depth: 2
 ---
 
-Welcome to my personal website! This platform serves as a hub to share my research, professional work, and contributions to the field. My goal is to make my findings, presentations, and teaching materials accessible to colleagues, students, and anyone with an interest in advancing knowledge.
+My work sits at the intersection of research, program evaluation, and the use of evidence to improve services. I am especially interested in helping organizations ask useful questions, measure outcomes thoughtfully, and communicate findings in ways that support decisions.
 
-I am a Director of Research and Evaluation specializing in mental health service delivery, workforce engagement, and healthcare data science. My work focuses on using data-driven insights to improve mental health services, support provider well-being, and enhance organizational effectiveness. I am passionate about bridging research and practice to create meaningful change in community mental health settings.
+## Research and evaluation
 
-You can view my CV here for more details on my professional experience and research contributions.
+I serve as Director of Research and Evaluation at Didi Hirsch Mental Health Services, where I lead research, evaluation, and analytics supporting community mental health and related behavioral health programs. My work includes outcome measurement, assessment implementation, service evaluation, data quality, reproducible analyses, and communication of findings to clinical and organizational stakeholders.
 
-Here, you'll find:
+I am interested in the practical challenges of moving from data to useful insight: how measures are defined, whose experiences are represented, what conclusions a research design supports, and how findings can inform improvements in care and organizational practice.
 
--   Details about my [**research publications**](research.qmd).
+## Education and quantitative methods
 
--   [**Presentations**](presentations.qmd) and materials from conferences and workshops.
+I earned an **M.A. in Psychology with an emphasis in Quantitative Methods** from California State University, Fullerton, and a **B.A. in Psychology** with a minor in Philosophy from California State University, Dominguez Hills.
 
--   Resources for **teaching** and professional development.
+My training and research interests include psychological measurement, psychometrics, research methodology, statistical modeling, and applied data analysis.
 
-I am committed to fostering collaboration and knowledge sharing. I hope this site inspires meaningful discussions and serves as a resource for those who share similar interests. Please feel free to reach out to me---my contact information is available [here](contact.qmd).
+## Teaching and mentorship
 
-### Resume
+Alongside my research leadership responsibilities, I have provided research and program evaluation instruction and mentorship within an APA-accredited doctoral psychology internship program since 2016. I guide interns through applied research projects with an emphasis on research design, measurement, analysis, interpretation, and written and oral communication.
 
-### CV
+I am currently developing introductory statistics teaching resources that support conceptual understanding through guided practice and interactive demonstrations.
+
+[Visit Teaching & Learning](teaching.qmd) · [Explore Elementary Statistics](courses/elementary-statistics/index.qmd)
+
+## Research and collaboration
+
+My scholarly work addresses community mental health service delivery, workforce experiences, treatment engagement, and program evaluation.
+
+[Research publications](research.qmd) · [Conference presentations](presentations.qmd) · [Contact](contact.qmd)

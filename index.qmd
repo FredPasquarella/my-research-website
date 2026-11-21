@@ -53,11 +53,11 @@ Peer-reviewed scholarship and conference materials on workforce well-being, serv
 ::: {.g-col-12 .g-col-md-4}
 ::: {.site-card}
 
-### Teaching & mentorship
+### Teaching & learning
 
-Instruction in research methods, statistics, and measurement, with new interactive learning resources in development.
+Explore the proposed Elementary Statistics course pathway and future interactive lessons, alongside my teaching and mentorship experience.
 
-[Teaching portfolio](teaching.qmd)
+[Elementary Statistics hub](courses/elementary-statistics/index.qmd) · [Teaching portfolio](teaching.qmd)
 
 :::
 :::
@@ -75,7 +75,7 @@ This collaborative study examines mental health professionals' experiences durin
 
 I am designing an introductory statistics learning collection with guided explanations, interactive demonstrations, and practice activities. The first topics include distributions, sampling variability, confidence intervals, and statistical inference. These materials are being developed and are not yet published as completed lessons.
 
-[See the teaching portfolio and resource plan](teaching.qmd)
+[Explore the course pathway](courses/elementary-statistics/index.qmd) · [Teaching and mentorship](teaching.qmd)
 
 ## Connect
 

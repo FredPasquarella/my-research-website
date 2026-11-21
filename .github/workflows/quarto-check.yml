@@ -36,7 +36,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for page in index about research presentations contact; do
+          for page in index about research presentations teaching contact; do
             test -s "docs/${page}.html"
           done
           test -s docs/CNAME

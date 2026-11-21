@@ -1,58 +1,63 @@
 ---
-title: "Teaching"
-description: "Teaching experience, instructional approach, and proposed introductory statistics learning resources."
+title: "Teaching & Learning"
+description: "Elementary Statistics learning hub, planned interactive resources, and research-methods teaching portfolio."
 toc: true
 toc-depth: 2
 ---
 
-My teaching interests include **statistics, research methods, psychological measurement, and program evaluation**. I aim to help learners understand the questions behind an analysis, interpret evidence carefully, and communicate findings without overstating what the data can show.
+I am developing accessible, practical learning resources that help students **reason with statistics**, not just perform calculations. The first collection is an Elementary Statistics course hub built around examples from psychology, behavioral health, and everyday research.
+
+## Start learning: Elementary Statistics
+
+::: {.featured-course}
+
+**FEATURED LEARNING HUB**{.course-label}
+
+### Elementary Statistics: understanding data and uncertainty
+
+Explore the proposed 18-week learning pathway, from describing data and sampling to inference, group comparisons, correlation, and regression.
+
+The hub outlines what students will learn, planned interactive demonstrations, and a laboratory/project approach. **The hub is a course design preview; interactive lessons are still in development.**
+
+[Explore the Elementary Statistics hub](courses/elementary-statistics/index.qmd){.btn .btn-primary}
+
+:::
+
+## Interactive resources in development
+
+The first resource collection is based on the proposed course sequence. These are planned activities, **not active links to completed simulations**.
+
+| Proposed topic | Course week | Intended activity |
+|---|---:|---|
+| Exploring distributions | 3–4 | Compare the mean, median, variability, and effects of outliers |
+| Sampling distributions and central limit theorem | 6 | Repeat samples and explore how sample size affects the distribution of sample means |
+| Confidence intervals | 7 | Examine repeated-sample interval coverage |
+| Hypothesis testing and power | 8 | Investigate Type I/II errors, effect sizes, and power |
+| Correlation and regression | 14–15 | Explore patterns, outliers, prediction, and limits of causal claims |
+
+Each future lesson will be organized around a question, a prediction, an example or simulation, an interpretation task, and a short knowledge check. Interactivity will be used only when it improves understanding. Accessible explanations and alternatives will accompany required visual activities.
 
 ## Teaching approach
 
-I emphasize three connected practices:
+My instructional goal is to make statistical and research reasoning understandable and useful.
 
-- **Start with meaningful questions.** Use examples from psychology, behavioral health, and everyday research to make statistical concepts relevant.
-- **Make reasoning visible.** Connect visual explanations, worked examples, guided practice, and opportunities to revise understanding.
-- **Interpret responsibly.** Discuss uncertainty, assumptions, bias, generalizability, and practical significance alongside calculations.
+- **Begin with meaningful questions.** Connect statistical ideas to psychology, community mental health, and everyday evidence.
+- **Build understanding gradually.** Combine clear explanations, worked examples, guided practice, and feedback.
+- **Interpret before concluding.** Teach students to examine assumptions, bias, sampling, uncertainty, practical importance, and limitations.
+- **Support different learners.** Use plain language, multiple ways to explain a concept, and accessible materials without requiring prior programming experience.
 
 ## Instruction and mentorship
 
 Since 2016, I have contributed research and program evaluation instruction to the doctoral psychology internship training program at Didi Hirsch Mental Health Services.
 
-In collaboration with the internship training team, I guide approximately four doctoral interns each year through a yearlong applied research or evaluation project. Instruction and feedback include literature review, research design, measurement, statistical analysis, interpretation, scholarly writing, and presentation. The goal is to build independence while connecting methodological rigor with questions that matter to programs and communities.
+Working with the internship training team, I guide approximately four doctoral interns annually through a yearlong research or program evaluation project. Instruction and feedback include literature review, study design, measurement, statistical analysis, interpretation, APA-style writing, and presentations. The work helps interns develop increasing independence as researchers and evaluators.
 
-This experience is distinct from a formal college course appointment.
+This instructional and mentorship experience is **distinct from a formal college teaching appointment**.
 
-## Sample course design: Elementary Statistics
+## Sample course design and related work
 
-I have developed a **proposed sample syllabus** for **Elementary Statistics (PSYC 210)** at Cerritos College. The course outline is a model of my instructional approach, not a currently assigned course. Final requirements would be determined in collaboration with the college and its approved course outline.
+The Elementary Statistics materials draw from a **proposed PSYC 210 sample syllabus for Cerritos College**. It is not an active or officially approved class section; the approved course outline and departmental decisions would determine the final content and requirements.
 
-The sample organizes an 18-week sequence around conceptual understanding and applied practice, including:
+[Explore the course design](courses/elementary-statistics/index.qmd) · [Research publications](research.qmd) · [Conference presentations](presentations.qmd)
 
-- Describing data, measurement, study design, and sampling
-- Probability, distributions, sampling variability, and confidence intervals
-- Hypothesis testing, effect sizes, and statistical power
-- Tests of mean differences, chi-square, correlation, and simple linear regression
-- Statistical software practice, interpretation, and communication of limitations
-
-The proposed design includes guided laboratories, eight graded laboratory reports, and an applied statistical project using approved public, de-identified, or simulated data. It prioritizes learning to interpret statistical results over memorizing software procedures.
-
-## Interactive learning resources
-
-The resources below are **planned, not yet published lessons**. Each will pair a concise explanation with a prediction, a guided interaction, and an interpretation exercise.
-
-| Topic | Planned interactive activity | Central question |
-|---|---|---|
-| Describing distributions | Change the shape of a dataset and compare summaries | How do shape and outliers affect the mean, median, and spread? |
-| Sampling distributions | Repeat random sampling at different sample sizes | Why do sample estimates vary, and what changes with sample size? |
-| Confidence intervals | Generate and compare repeated-sample intervals | What does long-run coverage mean? |
-| Hypothesis testing and power | Change sample size, variability, and effect size | When are true effects more or less likely to be detected? |
-| Correlation and regression | Move points on an interactive scatterplot | How do outliers and patterns influence association and prediction? |
-
-Resources will be designed for standard web browsers, keyboard navigation, and responsive layouts. Assigned activities will need accessible alternatives; student submissions and grades will remain in the institution's learning management system.
-
-## Related work
-
-My [research publications](research.qmd) and [conference presentations](presentations.qmd) provide applied examples of research design, measurement, statistical interpretation, and evidence communication.
-
-For collaboration or questions about instructional materials, please use the [contact page](contact.qmd).
+For instructional collaboration, please use the [contact page](contact.qmd).

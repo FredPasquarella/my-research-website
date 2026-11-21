@@ -1,122 +1,155 @@
 ---
 title: "Elementary Statistics"
 subtitle: "A guided pathway through statistical reasoning"
-description: "Proposed Elementary Statistics learning sequence and planned interactive activities in psychology and behavioral science."
+description: "A proposed Elementary Statistics learning sequence and planned interactive activities for psychology and the behavioral sciences."
 toc: true
 toc-depth: 2
 ---
 
-[← Back to Teaching](../../teaching.qmd)
+[Teaching & Learning](../../teaching.qmd) / Elementary Statistics
 
-::: {.course-intro}
+::: {.course-introduction}
 
-**Sample course design · Resources in development**
+<span class="course-eyebrow">Sample course design · Resources in development</span>
 
-Statistics helps us ask better questions about the world, examine data thoughtfully, and understand how much confidence to place in a conclusion. This learning hub will bring together concise explanations, guided practice, and interactive demonstrations based on examples from psychology, behavioral health, and everyday research.
+Statistics provides ways to describe patterns in data, investigate questions, and draw appropriately cautious conclusions. This learning hub is designed around conceptual explanations, hands-on demonstrations, guided practice, and interpretation in context.
 
-The sequence is adapted from my **proposed Elementary Statistics (PSYC 210) sample syllabus** for Cerritos College. It is a teaching-design sample, **not an active or officially adopted course**. Topics, software, assignments, and scheduling would be finalized with the department before instruction.
+The sequence draws from my **proposed Elementary Statistics (PSYC 210) sample syllabus for Cerritos College**. It is **not an assigned, approved, or currently running course**. The institution's approved course outline would determine the final content, materials, and requirements.
 
 :::
-
-## How to use this hub
-
-The structure below is a **course roadmap**, not a completed lesson library. As materials are developed, each topic will have a short explanation, an example to work through, a simulation or practice activity where it adds instructional value, and a way to check your understanding.
-
-For actual enrolled students, course announcements, graded assignments, and feedback would remain in **Canvas**. No student data or grades are collected on this public site.
 
 ## Learning pathway
 
-:::: {.grid .course-pathway}
-::: {.g-col-12 .g-col-md-6}
-::: {.site-card}
+These six modules organize the proposed 18-week syllabus. They are **roadmap entries**, not links to lessons that are already complete.
 
-### 1. Asking questions and describing data
+::: {.course-module}
+::: {.course-module__number}
 
-*Weeks 1–4 · Planned*
+01
 
-Research questions; observational versus experimental studies; populations and samples; levels of measurement; sampling bias; graphs, center, variability, standard deviation, and z-scores.
+:::
+::: {.course-module__body}
 
-**Planned demonstration:** Explore how distribution shape and outliers change the mean, median, and spread.
+### Research questions and describing data
+
+<span class="course-module__weeks">Weeks 1–4 · Planned</span>
+
+Populations and samples; observational and experimental research; variables and measurement; sampling and bias; frequency distributions, graphs, central tendency, variability, standard deviation, and z-scores.
+
+**Planned demonstration:** Examine how changes in distribution shape and outliers affect the mean, median, and spread.
 
 :::
 :::
-::: {.g-col-12 .g-col-md-6}
-::: {.site-card}
 
-### 2. Probability and sampling
+::: {.course-module}
+::: {.course-module__number}
 
-*Weeks 5–6 · Planned*
+02
+
+:::
+::: {.course-module__body}
+
+### Probability and sampling distributions
+
+<span class="course-module__weeks">Weeks 5–6 · Planned</span>
 
 Basic and conditional probability, independence, normal distributions, sampling distributions, the central limit theorem, and standard error.
 
-**First interactive prototype:** Draw repeated samples, compare distributions of sample means, and examine the effects of sample size.
+**First interactive prototype:** Repeatedly sample from a population and explore why the distribution of sample means changes as sample size increases.
 
 :::
 :::
-::: {.g-col-12 .g-col-md-6}
-::: {.site-card}
 
-### 3. Estimation and inference
+::: {.course-module}
+::: {.course-module__number}
 
-*Weeks 7–8 · Planned*
+03
 
-Point estimates, confidence intervals, hypothesis testing, p-values, Type I and II errors, introductory effect size, and statistical power.
+:::
+::: {.course-module__body}
 
-**Planned demonstrations:** Repeated-sample interval coverage and relationships between sample size, effect size, variability, and power.
+### Estimation and statistical inference
+
+<span class="course-module__weeks">Weeks 7–8 · Planned</span>
+
+Point estimates, confidence intervals, precision, hypothesis testing, p-values, Type I and Type II errors, effect size, and introductory statistical power.
+
+**Planned demonstrations:** Examine repeated-sample confidence interval coverage and how sample size, variability, and effect size influence power.
 
 :::
 :::
-::: {.g-col-12 .g-col-md-6}
-::: {.site-card}
 
-### 4. Comparing groups
+::: {.course-module}
+::: {.course-module__number}
 
-*Weeks 9–12 · Planned*
+04
 
-One-sample, independent-samples, and paired-samples t-tests; one-way ANOVA; assumptions and selected nonparametric alternatives.
+:::
+::: {.course-module__body}
 
-**Planned practice:** Choose a comparison method, examine assumptions, and explain the result in context.
+### Comparing groups
+
+<span class="course-module__weeks">Weeks 9–12 · Planned</span>
+
+One-sample, independent-samples, and paired-samples t-tests; one-way ANOVA; checking assumptions; outliers; and selected nonparametric alternatives.
+
+**Planned practice:** Choose a comparison method, evaluate its assumptions, and interpret findings without overstating the evidence.
 
 :::
 :::
-::: {.g-col-12 .g-col-md-6}
-::: {.site-card}
 
-### 5. Categorical and quantitative relationships
+::: {.course-module}
+::: {.course-module__number}
 
-*Weeks 13–15 · Planned*
+05
 
-Chi-square tests, correlation, confounding and causation, simple linear regression, prediction, residuals, and extrapolation.
+:::
+::: {.course-module__body}
 
-**Planned demonstration:** Explore how outliers and changing patterns affect correlation and regression.
+### Relationships and prediction
+
+<span class="course-module__weeks">Weeks 13–15 · Planned</span>
+
+Chi-square tests; correlation, confounding, and causation; simple linear regression, slopes, prediction, residuals, and the risks of extrapolation.
+
+**Planned demonstration:** Adjust data points to investigate association, prediction, and outliers.
 
 :::
 :::
-::: {.g-col-12 .g-col-md-6}
-::: {.site-card}
 
-### 6. Applying and communicating results
+::: {.course-module}
+::: {.course-module__number}
 
-*Weeks 16–18 · Planned*
+06
 
-Integrating methods, selecting analyses, communicating practical importance and limitations, presenting an applied project, and reviewing course concepts.
+:::
+::: {.course-module__body}
 
-**Planned practice:** Translate statistical output into an appropriately qualified, accessible explanation.
+### Integrating and communicating results
+
+<span class="course-module__weeks">Weeks 16–18 · Planned</span>
+
+Selecting appropriate analyses, revisiting practical importance, communicating uncertainty and limitations, completing an applied project, and reviewing major ideas.
+
+**Planned practice:** Translate statistical output into a concise and appropriately qualified interpretation.
 
 :::
 :::
-::::
 
-## Laboratory and project structure
+## Laboratory and applied project
 
-In the sample syllabus, students use statistical software for applied questions, with **eight designated laboratory reports** distributed through the course. The proposed software is R with step-by-step support; jamovi is a possible alternative, depending on departmental decisions. No prior programming experience is assumed.
+The sample syllabus proposes eight graded laboratory reports, supported by additional practice activities. These labs focus on choosing analyses, examining data, interpreting output, and communicating results.
 
-The sample applied project uses a public, de-identified, or simulated dataset. Students develop a research question, visualize and summarize the data, justify an analysis, interpret uncertainty, and discuss limitations. No collection of sensitive personal data is required.
+The proposed software approach uses free tools: R with instructor-provided scripts and guidance, or potentially jamovi depending on departmental preferences. Prior programming experience is not assumed.
 
-## Materials and accessibility
+For the applied statistical project, students would work with an instructor-approved public, de-identified, or simulated dataset and explain the research question, descriptive results, analysis choices, assumptions, practical importance, and limitations. Collecting sensitive personal information is not required.
 
-The proposed course uses the freely accessible [OpenStax *Introductory Statistics 2e*](https://openstax.org/details/books/introductory-statistics-2e) as a textbook reference. Any resources added here will aim to work in standard browsers, including on smaller screens, with keyboard-operable controls, readable explanations, and accessible alternatives when appropriate.
+## Learning materials and accessibility
 
-**Development status:** No interactive lessons are linked as finished resources yet. The first planned lesson focuses on **sampling distributions and the central limit theorem (Week 6)**.
+The sample syllabus identifies the freely available [OpenStax *Introductory Statistics 2e*](https://openstax.org/details/books/introductory-statistics-2e) as a potential textbook.
 
-[Read about the teaching approach](../../teaching.qmd#teaching-approach) · [Explore publications](../../research.qmd)
+Future browser-based demonstrations will include explanatory text, keyboard-operable controls, and accessible alternatives as appropriate. Course announcements, graded assessments, and student records would remain in Canvas.
+
+<p class="learning-status">Development status: This page is a proposed course pathway. Interactive modules have not yet been published.</p>
+
+[Return to Teaching & Learning](../../teaching.qmd)

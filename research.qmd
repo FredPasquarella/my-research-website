@@ -7,76 +7,76 @@ toc-location: right
 
 My research focuses on the intersection of mental health service delivery, workforce engagement, and systemic challenges in community-based mental health settings. Through a blend of applied research and theoretical exploration, I seek to improve service provision, enhance workforce well-being, and contribute to a deeper understanding of societal and psychological phenomena. I am committed to producing data-driven solutions that support mental health providers and strengthen the communities they serve.
 
-# 📚 Publications
+# Publications
 
 ## Telemental Health and Remote Work
 
 Telemental Health and Remote Work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home
 
-📅 **2025** ✍️ *Lizano, E. L., Bergen, C., Smith, B., **Pasquarella, F. J.**, & Lee, S.*
+**2025** · *Lizano, E. L., Bergen, C., Smith, B., **Pasquarella, F. J.**, & Lee, S.*
 
-📝 **Summary:** This study examines the impact of the rapid transition to telemental health during COVID-19 on community mental health (CMH) workers. Analyzing responses from 112 CMH providers, the study identifies structural changes, workforce effects, and clinical care implications. Findings reveal both positive and negative impacts on work environment, productivity, and emotional well-being. The research highlights the need for targeted strategies to support CMH professionals during future transitions in service delivery.
+This study examines the impact of the rapid transition to telemental health during COVID-19 on community mental health (CMH) workers. Analyzing responses from 112 CMH providers, the study identifies structural changes, workforce effects, and clinical care implications. Findings reveal both positive and negative impacts on work environment, productivity, and emotional well-being. The research highlights the need for targeted strategies to support CMH professionals during future transitions in service delivery.
 
-📄 [Read More](https://link.springer.com/article/10.1007/s11414-024-09925-z){target="_blank"}
+[View source](https://link.springer.com/article/10.1007/s11414-024-09925-z){target="_blank"}
 
 ## Follow-up Care in Suicide Prevention
 
 Follow-up Care Offers and Acceptance in Crisis Line Suicide Prevention Services
 
-📅 **2024** ✍️ *Fulginiti, A., Doyle, M., Miller, S., Lee, S., & **Pasquarella, F. J.***
+**2024** · *Fulginiti, A., Doyle, M., Miller, S., Lee, S., & **Pasquarella, F. J.***
 
-📝 **Summary:** This study examines the offer and acceptance of follow-up care in the 988 Suicide & Crisis Lifeline, analyzing data from 55,594 callers between 2017 and 2019. Findings indicate that Black callers and those with higher suicide capability and intent were more likely to be offered and accept follow-up. Longer call duration also increased follow-up acceptance, while higher suicidal desire raised the likelihood of offers. The study underscores the need to understand barriers to follow-up acceptance and highlights the importance of tailored interventions for high-risk callers.
+This study examines the offer and acceptance of follow-up care in the 988 Suicide & Crisis Lifeline, analyzing data from 55,594 callers between 2017 and 2019. Findings indicate that Black callers and those with higher suicide capability and intent were more likely to be offered and accept follow-up. Longer call duration also increased follow-up acceptance, while higher suicidal desire raised the likelihood of offers. The study underscores the need to understand barriers to follow-up acceptance and highlights the importance of tailored interventions for high-risk callers.
 
-📄 [Read More](https://psycnet.apa.org/record/2025-25194-001){target="_blank"}
+[View source](https://psycnet.apa.org/record/2025-25194-001){target="_blank"}
 
 ## Organizational Health Assessment
 
 Planning and Implementing an Organizational Health Assessment in a Community Mental Health Setting
 
-📅 **2022** ✍️ *Lee, S., **Pasquarella, F. J.**, De La Peza, D., Lizano, E. L., & Santoro, K.*
+**2022** · *Lee, S., **Pasquarella, F. J.**, De La Peza, D., Lizano, E. L., & Santoro, K.*
 
-📝 **Summary:** This case study explores the development and implementation of a low-cost organizational health assessment in a large community mental health organization to improve workforce retention and job satisfaction. Implemented in 2017, the assessment followed a five-phase process, from data collection to intervention development. Findings emphasize the importance of leadership buy-in and data-driven strategies in fostering a stable and engaged workforce in community mental health settings.
+This case study explores the development and implementation of a low-cost organizational health assessment in a large community mental health organization to improve workforce retention and job satisfaction. Implemented in 2017, the assessment followed a five-phase process, from data collection to intervention development. Findings emphasize the importance of leadership buy-in and data-driven strategies in fostering a stable and engaged workforce in community mental health settings.
 
-📄 [Read More](https://link.springer.com/article/10.1007/s10597-022-01052-3){target="_blank"}
+[View source](https://link.springer.com/article/10.1007/s10597-022-01052-3){target="_blank"}
 
 ## Job Demands, Engagement, and Turnover
 
 An Examination of Work Engagement's Antecedents and Consequences in a Sample of U.S. Community Mental Health Providers
 
-📅 **2021** ✍️ ***Pasquarella, F. J.**, Lizano, E. L., Lee, S., & De La Peza, D.*
+**2021** · ***Pasquarella, F. J.**, Lizano, E. L., Lee, S., & De La Peza, D.*
 
-📝 **Summary:** This study examines the relationship between job demands, job resources, work engagement, and turnover intentions among 170 community mental health providers. Findings indicate that high job demands (pressure to produce, role ambiguity) negatively impact engagement, while team commitment and connection to organizational mission enhance it. Greater work engagement is associated with lower turnover intentions, and engagement mediates the effects of job demands and resources on turnover. The study highlights the importance of reducing job stressors and strengthening organizational support to improve workforce stability in community mental health settings.
+This study examines the relationship between job demands, job resources, work engagement, and turnover intentions among 170 community mental health providers. Findings indicate that high job demands (pressure to produce, role ambiguity) negatively impact engagement, while team commitment and connection to organizational mission enhance it. Greater work engagement is associated with lower turnover intentions, and engagement mediates the effects of job demands and resources on turnover. The study highlights the importance of reducing job stressors and strengthening organizational support to improve workforce stability in community mental health settings.
 
-📄 [Read More](https://onlinelibrary.wiley.com/doi/abs/10.1111/hsc.13670){target="_blank"}
+[View source](https://onlinelibrary.wiley.com/doi/abs/10.1111/hsc.13670){target="_blank"}
 
 ## Provider Readiness to Address Substance Use in SMI
 
 Managing Substance Use for Client with Serious Mental Illness: Knowledge, Attitude, and Training Challenges Among Outpatient Behavioral Health Providers in California, Ohio, and New York
 
-📅 **2021** ✍️ *Kelly, E., **Pasquarella, F. J.**, Davis, L., Hunt, A., Lee, S., Fairhurst, S., ... Brekke, J. S.*
+**2021** · *Kelly, E., **Pasquarella, F. J.**, Davis, L., Hunt, A., Lee, S., Fairhurst, S., ... Brekke, J. S.*
 
-📝 **Summary:** This study examines mental health providers' preparedness to assess and address substance use among individuals with serious mental illness, focusing on alcohol and cannabis use. Surveying 717 providers across California, Ohio, and New York, findings reveal that staff feel more confident addressing alcohol use than cannabis use, with California providers reporting the lowest preparedness. Analysis indicates that training deficits largely account for state differences in assessment and treatment capacity. The study highlights the urgent need for improved workforce training to support effective substance use interventions in community mental health settings.
+This study examines mental health providers' preparedness to assess and address substance use among individuals with serious mental illness, focusing on alcohol and cannabis use. Surveying 717 providers across California, Ohio, and New York, findings reveal that staff feel more confident addressing alcohol use than cannabis use, with California providers reporting the lowest preparedness. Analysis indicates that training deficits largely account for state differences in assessment and treatment capacity. The study highlights the urgent need for improved workforce training to support effective substance use interventions in community mental health settings.
 
-📄 [Read More](https://www.sciencedirect.com/science/article/pii/S0740547221002737){target="_blank"}
+[View source](https://www.sciencedirect.com/science/article/pii/S0740547221002737){target="_blank"}
 
-# 🎓 Graduate Research
+# Graduate Research
 
 ## Master's Thesis
 
 ### The Construction and Validation of the Fullerton Ontological Confusion Scale
 
-📅 **2015** ✍️ ***Pasquarella, F. J.***
+**2015** · ***Pasquarella, F. J.***
 
-📝 **Summary:** This study develops and validates the Fullerton Ontological Confusion Scale, a tool designed to measure paranormal, superstitious, magical, and supernatural beliefs as misattributions of core knowledge categories. Using Item Response Theory and the nominal response model, the scale was refined for optimal measurement accuracy. Correlation analysis confirmed its validity, demonstrating that the FOC scale provides a more precise and theoretically grounded measure of PSMS beliefs compared to existing tools.
+This study develops and validates the Fullerton Ontological Confusion Scale, a tool designed to measure paranormal, superstitious, magical, and supernatural beliefs as misattributions of core knowledge categories. Using Item Response Theory and the nominal response model, the scale was refined for optimal measurement accuracy. Correlation analysis confirmed its validity, demonstrating that the FOC scale provides a more precise and theoretically grounded measure of PSMS beliefs compared to existing tools.
 
-📄 [Read More](assets/papers/2015_thesis.pdf){target="_blank"}
+[View research paper](assets/papers/2015_thesis.pdf){target="_blank"}
 
 ## Other Research
 
 ### A Structural Equation Model of Political Instability, Religiosity, and Progressive Values
 
-📅 **2015** ✍️ ***Pasquarella, F. J.*** *& Johnson, G. L.*
+**2015** · ***Pasquarella, F. J.*** *& Johnson, G. L.*
 
-📝 **Summary:** This study examines the relationship between political instability, religiosity, and progressive social values, proposing a mediation model where increased political instability leads to lower progressive values via increased religiosity. Using structural equation modeling (SEM) on World Values Survey data (N = 3,881), the initial model had poor fit, but a revised version focusing on gender equality as a measure of progressiveness showed improved results. Findings suggest that greater political instability is linked to lower religiosity, contradicting expectations, while religiosity's direct effect on gender equality was weak. The study highlights the need for more precise measures of political instability and cross-national comparisons in future research.
+This study examines the relationship between political instability, religiosity, and progressive social values, proposing a mediation model where increased political instability leads to lower progressive values via increased religiosity. Using structural equation modeling (SEM) on World Values Survey data (N = 3,881), the initial model had poor fit, but a revised version focusing on gender equality as a measure of progressiveness showed improved results. Findings suggest that greater political instability is linked to lower religiosity, contradicting expectations, while religiosity's direct effect on gender equality was weak. The study highlights the need for more precise measures of political instability and cross-national comparisons in future research.
 
-📄 [Read More](assets/papers/2015_politics_religion.pdf){target="_blank"}
+[View research paper](assets/papers/2015_politics_religion.pdf){target="_blank"}

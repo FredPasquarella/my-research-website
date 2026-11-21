@@ -25,3 +25,88 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Home and teaching prototype: scoped, responsive site components. */
+
+.site-hero {
+  background: #f2f7f8;
+  border: 1px solid #d9e6e9;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2.25rem;
+  align-items: center;
+}
+
+.site-hero .hero-kicker {
+  color: #28556a;
+  font-size: 0.84rem;
+  letter-spacing: 0.065em;
+  font-weight: 700;
+}
+
+.site-hero h2 {
+  color: #173647;
+  font-weight: 700;
+  margin-top: 0.65rem;
+}
+
+.site-hero p {
+  max-width: 65ch;
+}
+
+.site-hero .btn {
+  margin: 0.35rem 0.45rem 0.15rem 0;
+  white-space: normal;
+}
+
+.site-portrait {
+  display: block;
+  max-width: min(100%, 240px);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0.85rem;
+  box-shadow: 0 0.55rem 1.6rem rgba(19, 54, 70, 0.15);
+}
+
+.site-card-grid {
+  margin-bottom: 2rem;
+}
+
+.site-card {
+  height: 100%;
+  padding: 1.45rem;
+  background: #fff;
+  border: 1px solid #dae3e8;
+  border-radius: 0.85rem;
+  box-shadow: 0 0.2rem 0.65rem rgba(19, 54, 70, 0.045);
+}
+
+.site-card h3 {
+  color: #173647;
+  margin-top: 0;
+  font-size: 1.18rem;
+}
+
+.site-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Visible focus treatment for keyboard users, including buttons and navigation. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #a34f0b;
+  outline-offset: 3px;
+}
+
+@media (max-width: 767.98px) {
+  .site-hero {
+    padding: 1.3rem;
+  }
+
+  .site-card {
+    padding: 1.15rem;
+  }
+}

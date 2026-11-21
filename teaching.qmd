@@ -1,0 +1,58 @@
+---
+title: "Teaching"
+description: "Teaching experience, instructional approach, and proposed introductory statistics learning resources."
+toc: true
+toc-depth: 2
+---
+
+My teaching interests include **statistics, research methods, psychological measurement, and program evaluation**. I aim to help learners understand the questions behind an analysis, interpret evidence carefully, and communicate findings without overstating what the data can show.
+
+## Teaching approach
+
+I emphasize three connected practices:
+
+- **Start with meaningful questions.** Use examples from psychology, behavioral health, and everyday research to make statistical concepts relevant.
+- **Make reasoning visible.** Connect visual explanations, worked examples, guided practice, and opportunities to revise understanding.
+- **Interpret responsibly.** Discuss uncertainty, assumptions, bias, generalizability, and practical significance alongside calculations.
+
+## Instruction and mentorship
+
+Since 2016, I have contributed research and program evaluation instruction to the doctoral psychology internship training program at Didi Hirsch Mental Health Services.
+
+In collaboration with the internship training team, I guide approximately four doctoral interns each year through a yearlong applied research or evaluation project. Instruction and feedback include literature review, research design, measurement, statistical analysis, interpretation, scholarly writing, and presentation. The goal is to build independence while connecting methodological rigor with questions that matter to programs and communities.
+
+This experience is distinct from a formal college course appointment.
+
+## Sample course design: Elementary Statistics
+
+I have developed a **proposed sample syllabus** for **Elementary Statistics (PSYC 210)** at Cerritos College. The course outline is a model of my instructional approach, not a currently assigned course. Final requirements would be determined in collaboration with the college and its approved course outline.
+
+The sample organizes an 18-week sequence around conceptual understanding and applied practice, including:
+
+- Describing data, measurement, study design, and sampling
+- Probability, distributions, sampling variability, and confidence intervals
+- Hypothesis testing, effect sizes, and statistical power
+- Tests of mean differences, chi-square, correlation, and simple linear regression
+- Statistical software practice, interpretation, and communication of limitations
+
+The proposed design includes guided laboratories, eight graded laboratory reports, and an applied statistical project using approved public, de-identified, or simulated data. It prioritizes learning to interpret statistical results over memorizing software procedures.
+
+## Interactive learning resources
+
+The resources below are **planned, not yet published lessons**. Each will pair a concise explanation with a prediction, a guided interaction, and an interpretation exercise.
+
+| Topic | Planned interactive activity | Central question |
+|---|---|---|
+| Describing distributions | Change the shape of a dataset and compare summaries | How do shape and outliers affect the mean, median, and spread? |
+| Sampling distributions | Repeat random sampling at different sample sizes | Why do sample estimates vary, and what changes with sample size? |
+| Confidence intervals | Generate and compare repeated-sample intervals | What does long-run coverage mean? |
+| Hypothesis testing and power | Change sample size, variability, and effect size | When are true effects more or less likely to be detected? |
+| Correlation and regression | Move points on an interactive scatterplot | How do outliers and patterns influence association and prediction? |
+
+Resources will be designed for standard web browsers, keyboard navigation, and responsive layouts. Assigned activities will need accessible alternatives; student submissions and grades will remain in the institution's learning management system.
+
+## Related work
+
+My [research publications](research.qmd) and [conference presentations](presentations.qmd) provide applied examples of research design, measurement, statistical interpretation, and evidence communication.
+
+For collaboration or questions about instructional materials, please use the [contact page](contact.qmd).

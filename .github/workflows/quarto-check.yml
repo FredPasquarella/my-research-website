@@ -39,6 +39,7 @@ jobs:
           for page in index about research presentations teaching contact; do
             test -s "docs/${page}.html"
           done
+          test -s docs/courses/elementary-statistics/index.html
           test -s docs/CNAME
           grep -Fxq "www.fredjpasquarella.com" docs/CNAME
 

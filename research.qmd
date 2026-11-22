@@ -5,7 +5,7 @@ toc-depth: 2
 toc-location: right
 ---
 
-My research focuses on the intersection of mental health service delivery, workforce engagement, and systemic challenges in community-based mental health settings. Through a blend of applied research and theoretical exploration, I seek to improve service provision, enhance workforce well-being, and contribute to a deeper understanding of societal and psychological phenomena. I am committed to producing data-driven solutions that support mental health providers and strengthen the communities they serve.
+My research uses applied methods, data analysis, and program evaluation to study mental health service delivery and workforce experiences. Recent projects have examined telehealth, treatment engagement, organizational health, and the conditions under which community mental health professionals work. I am interested in research that answers practical questions while being clear about the limits of the available data.
 
 # Publications
 

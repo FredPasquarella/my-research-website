@@ -1,6 +1,6 @@
 ---
 title: "Elementary Statistics"
-subtitle: "A guided pathway through statistical reasoning"
+subtitle: "Course overview and learning sequence"
 description: "A proposed Elementary Statistics learning sequence and planned interactive activities for psychology and the behavioral sciences."
 toc: true
 toc-depth: 2
@@ -12,7 +12,7 @@ toc-depth: 2
 
 <span class="course-eyebrow">Sample course design · Resources in development</span>
 
-Statistics provides ways to describe patterns in data, investigate questions, and draw appropriately cautious conclusions. This learning hub is designed around conceptual explanations, hands-on demonstrations, guided practice, and interpretation in context.
+Statistics provides ways to describe patterns in data, investigate questions, and draw appropriately cautious conclusions. The proposed materials will include short explanations, worked examples, practice questions, and demonstrations that let learners explore how statistical ideas work.
 
 The sequence draws from my **proposed Elementary Statistics (PSYC 210) sample syllabus for Cerritos College**. It is **not an assigned, approved, or currently running course**. The institution's approved course outline would determine the final content, materials, and requirements.
 
@@ -32,7 +32,7 @@ These six modules organize the proposed 18-week syllabus. They are **roadmap ent
 
 ### Research questions and describing data
 
-<span class="course-module__weeks">Weeks 1–4 · Planned</span>
+<span class="course-module__weeks">Weeks 1 to 4 · Planned</span>
 
 Populations and samples; observational and experimental research; variables and measurement; sampling and bias; frequency distributions, graphs, central tendency, variability, standard deviation, and z-scores.
 
@@ -51,7 +51,7 @@ Populations and samples; observational and experimental research; variables and 
 
 ### Probability and sampling distributions
 
-<span class="course-module__weeks">Weeks 5–6 · Planned</span>
+<span class="course-module__weeks">Weeks 5 to 6 · Planned</span>
 
 Basic and conditional probability, independence, normal distributions, sampling distributions, the central limit theorem, and standard error.
 
@@ -70,7 +70,7 @@ Basic and conditional probability, independence, normal distributions, sampling 
 
 ### Estimation and statistical inference
 
-<span class="course-module__weeks">Weeks 7–8 · Planned</span>
+<span class="course-module__weeks">Weeks 7 to 8 · Planned</span>
 
 Point estimates, confidence intervals, precision, hypothesis testing, p-values, Type I and Type II errors, effect size, and introductory statistical power.
 
@@ -89,7 +89,7 @@ Point estimates, confidence intervals, precision, hypothesis testing, p-values, 
 
 ### Comparing groups
 
-<span class="course-module__weeks">Weeks 9–12 · Planned</span>
+<span class="course-module__weeks">Weeks 9 to 12 · Planned</span>
 
 One-sample, independent-samples, and paired-samples t-tests; one-way ANOVA; checking assumptions; outliers; and selected nonparametric alternatives.
 
@@ -108,7 +108,7 @@ One-sample, independent-samples, and paired-samples t-tests; one-way ANOVA; chec
 
 ### Relationships and prediction
 
-<span class="course-module__weeks">Weeks 13–15 · Planned</span>
+<span class="course-module__weeks">Weeks 13 to 15 · Planned</span>
 
 Chi-square tests; correlation, confounding, and causation; simple linear regression, slopes, prediction, residuals, and the risks of extrapolation.
 
@@ -127,7 +127,7 @@ Chi-square tests; correlation, confounding, and causation; simple linear regress
 
 ### Integrating and communicating results
 
-<span class="course-module__weeks">Weeks 16–18 · Planned</span>
+<span class="course-module__weeks">Weeks 16 to 18 · Planned</span>
 
 Selecting appropriate analyses, revisiting practical importance, communicating uncertainty and limitations, completing an applied project, and reviewing major ideas.
 

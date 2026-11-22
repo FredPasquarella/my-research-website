@@ -11,14 +11,14 @@ description: "Applied research, program evaluation, and teaching resources by Fr
 
 ## Connecting research and understanding.
 
-I lead research and evaluation work in community mental health, drawing on graduate training in quantitative psychology. My interests include measurement, applied analysis, effective services, and clear communication of what evidence can—and cannot—tell us.
+I work in applied research, data science, and program evaluation in community mental health. My focus is on using data and sound research methods to understand services, examine outcomes, and support practical decisions. Measurement is an important part of that work, along with statistical analysis and clear communication of findings.
 
-I also mentor doctoral psychology interns and am developing accessible resources to help students learn statistical reasoning through meaningful examples and guided practice.
+I also provide periodic guidance on doctoral psychology interns' research projects. I am developing teaching resources that use examples, explanations, and practice activities to make statistical concepts easier to understand.
 
 ::: {.editorial-actions}
-[Explore Elementary Statistics](courses/elementary-statistics/index.qmd)
-
 [Explore research](research.qmd)
+
+[Explore Elementary Statistics](courses/elementary-statistics/index.qmd)
 :::
 
 :::
@@ -36,7 +36,7 @@ I also mentor doctoral psychology interns and am developing accessible resources
 
 ### Research & evaluation
 
-Applied research, outcome measurement, and evaluation to inform behavioral health programs and organizational decisions.
+Applied research, data science, program evaluation, and measurement to answer questions about behavioral health services and organizational decisions.
 
 [Explore research](research.qmd)
 
@@ -54,7 +54,7 @@ Peer-reviewed research and conference materials on workforce well-being, mental 
 
 ### Teaching & learning
 
-A proposed Elementary Statistics learning pathway, with interactive lessons in development, and a portfolio of research instruction and mentorship.
+A growing collection of course materials and independent learning resources, beginning with a proposed Elementary Statistics pathway.
 
 [Explore teaching](teaching.qmd)
 
@@ -77,9 +77,9 @@ Lizano, Bergen, Smith, Pasquarella, and Lee examine how the rapid shift to remot
 
 ## Teaching resources in development
 
-The first collection will support **Elementary Statistics** through short explanations, worked examples, interactive demonstrations, and guided interpretation. The course roadmap is available now as a proposed instructional design; individual simulations are not yet published.
+Elementary Statistics is the first planned course collection. I also intend to add short lectures, video explanations, and other standalone resources over time. The course roadmap is available now, but the individual lessons are still in development.
 
-[View the Elementary Statistics pathway](courses/elementary-statistics/index.qmd) · [Read about my teaching approach](teaching.qmd#teaching-approach)
+[Explore the Teaching and Learning hub](teaching.qmd) · [View the Elementary Statistics pathway](courses/elementary-statistics/index.qmd)
 
 ## Contact
 

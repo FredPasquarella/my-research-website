@@ -1,0 +1,238 @@
+/* Reusable, site-aligned styles for independent statistics learning activities.
+   Reuses visual tokens from /styles.css. No decorative icons or animations. */
+
+.clt-lesson {
+  --clt-ink: var(--site-ink, #26363e);
+  --clt-muted: var(--site-muted, #53656c);
+  --clt-accent: var(--site-accent-dark, #30545b);
+  --clt-paper: var(--site-paper, #fff);
+  --clt-tint: var(--site-tint, #eef4f3);
+  --clt-border: var(--site-border, #dadfd9);
+  color: var(--clt-ink);
+}
+
+.clt-lesson .clt-overview {
+  background: var(--clt-tint);
+  border-left: 3px solid var(--clt-accent);
+  padding: 1.2rem 1.6rem;
+  margin: 1rem 0 1.8rem;
+}
+
+.clt-lesson .clt-overview p:last-child { margin-bottom: 0; }
+
+.clt-simulator {
+  margin: 1rem 0 2rem;
+  padding: clamp(1rem, 2.5vw, 1.8rem);
+  border: 1px solid var(--clt-border);
+  border-radius: 5px;
+  background: var(--clt-paper);
+}
+
+.clt-lesson .clt-lead {
+  color: var(--clt-muted);
+  font-size: 0.96rem;
+}
+
+.clt-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.clt-control label {
+  display: block;
+  font-weight: 650;
+  margin: 0 0 0.35rem;
+}
+
+.clt-control select {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #81969a;
+  border-radius: 4px;
+  font: inherit;
+  padding: 0.5rem 0.7rem;
+  color: var(--clt-ink);
+}
+
+.clt-lesson .clt-help,
+.clt-lesson .clt-caption {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--clt-muted);
+}
+
+.clt-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.1rem 0;
+}
+
+.clt-btn {
+  appearance: none;
+  border: 1px solid var(--clt-accent);
+  border-radius: 4px;
+  background: var(--clt-accent);
+  color: white;
+  padding: 0.57rem 0.88rem;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  min-height: 43px;
+}
+
+.clt-btn:hover { background: #203d44; border-color: #203d44; }
+
+.clt-btn.clt-secondary {
+  background: transparent;
+  color: var(--clt-accent);
+}
+
+.clt-btn.clt-secondary:hover { background: var(--clt-tint); }
+
+.clt-btn:focus-visible,
+.clt-control select:focus-visible,
+.clt-choice input:focus-visible {
+  outline: 3px solid #a66b24;
+  outline-offset: 3px;
+}
+
+.clt-status {
+  min-height: 1.75rem;
+  color: var(--clt-accent);
+  font-size: 0.96rem;
+  font-weight: 600;
+  margin: 0.2rem 0 1.25rem;
+}
+
+.clt-plots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 0.4rem 0 1.6rem;
+}
+
+.clt-plot {
+  min-width: 0;
+  padding: 0.8rem 0.8rem 0.95rem;
+  border: 1px solid var(--clt-border);
+  background: #fcfcfb;
+}
+
+.clt-plot h3 {
+  margin: 0.15rem 0 0.3rem !important;
+  font-family: var(--site-serif, Georgia, serif);
+  font-size: 1.25rem !important;
+}
+
+.clt-plot p {
+  font-size: 0.89rem;
+  line-height: 1.55;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.clt-chart {
+  width: 100%;
+  min-height: 145px;
+}
+
+.clt-svg { display: block; width: 100%; height: auto; }
+
+.clt-axis-label, .clt-axis-title, .clt-mean-label {
+  fill: var(--clt-muted);
+  font-family: var(--site-sans, Arial, sans-serif);
+  font-size: 16px;
+}
+.clt-axis-title { font-size: 15px; font-weight: 600; }
+.clt-mean-label { font-size: 14px; font-weight: 650; fill: #80521c; }
+
+.clt-summary-title { margin-top: 0.6rem !important; }
+
+.clt-summary {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0.7rem 0;
+  font-size: 0.96rem;
+}
+
+.clt-summary th,
+.clt-summary td {
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid var(--clt-border);
+  overflow-wrap: anywhere;
+}
+
+.clt-summary th {
+  text-align: left;
+  width: 68%;
+  font-weight: 600;
+}
+
+.clt-summary td { text-align: right; font-variant-numeric: tabular-nums; }
+
+.clt-question {
+  border: 1px solid var(--clt-border);
+  padding: 1rem 1.25rem;
+  margin: 1.1rem 0 1.7rem;
+}
+
+.clt-question legend {
+  font-family: var(--site-serif, Georgia, serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  width: auto;
+}
+
+.clt-choice {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0.65rem 0;
+  max-width: 75ch;
+  cursor: pointer;
+}
+
+.clt-choice input {
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0;
+  accent-color: var(--clt-accent);
+}
+
+.clt-feedback {
+  min-height: 1.4rem;
+  margin: 0.6rem 0 0 !important;
+  color: var(--clt-accent);
+  font-weight: 600;
+}
+
+.clt-lesson .clt-interpretation {
+  border-top: 1px solid var(--clt-border);
+  padding-top: 1.1rem;
+}
+
+@media (max-width: 870px) {
+  .clt-plots { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 575px) {
+  .clt-controls { grid-template-columns: 1fr; }
+  .clt-simulator { padding: 1rem 0.75rem; }
+  .clt-question { padding: 0.8rem; }
+  .clt-summary { font-size: 0.88rem; }
+  .clt-summary th { width: 60%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clt-lesson *, .clt-lesson *::before, .clt-lesson *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

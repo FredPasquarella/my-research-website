@@ -20,7 +20,7 @@ Courses bring related topics together in a sequence. Each course can have its ow
 
 This proposed course covers distributions, sampling, statistical inference, comparisons between groups, correlation, and regression. The overview includes an 18-week learning pathway and plans for laboratory activities.
 
-The course page is a sample design. Individual interactive lessons are still being developed, and the course is not currently being taught as an assigned section.
+The course page is a sample design, not a currently assigned class. A first interactive Week 6 sampling distributions lesson is available as a development prototype; the remaining lessons are in progress.
 
 [Explore Elementary Statistics](courses/elementary-statistics/index.qmd){.btn .btn-primary}
 
@@ -36,12 +36,12 @@ This collection will be organized by topic so that visitors can find a specific 
 
 ## Planned Elementary Statistics activities
 
-These are examples of the first interactive resources I would like to develop. They are not completed lessons.
+These are the first interactive resources in the development plan. The Week 6 sampling distributions activity is the initial prototype. Other lessons remain planned.
 
 | Topic | Proposed weeks | Activity in development |
 |---|---|---|
 | Describing distributions | 3 to 4 | Explore how outliers and distribution shape affect numerical summaries |
-| Sampling distributions | 6 | Compare the distribution of sample means at different sample sizes |
+| [Sampling distributions and the central limit theorem](courses/elementary-statistics/lessons/sampling-distributions.qmd) | 6 | Interactive prototype: compare sample means and standard error at different sample sizes |
 | Confidence intervals | 7 | Investigate coverage across repeated samples |
 | Hypothesis tests and power | 8 | Explore sample size, variability, effect size, and statistical power |
 | Correlation and regression | 14 to 15 | Examine association, prediction, outliers, and causal limitations |

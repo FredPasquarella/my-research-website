@@ -23,6 +23,7 @@ if (root) {
   const populationDescription = root.querySelector('[data-output="population-description"]');
   const meanDescription = root.querySelector('[data-output="means-description"]');
   const countText = root.querySelector('[data-output="count"]');
+  const sampleSizeText = root.querySelector('[data-output="sample-size"]');
   const latestMeanText = root.querySelector('[data-output="latest-mean"]');
   const meanOfMeansText = root.querySelector('[data-output="mean-of-means"]');
   const observedSdText = root.querySelector('[data-output="observed-sd"]');
@@ -193,6 +194,7 @@ if (root) {
   function renderSummary() {
     const summary = describe(state.means);
     countText.textContent = String(summary.n);
+    sampleSizeText.textContent = selectN.value;
     latestMeanText.textContent = state.latest ? fmt(state.latest.mean) : "No sample yet";
     meanOfMeansText.textContent = fmt(summary.mean);
     observedSdText.textContent = fmt(summary.sd);

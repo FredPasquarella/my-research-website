@@ -1,7 +1,6 @@
 ---
 title: "Fred J. Pasquarella"
 subtitle: "Research, evaluation, and statistics education"
-description: "Applied research, program evaluation, and teaching resources by Fred J. Pasquarella."
 ---
 
 :::: {.editorial-hero}

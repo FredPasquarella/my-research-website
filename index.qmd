@@ -1,39 +1,86 @@
 ---
-title: "Welcome to My Research Website "
+title: "Fred J. Pasquarella"
+subtitle: "Research, evaluation, and statistics education"
+description: "Applied research, program evaluation, and teaching resources by Fred J. Pasquarella."
 ---
 
-I am Fred J. Pasquarella, a research, program evaluation, and data analytics professional. This website serves as a hub for my research, presentations, and academic work.
+:::: {.editorial-hero}
+::: {.editorial-hero__copy}
 
-![](assets/images/headshot.jpg){width="200px"}
+<span class="editorial-kicker">Research · Evaluation · Education</span>
 
-I am a data-driven research leader with over a decade of experience in community mental health, workforce evaluation, and service optimization. At Didi Hirsch Mental Health Services, I led research and analytics initiatives that drive data-informed decisions, improve service delivery, and enhance workforce engagement. My expertise spans program evaluation, implementation science, and health informatics, with a focus on bridging research and practice.
+## Connecting research and understanding.
 
-You can find my contact information [here](contact.qmd).
+I work in applied research, data science, and program evaluation in community mental health. My focus is on using data and sound research methods to understand services, examine outcomes, and support practical decisions. Measurement is an important part of that work, along with statistical analysis and clear communication of findings.
 
-::::: grid
-::: g-col-6
-## Latest Research
+I also provide periodic guidance on doctoral psychology interns' research projects. I am developing teaching resources that use examples, explanations, and practice activities to make statistical concepts easier to understand.
 
-I am excited to share that my latest research, titled "[*Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals' experiences during COVID-19 stay-at-home orders*](https://link.springer.com/article/10.1007/s11414-024-09925-z){target="_blank"}," has been published in the Journal of Behavioral Health Services & Research. This study delves into the rapid shift from in-person to remote service delivery during the COVID-19 pandemic, analyzing written responses from 112 providers and staff at a large community mental health agency in California. Our findings highlight both the positive and negative impacts of this transition on structural changes, employee well-being, and clinical care. We hope these insights will inform strategies to better support mental health professionals in adapting to future changes in service delivery.
+::: {.editorial-actions}
+[Explore research](research.qmd)
 
-*Check out all my [Reseach Publications](research.qmd) here.*
+[Explore Elementary Statistics](courses/elementary-statistics/index.qmd)
 :::
 
-::: g-col-6
-## Latest Presentation
-
-I'm pleased to share that I recently presented my latest research at the Society for [Social Work and Research (SSWR) 2025 Annual Conference](https://sswr.org/2025-conference-home){target="_blank"}, held from January 15th to 19th in Seattle, Washington.
-
-At the conference, I showcased a poster titled "The Catch-22 of Telehealth: A Qualitative Study of Its Dual Impact on the Work Experiences and Well-being of Mental Health Professionals," which delved into the challenges and adaptations faced by providers during this significant shift in service delivery.
-
-Additionally, I presented a paper on [Analyzing Telemental Health Service Modality Effects on Treatment Engagement Using Electronic Health Record Claims Data](assets/presentations/sswr_2025_tmh_engagement.pdf){target="_blank"}, exploring how different telehealth modalities impact client engagement.
-
-I also shared a poster titled [Navigating Telemental Health: Provider Perceptions and Decision-Making in a Community Mental Health Setting](assets/presentations/sswr_2025_tmh_perceptions.pdf){target="_blank"}, which examined the factors influencing providers' choices and experiences in implementing telehealth services.
-
-These studies were conducted as part of an annual research project I led during my agency's APA-accredited psychology doctoral internship program.
-
-Engaging with fellow professionals at the conference provided valuable insights and fostered discussions on enhancing mental health service delivery in evolving contexts.
-
-*Check out all my [Research Presentations](presentations.qmd) here.*
 :::
-:::::
+::: {.editorial-hero__portrait}
+
+![Portrait of Fred J. Pasquarella](assets/images/headshot.jpg)
+
+:::
+::::
+
+## Research and teaching
+
+:::: {.editorial-feature-grid}
+::: {.editorial-feature}
+
+### Research & evaluation
+
+Applied research, data science, program evaluation, and measurement to answer questions about behavioral health services and organizational decisions.
+
+[Explore research](research.qmd)
+
+:::
+::: {.editorial-feature}
+
+### Publications & presentations
+
+Peer-reviewed research and conference materials on workforce well-being, mental health service delivery, and program evaluation.
+
+[View publications](research.qmd) · [Browse presentations](presentations.qmd)
+
+:::
+::: {.editorial-feature}
+
+### Teaching & learning
+
+A growing collection of course materials and independent learning resources, beginning with a proposed Elementary Statistics pathway.
+
+[Explore teaching](teaching.qmd)
+
+:::
+::::
+
+## Featured publication
+
+::: {.editorial-spotlight}
+
+<span class="section-kicker">Peer-reviewed research · 2025</span>
+
+<div class="spotlight-title">Telemental health and remote work: An exploratory analysis of their dual impact on mental health professionals’ experiences during COVID-19 stay-at-home orders</div>
+
+Lizano, Bergen, Smith, Pasquarella, and Lee examine how the rapid shift to remote work and services shaped mental health professionals’ experiences, with implications for workforce well-being and clinical care.
+
+[Read the publication](https://doi.org/10.1007/s11414-024-09925-z) · [See all publications](research.qmd)
+
+:::
+
+## Teaching resources in development
+
+Elementary Statistics is the first planned course collection. I also intend to add short lectures, video explanations, and other standalone resources over time. The course roadmap is available now, but the individual lessons are still in development.
+
+[Explore the Teaching and Learning hub](teaching.qmd) · [View the Elementary Statistics pathway](courses/elementary-statistics/index.qmd)
+
+## Contact
+
+For research, evaluation, and teaching inquiries, use the [contact page](contact.qmd).

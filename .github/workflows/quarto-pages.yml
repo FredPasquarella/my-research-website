@@ -45,10 +45,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for page in index about research presentations contact; do
+          for page in index about research presentations teaching contact; do
             test -s "docs/${page}.html"
           done
           test -s CNAME
+          test -s docs/courses/elementary-statistics/index.html
           test -s docs/CNAME
           cmp CNAME docs/CNAME
           grep -Fxq "www.fredjpasquarella.com" docs/CNAME

@@ -2,9 +2,7 @@
 title: "Contact Me"
 ---
 
-## Contact Me
-
-If you’d like to reach out, please fill out the form below, and I’ll get back to you as soon as possible.
+For questions about research, evaluation, teaching, or collaboration, you can send a message using the form below.
 
 <form action="https://formspree.io/f/xgvorpaa" method="POST">
 

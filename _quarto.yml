@@ -2,28 +2,29 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "Fred J Pasquarella"
+  title: "Fred J. Pasquarella"
   search: true
-  page-footer: "© 2024 Fred Pasquarella | All Rights Reserved"
-  description: "A website showcasing research, presentations, and academic work by Fred Pasquarella."
+  page-footer: "© Fred J. Pasquarella | All Rights Reserved"
+  description: "Research, program evaluation, publications, and teaching resources by Fred J. Pasquarella."
   navbar:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "About"
-        href: about.qmd
       - text: "Research"
         href: research.qmd
       - text: "Presentations"
         href: presentations.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "About"
+        href: about.qmd
       - text: "Contact"
         href: contact.qmd
 format:
   html:
-    theme: yeti  # Other options i like: cosmo, flatly, spacelab
+    theme: yeti
     fontsize: 1.1em
-    css: styles.css  # Optional custom styles
+    css: styles.css
     fig-align: center
 
 editor: visual
-

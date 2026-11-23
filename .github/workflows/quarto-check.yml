@@ -32,6 +32,13 @@ jobs:
       - name: Render Quarto website
         run: quarto render
 
+      - name: Synchronize custom stylesheet
+        shell: bash
+        run: |
+          set -euo pipefail
+          # A tracked legacy docs/styles.css may otherwise remain stale.
+          cp styles.css docs/styles.css
+
       - name: Check required pages and custom domain
         shell: bash
         run: |
@@ -40,6 +47,10 @@ jobs:
             test -s "docs/${page}.html"
           done
           test -s docs/courses/elementary-statistics/index.html
+          # Verify that the published artifact uses the approved stylesheet.
+          test -s docs/styles.css
+          cmp styles.css docs/styles.css
+          grep -Fq 'href="styles.css"' docs/index.html
           test -s docs/CNAME
           grep -Fxq "www.fredjpasquarella.com" docs/CNAME
 

@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/interactive/sampling-math.mjs
+    - assets/interactive/sampling-distributions.mjs
+    - assets/interactive/interactive-lessons.css
 website:
   title: "Fred J. Pasquarella"
   search: true

@@ -103,7 +103,7 @@ Before running the simulation, consider what should happen if we increase the nu
       <tbody>
         <tr><th scope="row">Population mean</th><td>50.00</td></tr>
         <tr><th scope="row">Population standard deviation</th><td>10.00</td></tr>
-        <tr><th scope="row">Sample size (n)</th><td>Shown in the selector above</td></tr>
+        <tr><th scope="row">Sample size (n)</th><td data-output="sample-size">5</td></tr>
         <tr><th scope="row">Number of sample means collected</th><td data-output="count">0</td></tr>
         <tr><th scope="row">Most recent sample mean</th><td data-output="latest-mean">No sample yet</td></tr>
         <tr><th scope="row">Mean of collected sample means</th><td data-output="mean-of-means">Not yet available</td></tr>
@@ -142,13 +142,13 @@ Try these comparisons. You can record the values in your own notes; this page do
 
 The central limit theorem describes why a sampling distribution of means can become approximately normal as sample size increases, even when the original population is not normally distributed. The required sample size depends on the population's shape and the purpose of the approximation. A sample size of 30 is a common teaching example, not a universal cutoff.
 
-For independent observations sampled from a population with mean \\(\\mu\\) and finite standard deviation \\(\\sigma\\), the mean of the sample means is \\(\\mu\\), and the theoretical standard deviation of the sample means is
+For independent observations sampled from a population with mean \(\mu\) and finite standard deviation \(\sigma\), the mean of the sample means is \(\mu\), and the theoretical standard deviation of the sample means is
 
-\\[
-\\operatorname{SE}(\\bar X) = \\frac{\\sigma}{\\sqrt{n}}.
-\\]
+\[
+\operatorname{SE}(\bar X) = \frac{\sigma}{\sqrt{n}}.
+\]
 
-In this simulation, the population standard deviation is 10, so the standard error is \\(10/\\sqrt{n}\\). Increasing n decreases that standard error, even though the distribution of **individual population observations** is unchanged.
+In this simulation, the population standard deviation is 10, so the standard error is \(10/\sqrt{n}\). Increasing n decreases that standard error, even though the distribution of **individual population observations** is unchanged.
 
 **Do not confuse the two graphs.** The population graph shows individual values. The sampling distribution graph shows averages from repeated samples. The central limit theorem concerns the latter.
 

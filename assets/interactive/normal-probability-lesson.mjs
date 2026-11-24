@@ -25,6 +25,8 @@ if (root) {
   const observed = root.querySelector('[data-output="observed"]');
   const lastScore = root.querySelector('[data-output="latest"]');
   const status = root.querySelector('[data-output="status"]');
+  const theoreticalBar = root.querySelector('[data-bar="theoretical"]');
+  const observedBar = root.querySelector('[data-bar="observed"]');
   const prediction = root.querySelector('[data-output="prediction-feedback"]');
   const questions = document.getElementById("normal-probability-check");
 
@@ -119,6 +121,7 @@ if (root) {
     thresholdText.textContent = String(t);
     z.textContent = asNumber(standardize(t));
     probability.textContent = asPercent(p);
+    theoreticalBar.style.width = (100 * p).toFixed(2) + "%";
     goal.textContent = "Score " + label + " " + t;
     shadeDescription.textContent = "Shaded region: scores " + label + " " +
       t + ". The model predicts approximately " + asPercent(p) +
@@ -129,6 +132,7 @@ if (root) {
     count.textContent = String(state.draws);
     matches.textContent = String(state.matches);
     observed.textContent = asPercent(observedFraction(state.matches, state.draws));
+    observedBar.style.width = (100 * (observedFraction(state.matches, state.draws) ?? 0)).toFixed(2) + "%";
     lastScore.textContent = state.latest === null
       ? "No draws yet" : state.latest.toFixed(1);
   }

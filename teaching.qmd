@@ -36,11 +36,12 @@ This collection will be organized by topic so that visitors can find a specific 
 
 ## Planned Elementary Statistics activities
 
-These are the first interactive resources in the development plan. The Week 6 sampling distributions activity is the initial prototype. Other lessons remain planned.
+These are the first interactive resources in the development plan. The Week 6 sampling distributions activity is published. A Week 5 normal probability simulation is now in development; other lessons are planned.
 
 | Topic | Proposed weeks | Activity in development |
 |---|---|---|
 | Describing distributions | 3 to 4 | Explore how outliers and distribution shape affect numerical summaries |
+| [Probability and the normal distribution](courses/elementary-statistics/lessons/normal-probability.qmd) | 5 | Interactive prototype: compare normal probabilities with simulated frequencies |
 | [Sampling distributions and the central limit theorem](courses/elementary-statistics/lessons/sampling-distributions.qmd) | 6 | Interactive prototype: compare sample means and standard error at different sample sizes |
 | Confidence intervals | 7 | Investigate coverage across repeated samples |
 | Hypothesis tests and power | 8 | Explore sample size, variability, effect size, and statistical power |

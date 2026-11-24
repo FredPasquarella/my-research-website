@@ -5,6 +5,8 @@ import { makeSeededRandom } from "../assets/interactive/sampling-math.mjs";
 import {
   MODEL_MEAN, MODEL_SD, standardize, standardNormalCDF,
   modelProbability, drawNormalTrials, observedFraction,
+  emptyHistogram, mergeHistograms, histogramTotals,
+  histogramBinIndex, HISTOGRAM_MIN, HISTOGRAM_MAX, HISTOGRAM_BIN_COUNT,
 } from "../assets/interactive/normal-probability-math.mjs";
 
 function near(actual, expected, tolerance = 1e-6) {
@@ -75,6 +77,81 @@ test("invalid inputs are rejected", () => {
   assert.throws(() => observedFraction(-1, 4), RangeError);
 });
 
+test("simulated scores accumulate into fixed five-point bins", () => {
+  assert.equal(HISTOGRAM_MIN, 10);
+  assert.equal(HISTOGRAM_MAX, 90);
+  assert.equal(HISTOGRAM_BIN_COUNT, 16);
+  assert.equal(histogramBinIndex(10), 0);
+  assert.equal(histogramBinIndex(14.99), 0);
+  assert.equal(histogramBinIndex(15), 1);
+  assert.equal(histogramBinIndex(60), 10);
+  assert.equal(histogramBinIndex(89.99), 15);
+  assert.equal(histogramBinIndex(9), -1);
+  assert.equal(histogramBinIndex(90), 16);
+
+  const rng = makeSeededRandom(8402);
+  const first = drawNormalTrials(61, "above", 100, rng);
+  const second = drawNormalTrials(61, "above", 1000, rng);
+  const combined = mergeHistograms(first.histogram, second.histogram);
+  const totals = histogramTotals(combined);
+
+  assert.equal(totals.total, 1100);
+  assert.equal(totals.selectedTotal, first.matches + second.matches);
+  assert.equal(totals.displayed + totals.outside, 1100);
+  assert.equal(first.count + second.count, 1100);
+  assert.equal(first.histogram.counts.length, HISTOGRAM_BIN_COUNT);
+  assert.equal(combined.counts.length, HISTOGRAM_BIN_COUNT);
+  assert.ok(combined.counts.some(n => n > 0));
+  assert.ok(combined.counts[10] > 0 && combined.selectedCounts[10] > 0,
+    "The threshold-crossing 60–65 bin should contain selected scores");
+  assert.ok(combined.selectedCounts[10] < combined.counts[10],
+    "The cutoff should split one bin into both matching and other scores");
+
+  // Merge does not alter earlier batches or their arrays.
+  const originalTotal = histogramTotals(first.histogram);
+  assert.equal(originalTotal.total, 100);
+  assert.equal(originalTotal.selectedTotal, first.matches);
+});
+
+test("scores outside the displayed range still count toward probabilities", () => {
+  // Box-Muller draws: approximately 7.57, 92.43, 62, and 58.94.
+  const uniforms = [
+    1 - Math.exp(-9), 0.5,
+    1 - Math.exp(-9), 0,
+    1 - Math.exp(-0.72), 0,
+    1 - Math.exp(-0.4), 0,
+  ];
+  let index = 0;
+  const batch = drawNormalTrials(60, "above", 4, () => uniforms[index++]);
+  const totals = histogramTotals(batch.histogram);
+  assert.equal(batch.matches, 2);
+  assert.equal(totals.total, 4);
+  assert.equal(totals.displayed, 2);
+  assert.equal(totals.outside, 2);
+  assert.equal(totals.selectedTotal, 2);
+  assert.equal(batch.histogram.belowRange, 1);
+  assert.equal(batch.histogram.aboveRange, 1);
+  assert.equal(batch.histogram.selectedOutside, 1);
+});
+
+test("reset gives a fresh empty histogram with no old observations", () => {
+  const empty = emptyHistogram();
+  assert.deepEqual(histogramTotals(empty), {
+    displayed: 0, selectedDisplayed: 0, outside: 0, total: 0,
+    selectedTotal: 0,
+  });
+  const rng = makeSeededRandom(123);
+  const filled = mergeHistograms(empty, drawNormalTrials(50, "below", 100, rng).histogram);
+  assert.equal(histogramTotals(filled).total, 100);
+
+  const reset = emptyHistogram();
+  assert.equal(histogramTotals(reset).total, 0);
+  assert.notEqual(reset.counts, filled.counts);
+  assert.notEqual(reset.counts, empty.counts);
+  reset.counts[0] = 3;
+  assert.equal(empty.counts[0], 0, "Reset arrays must not share references");
+});
+
 const lesson = readFileSync(
   new URL("../courses/elementary-statistics/lessons/normal-probability.qmd", import.meta.url), "utf8"
 );
@@ -100,4 +177,11 @@ test("feedback reuses explicit theme labels and separate correct/incorrect respo
   assert.match(lesson, /normal-probability-lesson\.mjs/);
   assert.match(lesson, /normal-probability-lesson\.css/);
   assert.match(lesson, /normal-probability-check/);
+  assert.match(lesson, /data-chart="empirical-histogram"/);
+  assert.match(lesson, /data-output="empirical-description"/);
+  assert.ok(!lesson.includes('data-bar="theoretical"'));
+  assert.ok(!lesson.includes('data-bar="observed"'));
+  assert.match(browser, /drawEmpiricalHistogram\(\)/);
+  assert.match(browser, /state.histogram = mergeHistograms\(state.histogram, batch.histogram\)/);
+  assert.match(browser, /state.histogram = emptyHistogram\(\)/);
 });

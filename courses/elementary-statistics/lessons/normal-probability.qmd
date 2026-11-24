@@ -125,7 +125,7 @@ In this model, which event is more likely: a score **below 50** or a score **abo
 
 ## What is the normal model telling us?
 
-For a normally distributed variable with mean \(\mu\) and standard deviation \(\sigma\), a score \(x\) can be standardized as \(z=(x-\mu)/\sigma\). In this model, a score of 60 has \(z=(60-50)/10=1\), meaning it is one population standard deviation above the mean. The **area under the curve** to the right of 60 is approximately 15.9%, so \(P(X>60)\approx0.159\).
+For a normally distributed variable with mean $\mu$ and standard deviation $\sigma$, a score $x$ can be standardized as $z=(x-\mu)/\sigma$. In this model, a score of 60 has $z=(60-50)/10=1$, meaning it is one population standard deviation above the mean. The **area under the curve** to the right of 60 is approximately 15.9%, so $P(X>60)\approx0.159$.
 
 **Why this makes sense:** Scores near the middle are more common in this model than scores far into either tail. Moving a cutoff farther right leaves fewer scores above it. When we generate scores at random, the percentage above a cutoff may bounce around at first. With many independent draws, it tends to settle near the theoretical probability, although individual batches can still move it away.
 

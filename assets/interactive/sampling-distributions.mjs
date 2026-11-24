@@ -257,53 +257,84 @@ if (root) {
     "Sample size changed. Previous sample means were cleared so only comparable results are shown."
   ));
 
+  // Explicit labels accompany muted colors so feedback is also understandable
+  // without color vision or when announced by a screen reader.
+  function setAnswerFeedback(element, result, explanation = "") {
+    const labels = {
+      correct: "Correct.",
+      incorrect: "Incorrect.",
+      pending: "Choose an answer first.",
+    };
+    element.dataset.result = result;
+    element.textContent = explanation
+      ? labels[result] + " " + explanation
+      : labels[result];
+  }
+
+  function clearAnswerFeedback(element) {
+    element.removeAttribute("data-result");
+    element.textContent = "";
+  }
+
+  root.querySelectorAll('input[name="clt-prediction"]').forEach((input) => {
+    input.addEventListener("change", () => clearAnswerFeedback(predictionFeedback));
+  });
+
   root.querySelector('[data-action="prediction"]').addEventListener("click", () => {
     const choice = root.querySelector('input[name="clt-prediction"]:checked');
     if (!choice) {
-      predictionFeedback.textContent = "Choose an answer first.";
+      setAnswerFeedback(predictionFeedback, "pending");
       return;
     }
-    predictionFeedback.textContent = choice.value === "smaller"
-      ? "Correct. The theoretical standard error is the population SD divided by the square root of n. Larger n gives less variable sample means."
-      : "Try again. Compare 10 divided by the square root of 5 with 10 divided by the square root of 30.";
+    if (choice.value === "smaller") {
+      setAnswerFeedback(predictionFeedback, "correct",
+        "The theoretical standard error is the population SD divided by the square root of n. Larger n gives less variable sample means.");
+    } else {
+      setAnswerFeedback(predictionFeedback, "incorrect",
+        "Compare 10 divided by the square root of 5 with 10 divided by the square root of 30.");
+    }
   });
 
   const knowledgeCheckAnswers = Object.freeze({
     "distribution": {
       correct: "means",
-      yes: "Correct. Each repeated sample contributes one mean. Individual population observations appear in the other graph.",
+      yes: "Each repeated sample contributes one mean. Individual population observations appear in the other graph.",
       no: "Remember that the histogram is built from averages. Each sample contributes exactly one mean.",
     },
     "sample-size": {
       correct: "less",
-      yes: "Correct. A larger n usually gives sample means that cluster more closely around the population mean.",
+      yes: "A larger n usually gives sample means that cluster more closely around the population mean.",
       no: "For repeated independent samples, standard error decreases as n increases. Compare the values for n = 5 and n = 30.",
     },
     "standard-error": {
       correct: "se",
-      yes: "Correct. Standard error describes the spread of sample means. The observed SD of many simulated means should be close to 10 divided by the square root of n.",
+      yes: "Standard error describes the spread of sample means. The observed SD of many simulated means should be close to 10 divided by the square root of n.",
       no: "The population SD describes individual values. Standard error describes how sample means vary across repeated samples.",
     },
     "clt": {
       correct: "means-normal",
-      yes: "Correct. The sampling distribution of means can become more approximately normal as n grows. The original population does not change shape.",
+      yes: "The sampling distribution of means can become more approximately normal as n grows. The original population does not change shape.",
       no: "The central limit theorem concerns the averages across samples, not the shape of the original population.",
     },
   });
 
   if (checkRoot) {
-    checkRoot.querySelectorAll('[data-action="knowledge-check"]').forEach((button) => {
-      button.addEventListener("click", () => {
-        const question = button.closest("[data-question]");
-        const feedback = question.querySelector('[data-output="check-feedback"]');
-        const answer = knowledgeCheckAnswers[question.dataset.question];
-        const selected = question.querySelector('input[type="radio"]:checked');
+    checkRoot.querySelectorAll("[data-question]").forEach((question) => {
+      const feedback = question.querySelector('[data-output="check-feedback"]');
+      const answer = knowledgeCheckAnswers[question.dataset.question];
 
+      question.querySelectorAll('input[type="radio"]').forEach((input) => {
+        input.addEventListener("change", () => clearAnswerFeedback(feedback));
+      });
+
+      question.querySelector('[data-action="knowledge-check"]').addEventListener("click", () => {
+        const selected = question.querySelector('input[type="radio"]:checked');
         if (!selected) {
-          feedback.textContent = "Choose an answer first.";
+          setAnswerFeedback(feedback, "pending");
+        } else if (selected.value === answer.correct) {
+          setAnswerFeedback(feedback, "correct", answer.yes);
         } else {
-          feedback.textContent = selected.value === answer.correct
-            ? answer.yes : answer.no;
+          setAnswerFeedback(feedback, "incorrect", answer.no);
         }
       });
     });

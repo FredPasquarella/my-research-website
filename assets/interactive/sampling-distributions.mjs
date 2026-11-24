@@ -30,7 +30,7 @@ if (root) {
   const expectedSeText = root.querySelector('[data-output="expected-se"]');
   const sampleValuesText = root.querySelector('[data-output="sample-values"]');
   const predictionFeedback = root.querySelector('[data-output="prediction-feedback"]');
-  const checkFeedback = root.querySelector('[data-output="check-feedback"]');
+  const checkRoot = document.getElementById("clt-knowledge-check");
 
   const MAX_REPETITIONS = 20000;
   const MIN_X = 10;
@@ -268,16 +268,46 @@ if (root) {
       : "Try again. Compare 10 divided by the square root of 5 with 10 divided by the square root of 30.";
   });
 
-  root.querySelector('[data-action="knowledge-check"]').addEventListener("click", () => {
-    const choice = root.querySelector('input[name="clt-check"]:checked');
-    if (!choice) {
-      checkFeedback.textContent = "Choose an answer first.";
-      return;
-    }
-    checkFeedback.textContent = choice.value === "means"
-      ? "Correct. The histogram on the right is built from the mean of each independent sample. It is not the distribution of individual observations."
-      : "Not quite. Each repeated sample contributes exactly one mean to the histogram on the right. The left panel describes individual observations in the population.";
+  const knowledgeCheckAnswers = Object.freeze({
+    "distribution": {
+      correct: "means",
+      yes: "Correct. Each repeated sample contributes one mean. Individual population observations appear in the other graph.",
+      no: "Remember that the histogram is built from averages. Each sample contributes exactly one mean.",
+    },
+    "sample-size": {
+      correct: "less",
+      yes: "Correct. A larger n usually gives sample means that cluster more closely around the population mean.",
+      no: "For repeated independent samples, standard error decreases as n increases. Compare the values for n = 5 and n = 30.",
+    },
+    "standard-error": {
+      correct: "se",
+      yes: "Correct. Standard error describes the spread of sample means. The observed SD of many simulated means should be close to 10 divided by the square root of n.",
+      no: "The population SD describes individual values. Standard error describes how sample means vary across repeated samples.",
+    },
+    "clt": {
+      correct: "means-normal",
+      yes: "Correct. The sampling distribution of means can become more approximately normal as n grows. The original population does not change shape.",
+      no: "The central limit theorem concerns the averages across samples, not the shape of the original population.",
+    },
   });
+
+  if (checkRoot) {
+    checkRoot.querySelectorAll('[data-action="knowledge-check"]').forEach((button) => {
+      button.addEventListener("click", () => {
+        const question = button.closest("[data-question]");
+        const feedback = question.querySelector('[data-output="check-feedback"]');
+        const answer = knowledgeCheckAnswers[question.dataset.question];
+        const selected = question.querySelector('input[type="radio"]:checked');
+
+        if (!selected) {
+          feedback.textContent = "Choose an answer first.";
+        } else {
+          feedback.textContent = selected.value === answer.correct
+            ? answer.yes : answer.no;
+        }
+      });
+    });
+  }
 
   render();
   status.textContent = "Ready. Choose a population and sample size, then draw samples.";

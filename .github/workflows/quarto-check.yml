@@ -67,6 +67,7 @@ jobs:
           test -s docs/assets/interactive/normal-probability-lesson.css
           grep -Fq 'normal-probability-activity' docs/courses/elementary-statistics/lessons/normal-probability.html
           grep -Fq 'normal-probability-check' docs/courses/elementary-statistics/lessons/normal-probability.html
+          grep -Fq 'class="math inline"' docs/courses/elementary-statistics/lessons/normal-probability.html
           test -s docs/assets/interactive/sampling-math.mjs
           test -s docs/assets/interactive/sampling-distributions.mjs
           test -s docs/assets/interactive/interactive-lessons.css

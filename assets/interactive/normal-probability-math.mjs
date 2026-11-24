@@ -20,6 +20,8 @@ export function standardize(value, mean = MODEL_MEAN, sd = MODEL_SD) {
 
 export function standardNormalCDF(z) {
   if (!Number.isFinite(z)) throw new RangeError("z must be finite.");
+  // Preserve the exact symmetry of the standard normal at its mean.
+  if (z === 0) return 0.5;
   // Abramowitz and Stegun 7.1.26; maximum absolute error ~7.5e-8.
   const a = Math.abs(z);
   const t = 1 / (1 + 0.2316419 * a);

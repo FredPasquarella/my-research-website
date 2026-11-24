@@ -11,7 +11,7 @@ toc-depth: 2
 
 Imagine repeating the same study many times, each time selecting a new random sample from the same population. You would not get exactly the same sample mean every time. The **sampling distribution of the mean** describes how those means vary across repeated samples.
 
-This lesson corresponds to **Week 6** of the proposed Elementary Statistics sequence and prepares students for **Lab 3: Simulate sampling variability and examine sample size**. The lab requirements in an assigned course would be set separately.
+This optional lesson accompanies Week 6 of the proposed Elementary Statistics sequence. It can also be used as a standalone introduction to sampling distributions.
 
 ::: {.clt-overview}
 
@@ -115,27 +115,16 @@ Before running the simulation, consider what should happen if we increase the nu
     <p class="clt-caption">The two graphs share a horizontal scale, but their vertical scales differ. The dashed line marks the population mean of 50. Values outside the displayed range are counted but not drawn. The simulation limits a run to 20,000 sample means.</p>
   </section>
 
-  <fieldset class="clt-question">
-    <legend>Check your understanding</legend>
-    <p>What exactly is represented by the bars in the graph on the right?</p>
-    <label class="clt-choice"><input type="radio" name="clt-check" value="observations"> Individual observations from the population</label>
-    <label class="clt-choice"><input type="radio" name="clt-check" value="means"> Means from repeated independent samples</label>
-    <label class="clt-choice"><input type="radio" name="clt-check" value="errors"> Mistakes made when sampling</label>
-    <button type="button" class="clt-btn clt-secondary" data-action="knowledge-check">Check answer</button>
-    <p class="clt-feedback" data-output="check-feedback" role="status" aria-live="polite"></p>
-  </fieldset>
 </div>
 <script type="module" src="../../../assets/interactive/sampling-distributions.mjs"></script>
 ```
 
 ## Interpret what you find
 
-Try these comparisons. You can record the values in your own notes; this page does not collect responses.
+Try two comparisons and note what you observe:
 
-1. Choose the **right-skewed population**, set **n = 2**, and draw 1,000 samples. Describe the shape and spread of the sample means.
-2. Change the sample size to **n = 30**. The previous means are cleared. Draw 1,000 samples again. What changed in the shape and in the observed SD?
-3. Compare the observed SD of the sample means with the theoretical standard error displayed in the table. Why might they differ when you draw only a few samples?
-4. Return to **n = 5** and switch from right-skewed to approximately normal. Does the population shape change? Does the expected standard error change?
+1. Choose the **right-skewed population** and draw 1,000 samples with **n = 2**, then again with **n = 30**. How do the shape and spread of the sample means change?
+2. Compare the observed SD of the sample means with the theoretical standard error. Then switch the population shape while keeping n fixed. What changes, and what stays the same?
 
 ## What is the central limit theorem saying?
 
@@ -147,14 +136,56 @@ $$
 \operatorname{SE}(\bar{X}) = \frac{\sigma}{\sqrt{n}}.
 $$
 
-In this simulation, the population standard deviation is 10, so the standard error is $10/\sqrt{n}$. Increasing n decreases that standard error, even though the distribution of **individual population observations** is unchanged.
+In this simulation, the population standard deviation is 10, so the standard error is $10/\sqrt{n}$. Increasing n decreases that standard error, even though the distribution of **individual observations** is unchanged.
 
-**Do not confuse the two graphs.** The population graph shows individual values. The sampling distribution graph shows averages from repeated samples. The central limit theorem concerns the latter.
+**Why this makes sense:** Each sample mean combines information from n people or observations. With only 5 observations, an unusually high or low value can shift the average noticeably. With 30, the influence of any one value is smaller, and deviations tend to balance out. As a result, sample means vary less from one random sample to another. This does not guarantee that every larger sample will be closer to the population mean.
 
-## How this supports Lab 3
+The population graph shows individual values. The sampling distribution graph shows averages from repeated samples. The central limit theorem concerns the latter.
 
-The syllabus's Week 6 laboratory focuses on simulating sampling variability and examining sample size. This page provides an independent practice activity that prepares students to describe their observations and relate them to standard error. It is not itself a submitted laboratory report.
+## Check your understanding
 
-All calculations and responses are processed in your browser. Nothing is submitted or stored by this activity.
+These four questions revisit the learning goals. Select one answer for each, then check your response. Your answers stay in your browser.
+
+```{=html}
+<section id="clt-knowledge-check" class="clt-lesson" aria-label="Four learning goal review questions">
+  <fieldset class="clt-question" data-question="distribution">
+    <legend>1. What does the histogram of sample means represent?</legend>
+    <label class="clt-choice"><input type="radio" name="clt-check-distribution" value="observations"> Individual observations from the population</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-distribution" value="means"> One mean from each repeated random sample</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-distribution" value="errors"> Mistakes made when sampling</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="knowledge-check">Check answer</button>
+    <p class="clt-feedback" data-output="check-feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="clt-question" data-question="sample-size">
+    <legend>2. If sample size increases from 5 to 30, what usually happens across repeated samples?</legend>
+    <label class="clt-choice"><input type="radio" name="clt-check-sample-size" value="less"> The sample means become less variable.</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-sample-size" value="same"> The sample means have the same variability.</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-sample-size" value="more"> The sample means become more variable.</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="knowledge-check">Check answer</button>
+    <p class="clt-feedback" data-output="check-feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="clt-question" data-question="standard-error">
+    <legend>3. After drawing many samples, what should the observed SD of the sample means approach?</legend>
+    <label class="clt-choice"><input type="radio" name="clt-check-standard-error" value="population-sd"> The population SD of 10</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-standard-error" value="se"> The theoretical standard error of 10 divided by the square root of n</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-standard-error" value="population-mean"> The population mean of 50</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="knowledge-check">Check answer</button>
+    <p class="clt-feedback" data-output="check-feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="clt-question" data-question="clt">
+    <legend>4. For a right-skewed population, what can happen as sample size increases?</legend>
+    <label class="clt-choice"><input type="radio" name="clt-check-clt" value="population-normal"> The original population becomes normal.</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-clt" value="means-normal"> The sampling distribution of means becomes more approximately normal.</label>
+    <label class="clt-choice"><input type="radio" name="clt-check-clt" value="no-change"> Neither distribution can change shape.</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="knowledge-check">Check answer</button>
+    <p class="clt-feedback" data-output="check-feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+</section>
+```
+
+All calculations and responses stay in your browser. Nothing is submitted or stored by this activity.
 
 [Back to Elementary Statistics](../index.qmd)

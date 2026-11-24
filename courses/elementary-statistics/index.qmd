@@ -55,7 +55,11 @@ Populations and samples; observational and experimental research; variables, mea
 
 Basic and conditional probability, independence, normal distributions, sampling distributions, the central limit theorem, and standard error.
 
-**Week 6 interactive prototype:** Draw repeated random samples, compare sample means, and investigate how sample size affects the variability and shape of the sampling distribution.
+**Week 5 interactive prototype:** Explore how the area under a normal curve represents probability, then compare theoretical probabilities with repeated simulated observations.
+
+[Explore Probability and the Normal Distribution](lessons/normal-probability.qmd)
+
+**Week 6 interactive lesson:** Draw repeated random samples, compare sample means, and investigate how sample size affects the variability and shape of the sampling distribution.
 
 [Explore the sampling distributions lesson](lessons/sampling-distributions.qmd)
 

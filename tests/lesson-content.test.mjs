@@ -54,5 +54,23 @@ test("each answer has its own radio group and a live feedback region", () => {
       .match(/role="status" aria-live="polite"/g) ?? []).length,
     4
   );
-  assert.match(controller, /button\.closest\("\[data-question\]"\)/);
+  assert.match(controller, /question\.querySelector\('\[data-action="knowledge-check"\]'\)/);
+  assert.match(controller, /input\.addEventListener\("change", \(\) => clearAnswerFeedback\(feedback\)\)/);
+});
+
+test("answer feedback explicitly labels both outcomes with thematic, accessible colors", () => {
+  assert.match(controller, /correct: "Correct\."/);
+  assert.match(controller, /incorrect: "Incorrect\."/);
+  assert.match(controller, /setAnswerFeedback\(feedback, "correct", answer\.yes\)/);
+  assert.match(controller, /setAnswerFeedback\(feedback, "incorrect", answer\.no\)/);
+  assert.match(controller, /setAnswerFeedback\(predictionFeedback, "incorrect"/);
+
+  const css = readFileSync(
+    new URL("../assets/interactive/interactive-lessons.css", import.meta.url),
+    "utf8"
+  );
+  assert.match(css, /\.clt-feedback\[data-result="correct"\]/);
+  assert.match(css, /\.clt-feedback\[data-result="incorrect"\]/);
+  assert.match(css, /background: #edf3f6;/);
+  assert.match(css, /background: #fbf2e9;/);
 });

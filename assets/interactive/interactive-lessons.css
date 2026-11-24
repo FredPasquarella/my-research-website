@@ -213,6 +213,18 @@
   font-weight: 600;
 }
 
+/* Keep the four short learning-goal checks readable without excess spacing. */
+#clt-knowledge-check .clt-question {
+  margin: 0.65rem 0 0.9rem;
+  padding: 0.8rem 1.05rem;
+}
+#clt-knowledge-check .clt-choice {
+  margin: 0.35rem 0;
+}
+#clt-knowledge-check .clt-question legend {
+  margin-bottom: 0.35rem;
+}
+
 .clt-lesson .clt-interpretation {
   border-top: 1px solid var(--clt-border);
   padding-top: 1.1rem;

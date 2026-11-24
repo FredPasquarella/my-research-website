@@ -8,6 +8,14 @@
   --dist-tint: var(--site-tint, #eef4f3);
 }
 
+.dist-overview {
+  background: var(--site-tint, #eef4f3);
+  border-left: 3px solid var(--site-accent-dark, #30545b);
+  padding: 1.1rem 1.5rem;
+  margin: 1rem 0 1.7rem;
+}
+.dist-overview p:last-child { margin-bottom: 0; }
+
 .dist-demo {
   background: var(--site-paper, #fff);
   border: 1px solid var(--dist-line);

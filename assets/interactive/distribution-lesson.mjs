@@ -155,7 +155,8 @@ if (root) {
     },
   });
 
-  root.querySelectorAll("[data-question]").forEach((question) => {
+  const checkRoot = document.getElementById("distribution-knowledge-check");
+  if (checkRoot) checkRoot.querySelectorAll("[data-question]").forEach((question) => {
     const feedback = question.querySelector('[data-output="feedback"]');
     const answer = answers[question.dataset.question];
 

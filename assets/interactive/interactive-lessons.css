@@ -213,6 +213,26 @@
   font-weight: 600;
 }
 
+/* Correct and incorrect states match the editorial palette. Explicit text
+   labels carry the meaning as well as color, including for screen readers. */
+.clt-feedback[data-result="correct"],
+.clt-feedback[data-result="incorrect"] {
+  padding: 0.65rem 0.85rem;
+  border-left: 3px solid;
+  border-radius: 0 3px 3px 0;
+  line-height: 1.5;
+}
+.clt-feedback[data-result="correct"] {
+  color: #304d63;
+  background: #edf3f6;
+  border-left-color: #547187;
+}
+.clt-feedback[data-result="incorrect"] {
+  color: #8a4a21;
+  background: #fbf2e9;
+  border-left-color: #b2784d;
+}
+
 /* Keep the four short learning-goal checks readable without excess spacing. */
 #clt-knowledge-check .clt-question {
   margin: 0.65rem 0 0.9rem;

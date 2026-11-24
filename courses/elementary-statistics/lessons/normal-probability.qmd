@@ -82,7 +82,7 @@ In this model, which event is more likely: a score **below 50** or a score **abo
     </table>
 
     <h3>Compare with repeated random observations</h3>
-    <p>Draw independent scores from this same normal population. Compare the fraction in the selected region with its theoretical probability.</p>
+    <p>Draw independent scores from this same normal population. Watch their distribution build up, then compare the fraction in the selected region with its theoretical probability.</p>
     <div class="clt-action-row" role="group" aria-label="Draw independent scores">
       <button type="button" class="clt-btn clt-secondary" data-draw="1">Draw 1 score</button>
       <button type="button" class="clt-btn" data-draw="100">Draw 100 scores</button>
@@ -101,17 +101,17 @@ In this model, which event is more likely: a score **below 50** or a score **abo
       </tbody>
     </table>
 
-    <div class="normal-bars" aria-label="Comparison of theoretical and observed probability">
-      <div class="normal-bar-row">
-        <div class="normal-bar-head"><span>Theoretical probability</span><span>Shown numerically above</span></div>
-        <div class="normal-bar-track" aria-hidden="true"><span class="normal-bar-fill is-theoretical" data-bar="theoretical"></span></div>
+    <h3>Watch the simulated distribution take shape</h3>
+    <p>Each score adds one observation to the histogram. Compare how the shape changes after 1, 100, and 1,000 draws.</p>
+    <div class="normal-chart-panel normal-empirical-panel">
+      <div data-chart="empirical-histogram"></div>
+      <div class="normal-histogram-legend" aria-label="Histogram legend">
+        <span><i class="normal-swatch selected" aria-hidden="true"></i>Scores in the selected region</span>
+        <span><i class="normal-swatch other" aria-hidden="true"></i>Other scores</span>
       </div>
-      <div class="normal-bar-row">
-        <div class="normal-bar-head"><span>Observed proportion of simulated scores</span><span>Shown numerically above</span></div>
-        <div class="normal-bar-track" aria-hidden="true"><span class="normal-bar-fill is-observed" data-bar="observed"></span></div>
-      </div>
+      <p class="clt-help" data-output="empirical-description" role="status" aria-live="polite">No scores yet. Draw observations to build a histogram.</p>
     </div>
-    <p class="clt-caption">Each draw is independent and with replacement. The curve displays scores from 10 to 90, but the calculated probability includes the entire normal distribution. The curve shows density; shaded area shows probability. The comparison bars show percentages, not individual scores. A run is limited to 20,000 draws.</p>
+    <p class="clt-caption">The plots share the same horizontal score scale, but have different vertical scales: the normal curve shows density; the histogram shows observed counts in five-point bins. The numerical probability uses all simulated scores, including any outside the displayed range of 10 to 90. More draws generally reveal the bell shape, but each batch can vary. A run is limited to 20,000 draws.</p>
   </section>
 </div>
 <script type="module" src="../../../assets/interactive/normal-probability-lesson.mjs"></script>
@@ -127,7 +127,7 @@ In this model, which event is more likely: a score **below 50** or a score **abo
 
 For a normally distributed variable with mean $\mu$ and standard deviation $\sigma$, a score $x$ can be standardized as $z=(x-\mu)/\sigma$. In this model, a score of 60 has $z=(60-50)/10=1$, meaning it is one population standard deviation above the mean. The **area under the curve** to the right of 60 is approximately 15.9%, so $P(X>60)\approx0.159$.
 
-**Why this makes sense:** Scores near the middle are more common in this model than scores far into either tail. Moving a cutoff farther right leaves fewer scores above it. When we generate scores at random, the percentage above a cutoff may bounce around at first. With many independent draws, it tends to settle near the theoretical probability, although individual batches can still move it away.
+**Why this makes sense:** Scores near the middle are more common in this model than scores far into either tail. Early draws may look uneven, but as you add observations, the histogram generally starts to resemble the normal curve. The proportion of scores beyond the selected cutoff also tends toward the theoretical probability. Neither the shape nor that percentage has to improve after every new batch.
 
 The normal curve is a model, not a guarantee that real attention-test scores follow this shape. The simulation draws from the model deliberately so that the predicted and observed probabilities can be compared.
 

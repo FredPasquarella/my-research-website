@@ -1,0 +1,145 @@
+/* Descriptive statistics activity. Uses site colors and the existing
+   interactive-lessons.css feedback/button system. */
+
+.dist-lesson {
+  --dist-ink: var(--site-ink, #26363e);
+  --dist-muted: var(--site-muted, #53656c);
+  --dist-line: var(--site-border, #dadfd9);
+  --dist-tint: var(--site-tint, #eef4f3);
+}
+
+.dist-demo {
+  background: var(--site-paper, #fff);
+  border: 1px solid var(--dist-line);
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  margin: 1.3rem 0 2rem;
+  border-radius: 4px;
+}
+
+.dist-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.3rem;
+}
+
+.dist-controls label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.dist-controls input[type="range"] {
+  display: block;
+  width: 100%;
+  margin: 0.65rem 0 0.15rem;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  accent-color: #30545b;
+  min-height: 30px;
+}
+
+.dist-controls output {
+  font-weight: 700;
+  color: #30545b;
+  font-variant-numeric: tabular-nums;
+}
+
+.dist-preset-actions { margin: 0.7rem 0 1.2rem; }
+
+.dist-plot-wrap {
+  padding: 0.8rem 0.65rem;
+  border: 1px solid var(--dist-line);
+  background: #fcfcfb;
+  margin: 1rem 0 0.5rem;
+}
+
+.dist-svg { display: block; width: 100%; height: auto; }
+
+.dist-axis-label, .dist-axis-title {
+  fill: #53656c;
+  font-family: var(--site-sans, Arial, sans-serif);
+  font-size: 15px;
+}
+.dist-axis-title { font-size: 16px; font-weight: 600; }
+
+.dist-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.1rem;
+  margin: 0.3rem 0 0.6rem;
+  color: var(--dist-muted);
+  font-size: 0.91rem;
+}
+
+.dist-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.dist-legend i { display: inline-block; flex: 0 0 auto; }
+
+.dist-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #456f76;
+}
+.dist-dot.is-adjustable { background: #a66b24; }
+.dist-line {
+  width: 1.5rem;
+  height: 0;
+  border-top: 2px dashed #304d63;
+}
+.dist-line.is-median {
+  border-top-color: #a66b24;
+  border-top-style: dotted;
+}
+
+.dist-readout {
+  color: var(--dist-muted);
+  margin: 0.5rem 0 0.7rem;
+  line-height: 1.5;
+  font-size: 0.94rem;
+}
+
+.dist-stats {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0 0.4rem;
+  font-size: 0.96rem;
+}
+.dist-stats th, .dist-stats td {
+  border-bottom: 1px solid var(--dist-line);
+  padding: 0.55rem 0.65rem;
+}
+.dist-stats th { text-align: left; }
+.dist-stats td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.dist-stats tbody th { font-weight: 550; }
+.dist-stats thead th { color: var(--dist-ink); }
+.dist-stats [data-current] { font-weight: 700; color: #30545b; }
+
+.dist-lesson .clt-feedback {
+  max-width: 76ch;
+}
+
+.dist-lesson .clt-question {
+  margin: 0.7rem 0 0.95rem;
+  padding: 0.85rem 1.1rem;
+}
+.dist-lesson .clt-choice { margin: 0.4rem 0; }
+.dist-lesson .clt-question legend { margin-bottom: 0.35rem; }
+
+.dist-intuition {
+  border-left: 3px solid var(--site-accent, #456f76);
+  padding: 0.2rem 0 0.2rem 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 550px) {
+  .dist-demo { padding: 1rem 0.65rem; }
+  .dist-stats { font-size: 0.86rem; }
+  .dist-stats th, .dist-stats td { padding: 0.5rem 0.35rem; }
+  .dist-plot-wrap { padding: 0.5rem 0.25rem; }
+  .dist-legend { font-size: 0.82rem; }
+}

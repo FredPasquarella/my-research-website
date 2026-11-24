@@ -33,7 +33,7 @@ jobs:
         run: |
           node --check assets/interactive/sampling-math.mjs
           node --check assets/interactive/sampling-distributions.mjs
-          node --test tests/sampling-math.test.mjs
+          node --test tests/*.test.mjs
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -64,6 +64,7 @@ jobs:
           test -s docs/assets/interactive/interactive-lessons.css
           grep -Fq 'sampling-distributions.mjs' docs/courses/elementary-statistics/lessons/sampling-distributions.html
           grep -Fq 'clt-lab' docs/courses/elementary-statistics/lessons/sampling-distributions.html
+          grep -Fq 'clt-knowledge-check' docs/courses/elementary-statistics/lessons/sampling-distributions.html
           # Verify that the published artifact uses the approved stylesheet.
           test -s docs/styles.css
           cmp styles.css docs/styles.css

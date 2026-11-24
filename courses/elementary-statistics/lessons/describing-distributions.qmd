@@ -13,7 +13,7 @@ Imagine 10 people completing a short attention task. Most finish in about 8 to 1
 
 We will explore **center** (mean and median), **spread** (sample standard deviation and range), and **z-scores** using a small simulated dataset. This lesson supports topics from Weeks 3 and 4 of the proposed course. Other topics in those weeks, including graph interpretation and introductory scatterplots, will have separate resources.
 
-::: {.clt-overview}
+::: {.dist-overview}
 
 **Learning goals**
 

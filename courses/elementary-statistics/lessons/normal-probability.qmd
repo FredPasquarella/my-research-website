@@ -111,7 +111,7 @@ In this model, which event is more likely: a score **below 50** or a score **abo
         <div class="normal-bar-track" aria-hidden="true"><span class="normal-bar-fill is-observed" data-bar="observed"></span></div>
       </div>
     </div>
-    <p class="clt-caption">Each draw is independent and with replacement. The vertical scale of the curve represents density, while its shaded area represents probability. Bars represent percentages, not individual scores. A run is limited to 20,000 draws.</p>
+    <p class="clt-caption">Each draw is independent and with replacement. The curve displays scores from 10 to 90, but the calculated probability includes the entire normal distribution. The curve shows density; shaded area shows probability. The comparison bars show percentages, not individual scores. A run is limited to 20,000 draws.</p>
   </section>
 </div>
 <script type="module" src="../../../assets/interactive/normal-probability-lesson.mjs"></script>

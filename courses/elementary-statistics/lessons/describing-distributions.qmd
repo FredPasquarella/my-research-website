@@ -1,0 +1,148 @@
+---
+title: "Describing Distributions: Center, Spread, and Outliers"
+subtitle: "Elementary Statistics | Weeks 3 and 4 | Interactive lesson"
+toc: true
+toc-depth: 2
+---
+
+[Elementary Statistics](../index.qmd) / Describing distributions
+
+## Why can one observation change a summary?
+
+Imagine 10 people completing a short attention task. Most finish in about 8 to 14 minutes. If one person takes considerably longer, how should we describe a typical completion time?
+
+We will explore **center** (mean and median), **spread** (sample standard deviation and range), and **z-scores** using a small simulated dataset. This lesson supports topics from Weeks 3 and 4 of the proposed course. Other topics in those weeks, including graph interpretation and introductory scatterplots, will have separate resources.
+
+::: {.dist-overview}
+
+**Learning goals**
+
+After this activity, you should be able to:
+
+1. Explain the difference between the mean and median.
+2. Predict how an unusually large observation affects measures of center.
+3. Interpret sample standard deviation as a measure of variability.
+4. Explain what a z-score tells us about an observation's position relative to the mean.
+
+**Before starting:** Review how to order numerical values and calculate an average.
+
+:::
+
+## Make a prediction
+
+The data below represent **simulated task-completion times**, not observations from real students or patients. You can change only the final person's time. The other nine times stay fixed.
+
+Which measure will change more if the final time increases from **14 to 35 minutes**, the mean or the median? Make a prediction, then experiment.
+
+```{=html}
+<link rel="stylesheet" href="../../../assets/interactive/interactive-lessons.css">
+<link rel="stylesheet" href="../../../assets/interactive/distribution-lesson.css">
+<div class="clt-lesson dist-lesson" id="distribution-activity">
+  <section class="dist-demo" aria-labelledby="distribution-experiment">
+    <h2 id="distribution-experiment">Explore the distribution</h2>
+    <p class="clt-lead">Adjust one completion time to see what happens to the whole group's summary statistics.</p>
+    <div class="dist-controls">
+      <label for="dist-last-time">Adjust the last person's completion time: <output for="dist-last-time" data-output="selected-time">14 minutes</output></label>
+      <input type="range" id="dist-last-time" min="14" max="40" step="1" value="14" data-control="last-time" aria-describedby="dist-slider-help">
+      <p class="clt-help" id="dist-slider-help">Use the slider or your keyboard's arrow keys to change one observation. The other nine stay the same.</p>
+    </div>
+
+    <div class="clt-action-row dist-preset-actions" role="group" aria-label="Example completion times">
+      <button type="button" class="clt-btn clt-secondary" data-preset="14">Original time: 14</button>
+      <button type="button" class="clt-btn" data-preset="35">Unusually high: 35</button>
+    </div>
+
+    <div class="dist-plot-wrap">
+      <div data-chart="dotplot" aria-label="Interactive dot plot"></div>
+    </div>
+    <div class="dist-legend" aria-label="Plot legend">
+      <span><i class="dist-dot"></i> Other observations</span>
+      <span><i class="dist-dot is-adjustable"></i> Adjustable observation</span>
+      <span><i class="dist-line"></i> Mean</span>
+      <span><i class="dist-line is-median"></i> Median</span>
+    </div>
+    <p class="dist-readout" data-output="observations">Sorted times (minutes): 8, 9, 9, 10, 10, 11, 11, 12, 13, 14.</p>
+    <p class="dist-readout" data-output="distribution-description">Change the final observation to compare the results.</p>
+
+    <h3>Compare the summaries</h3>
+    <table class="dist-stats">
+      <caption>Summary statistics before and after adjusting one observation, in minutes unless noted</caption>
+      <thead><tr><th scope="col">Measure</th><th scope="col">Original</th><th scope="col">Current</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Mean</th><td>10.70</td><td data-current="mean">10.70</td></tr>
+        <tr><th scope="row">Median</th><td>10.50</td><td data-current="median">10.50</td></tr>
+        <tr><th scope="row">Sample standard deviation</th><td>1.89</td><td data-current="sd">1.95</td></tr>
+        <tr><th scope="row">Range</th><td>6.00</td><td data-current="range">6.00</td></tr>
+        <tr><th scope="row">Z-score of highlighted value</th><td>1.75</td><td data-current="z">1.69</td></tr>
+      </tbody>
+    </table>
+    <p class="clt-caption">Sample standard deviation uses n minus 1 in the denominator. Z-scores are calculated from the current dataset. No responses or results are submitted or saved.</p>
+  </section>
+
+  <noscript>
+    <p>JavaScript is needed for the interactive chart. The original simulated times are 8, 9, 9, 10, 10, 11, 11, 12, 13, and 14 minutes; you can still use the definitions below.</p>
+  </noscript>
+
+</div>
+<script type="module" src="../../../assets/interactive/distribution-lesson.mjs"></script>
+```
+
+## Interpret what you find
+
+First select **Original time: 14**, then **Unusually high: 35**. Compare how much the mean, median, standard deviation, and range change. Notice that the same ten people are represented in both versions; only one value changes.
+
+## What do these summaries tell us?
+
+The **mean** is the sum of the observations divided by their number. The **median** is the middle value after sorting (or the average of the two middle values for an even number of observations). Both describe center, but they respond differently to an extreme value.
+
+The **sample standard deviation** describes variability around the sample mean, in the same units as the observations. A **z-score** expresses a value's distance from the mean in standard-deviation units: $z=(x-\bar{x})/s$.
+
+**Why this makes sense:** An unusually long completion time pulls the mean upward because the mean includes every value. The median is based on which observations occupy the middle positions, so it may barely change. The unusually high time also makes the observations more spread out. A z-score puts an individual time in context by asking how far it sits from the current average relative to that spread.
+
+An unusual value is not necessarily a mistake. Investigate its source and context before deciding how to report or handle it.
+
+## Check your understanding
+
+```{=html}
+<div id="distribution-knowledge-check" class="clt-lesson dist-lesson">
+    <p>These four questions revisit the learning goals. Select an answer and check it for feedback.</p>
+
+    <fieldset class="clt-question" data-question="center">
+      <legend>1. Which measure uses the middle position of the ordered data?</legend>
+      <label class="clt-choice"><input type="radio" name="dist-center" value="mean"> Mean</label>
+      <label class="clt-choice"><input type="radio" name="dist-center" value="median"> Median</label>
+      <label class="clt-choice"><input type="radio" name="dist-center" value="range"> Range</label>
+      <button class="clt-btn clt-secondary" type="button" data-action="check-answer">Check answer</button>
+      <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+    </fieldset>
+
+    <fieldset class="clt-question" data-question="outlier">
+      <legend>2. As the final completion time rises from 14 to 35 minutes, which center measure changes more?</legend>
+      <label class="clt-choice"><input type="radio" name="dist-outlier" value="mean"> Mean</label>
+      <label class="clt-choice"><input type="radio" name="dist-outlier" value="median"> Median</label>
+      <label class="clt-choice"><input type="radio" name="dist-outlier" value="same"> Both change by the same amount.</label>
+      <button class="clt-btn clt-secondary" type="button" data-action="check-answer">Check answer</button>
+      <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+    </fieldset>
+
+    <fieldset class="clt-question" data-question="variation">
+      <legend>3. What does sample standard deviation describe?</legend>
+      <label class="clt-choice"><input type="radio" name="dist-variation" value="spread"> How spread out observations are around their mean</label>
+      <label class="clt-choice"><input type="radio" name="dist-variation" value="center"> The middle value after ordering the data</label>
+      <label class="clt-choice"><input type="radio" name="dist-variation" value="size"> The number of people in the dataset</label>
+      <button class="clt-btn clt-secondary" type="button" data-action="check-answer">Check answer</button>
+      <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+    </fieldset>
+
+    <fieldset class="clt-question" data-question="z-score">
+      <legend>4. If an observation has a z-score of +2, what does that mean?</legend>
+      <label class="clt-choice"><input type="radio" name="dist-z-score" value="minutes"> It is 2 minutes above the sample mean.</label>
+      <label class="clt-choice"><input type="radio" name="dist-z-score" value="above"> It is 2 standard deviations above the sample mean.</label>
+      <label class="clt-choice"><input type="radio" name="dist-z-score" value="below"> It is 2 standard deviations below the sample mean.</label>
+      <button class="clt-btn clt-secondary" type="button" data-action="check-answer">Check answer</button>
+      <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+    </fieldset>
+  </div>
+```
+
+[Back to Elementary Statistics](../index.qmd)

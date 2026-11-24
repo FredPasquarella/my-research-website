@@ -42,6 +42,8 @@ jobs:
         run: |
           node --check assets/interactive/sampling-math.mjs
           node --check assets/interactive/sampling-distributions.mjs
+          node --check assets/interactive/distribution-math.mjs
+          node --check assets/interactive/distribution-lesson.mjs
           node --test tests/*.test.mjs
 
       - name: Set up Quarto
@@ -69,6 +71,12 @@ jobs:
           test -s CNAME
           test -s docs/courses/elementary-statistics/index.html
           test -s docs/courses/elementary-statistics/lessons/sampling-distributions.html
+          test -s docs/courses/elementary-statistics/lessons/describing-distributions.html
+          test -s docs/assets/interactive/distribution-math.mjs
+          test -s docs/assets/interactive/distribution-lesson.mjs
+          test -s docs/assets/interactive/distribution-lesson.css
+          grep -Fq 'distribution-activity' docs/courses/elementary-statistics/lessons/describing-distributions.html
+          grep -Fq 'distribution-knowledge-check' docs/courses/elementary-statistics/lessons/describing-distributions.html
           test -s docs/assets/interactive/sampling-math.mjs
           test -s docs/assets/interactive/sampling-distributions.mjs
           test -s docs/assets/interactive/interactive-lessons.css

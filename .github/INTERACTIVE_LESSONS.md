@@ -1,6 +1,6 @@
 # Interactive teaching component guide
 
-Status: Development draft. The source files below are intended for a Quarto website hosted on GitHub Pages.
+These resources are designed for a Quarto site hosted on GitHub Pages. A new interactive lesson should be reviewed on its own branch before publication.
 
 ## First component
 
@@ -32,6 +32,19 @@ Theoretical standard error for both models is `10 / sqrt(n)`. The observed SD of
 The histograms use a shared horizontal scale for easy comparison. Their vertical scales are independently adjusted; this is explained in the activity. Theoretical population curve and simulated means use different representations. No sample results are persisted or transmitted.
 
 The central limit theorem is stated cautiously: when observations are independent and identically distributed with finite variance, suitably standardized sample means approach normality as n grows. A particular sample size is not a universal threshold.
+
+## Second component: Describing distributions
+
+- Course: Elementary Statistics sample syllabus, Weeks 3 to 4 (subset on center, spread, outliers, and z-scores)
+- Learning design: technical definition followed by practical intuition, one-variable dot plot, simulated task-completion time data, and four objective-aligned multiple-choice questions
+- Adjustable observation: 14 through 40 minutes; comparison of a fixed baseline with the adjusted dataset
+- Statistics: sample mean, median, sample SD using n minus 1, range, and the highlighted observation's z-score
+- Code: `assets/interactive/distribution-math.mjs` has no browser dependency; `distribution-lesson.mjs` manages the chart and controls; `distribution-lesson.css` uses existing site tokens and knowledge-check styles
+- Tests: `tests/distribution-lesson.test.mjs` validates numerical values, outlier behavior, z-scores, source structure, and response feedback
+
+The four-question review comes **after** both the technical explanation and the intuitive interpretation. Feedback labels and colors reuse the prior lesson's muted navy and burnt-orange system. No personal student data or external service is needed.
+
+Manual checks before approval: interact with the range control and both presets, confirm the plot/summary update, verify keyboard use and four feedback states, inspect desktop/mobile readability, and ensure all module assets load from the rendered Quarto preview.
 
 ## Quality checks and open manual checks
 

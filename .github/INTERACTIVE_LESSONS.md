@@ -33,6 +33,22 @@ The histograms use a shared horizontal scale for easy comparison. Their vertical
 
 The central limit theorem is stated cautiously: when observations are independent and identically distributed with finite variance, suitably standardized sample means approach normality as n grows. A particular sample size is not a universal threshold.
 
+## Week 5 component: Normal probabilities and simulated frequencies
+
+- Course: Elementary Statistics sample syllabus, Week 5, normal distributions and basic probability.
+- Scope: Normal area/probability, standard scores, cutoff/tail direction, and long-run interpretation of simulated probability. This activity **does not replace** separate instruction on conditional probability and independence.
+- Model: Synthetic normal population with mean 50 and SD 10, consistent with the Week 6 population parameters.
+- Interaction: Threshold 30 to 70, probability at or below versus above, theoretical normal curve with shaded region, simulated independent draws, and theoretical/observed proportion bars.
+- Learning pattern: Prediction, interactive experiment, interpretation, technical explanation followed by intuition, then four objective-aligned knowledge checks with explicit Correct./Incorrect. labels.
+- `assets/interactive/normal-probability-math.mjs`: independent functions for normal CDF, standard scores, theoretical probabilities, and count-based simulated frequencies, reusing the existing Week 6 normal random-number generator.
+- `assets/interactive/normal-probability-lesson.mjs`: accessible plot, control behavior and response feedback.
+- `assets/interactive/normal-probability-lesson.css`: scoped presentation matching site design and existing feedback components.
+- `tests/normal-probability.test.mjs`: numerical comparison with standard normal benchmarks, complementary tails, empirical frequencies, and lesson structure checks.
+
+Manual verification: Move cutoff and change tail; observe the area, z-score, and theoretical probability; draw 100 then 1,000 scores; verify the observed frequency is not artificially forced to the theoretical value; ensure changing settings resets observations; check all answer feedback, keyboard navigation, and phone-sized layouts.
+
+The SVG curve shows the horizontal range 10 to 90 for legibility; the calculated probability is for the entire theoretical distribution, including the negligible normal tails beyond the plotted limits. No real participant, student, or clinical data are collected or stored.
+
 ## Quality checks and open manual checks
 
 GitHub Actions must run Node syntax checks, numerical tests, `quarto render`, and existence/asset checks before a merge.

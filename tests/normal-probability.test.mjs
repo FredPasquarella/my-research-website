@@ -167,7 +167,8 @@ test("Week 5 lesson aligns four objectives with end-of-lesson questions", () => 
   assert.ok(lesson.indexOf("## Check your understanding") >
     lesson.indexOf("## What is the normal model telling us?"));
   assert.equal((lesson.match(/data-action="check-answer"/g) || []).length, 4);
-  assert.equal((lesson.match(/aria-live="polite"/g) || []).length, 6);
+  // Prediction, activity status, histogram summary, and four question responses.
+  assert.equal((lesson.match(/aria-live="polite"/g) || []).length, 7);
 });
 
 test("feedback reuses explicit theme labels and separate correct/incorrect responses", () => {

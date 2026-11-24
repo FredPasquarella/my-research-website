@@ -39,6 +39,61 @@ export function modelProbability(threshold, side) {
   return side === "below" ? below : 1 - below;
 }
 
+// Keep identical fixed-width bins while observations accumulate. The displayed
+// score scale matches the theoretical curve. Extreme draws outside that scale
+// remain in the numerical probabilities and are counted separately.
+export const HISTOGRAM_MIN = 10;
+export const HISTOGRAM_MAX = 90;
+export const HISTOGRAM_BIN_WIDTH = 5;
+export const HISTOGRAM_BIN_COUNT =
+  (HISTOGRAM_MAX - HISTOGRAM_MIN) / HISTOGRAM_BIN_WIDTH;
+
+export function emptyHistogram() {
+  return {
+    counts: new Array(HISTOGRAM_BIN_COUNT).fill(0),
+    selectedCounts: new Array(HISTOGRAM_BIN_COUNT).fill(0),
+    belowRange: 0,
+    aboveRange: 0,
+    selectedOutside: 0,
+  };
+}
+
+export function histogramBinIndex(value) {
+  if (!Number.isFinite(value)) throw new RangeError("Scores must be finite.");
+  if (value < HISTOGRAM_MIN) return -1;
+  if (value >= HISTOGRAM_MAX) return HISTOGRAM_BIN_COUNT;
+  return Math.floor((value - HISTOGRAM_MIN) / HISTOGRAM_BIN_WIDTH);
+}
+
+export function mergeHistograms(first, second) {
+  if (first.counts.length !== HISTOGRAM_BIN_COUNT ||
+      second.counts.length !== HISTOGRAM_BIN_COUNT) {
+    throw new RangeError("Incompatible histogram bin counts.");
+  }
+  return {
+    counts: first.counts.map((count, i) => count + second.counts[i]),
+    selectedCounts: first.selectedCounts.map((count, i) =>
+      count + second.selectedCounts[i]),
+    belowRange: first.belowRange + second.belowRange,
+    aboveRange: first.aboveRange + second.aboveRange,
+    selectedOutside: first.selectedOutside + second.selectedOutside,
+  };
+}
+
+export function histogramTotals(histogram) {
+  const displayed = histogram.counts.reduce((total, value) => total + value, 0);
+  const selectedDisplayed = histogram.selectedCounts.reduce(
+    (total, value) => total + value, 0);
+  const outside = histogram.belowRange + histogram.aboveRange;
+  return {
+    displayed,
+    selectedDisplayed,
+    outside,
+    total: displayed + outside,
+    selectedTotal: selectedDisplayed + histogram.selectedOutside,
+  };
+}
+
 export function drawNormalTrials(threshold, side, repetitions, rng = Math.random) {
   if (!SIDES.includes(side) || !Number.isFinite(threshold)) {
     throw new RangeError("Specify a finite threshold and a valid side.");
@@ -46,14 +101,27 @@ export function drawNormalTrials(threshold, side, repetitions, rng = Math.random
   if (!Number.isInteger(repetitions) || repetitions < 1 || repetitions > 10000) {
     throw new RangeError("Draw between 1 and 10,000 observations at once.");
   }
+  const histogram = emptyHistogram();
   let matches = 0;
   let lastValue = null;
   for (let i = 0; i < repetitions; i++) {
     const value = drawObservation("normal", rng);
     lastValue = value;
-    if (side === "below" ? value <= threshold : value > threshold) matches++;
+    const selected = side === "below" ? value <= threshold : value > threshold;
+    if (selected) matches++;
+    const index = histogramBinIndex(value);
+    if (index < 0) {
+      histogram.belowRange++;
+      if (selected) histogram.selectedOutside++;
+    } else if (index >= HISTOGRAM_BIN_COUNT) {
+      histogram.aboveRange++;
+      if (selected) histogram.selectedOutside++;
+    } else {
+      histogram.counts[index]++;
+      if (selected) histogram.selectedCounts[index]++;
+    }
   }
-  return { count: repetitions, matches, lastValue };
+  return { count: repetitions, matches, lastValue, histogram };
 }
 
 export function observedFraction(matches, total) {

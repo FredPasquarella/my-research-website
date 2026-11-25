@@ -23,6 +23,9 @@ project:
     - assets/interactive/sampling-bias-math.mjs
     - assets/interactive/sampling-bias-lesson.mjs
     - assets/interactive/sampling-bias-lesson.css
+    - assets/interactive/conditional-probability-math.mjs
+    - assets/interactive/conditional-probability-lesson.mjs
+    - assets/interactive/conditional-probability-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

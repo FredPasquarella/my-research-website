@@ -45,6 +45,8 @@ jobs:
           node --check assets/interactive/descriptive-lesson.mjs
           node --check assets/interactive/sampling-bias-math.mjs
           node --check assets/interactive/sampling-bias-lesson.mjs
+          node --check assets/interactive/conditional-probability-math.mjs
+          node --check assets/interactive/conditional-probability-lesson.mjs
           node --test tests/*.test.mjs
 
       - name: Set up Quarto
@@ -77,6 +79,13 @@ jobs:
           test -s docs/courses/elementary-statistics/lessons/statistical-power.html
           test -s docs/courses/elementary-statistics/lessons/distributions-and-variability.html
           test -s docs/courses/elementary-statistics/lessons/sampling-bias.html
+          test -s docs/courses/elementary-statistics/lessons/conditional-probability.html
+          test -s docs/assets/interactive/conditional-probability-math.mjs
+          test -s docs/assets/interactive/conditional-probability-lesson.mjs
+          test -s docs/assets/interactive/conditional-probability-lesson.css
+          grep -Fq 'cp-lesson' docs/courses/elementary-statistics/lessons/conditional-probability.html
+          grep -Fq 'cp-knowledge-check' docs/courses/elementary-statistics/lessons/conditional-probability.html
+          grep -Fq 'conditional-probability.html' docs/courses/elementary-statistics/index.html
           test -s docs/assets/interactive/sampling-bias-math.mjs
           test -s docs/assets/interactive/sampling-bias-lesson.mjs
           test -s docs/assets/interactive/sampling-bias-lesson.css

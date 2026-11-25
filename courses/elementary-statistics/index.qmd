@@ -20,7 +20,7 @@ This sequence draws from my **proposed Elementary Statistics (PSYC 210) sample s
 
 ## Learning pathway
 
-The proposed 18-week syllabus is organized here into seven units. The week labels refer to the sample syllabus, not scheduled course dates. Most lessons remain in development. The Week 6 sampling distributions activity is the first interactive prototype.
+The proposed 18-week syllabus is organized here into seven units. The week labels refer to the sample syllabus, not scheduled course dates. Interactive lessons for Weeks 5–7 are available; additional lessons remain in development.
 
 ::: {.course-module}
 ::: {.course-module__number}
@@ -80,7 +80,11 @@ Basic and conditional probability, independence, normal distributions, sampling 
 
 Point estimates, confidence intervals, precision, hypothesis testing, p-values, Type I and Type II errors, effect size, and introductory statistical power.
 
-**Planned demonstrations:** Investigate confidence interval coverage and how sample size, variability, and effect size influence statistical power.
+**Week 7 interactive lesson:** Construct repeated confidence intervals and explore coverage, precision, and uncertainty.
+
+[Explore Confidence Intervals and Coverage](lessons/confidence-intervals.qmd)
+
+**Planned demonstrations:** Investigate hypothesis testing and how sample size, variability, and effect size influence statistical power.
 
 :::
 :::
@@ -177,6 +181,6 @@ The sample syllabus identifies the freely available [OpenStax *Introductory Stat
 
 Browser-based activities will include explanatory text, keyboard-operable controls, and accessible alternatives as appropriate. Course announcements, graded assessments, and student records would remain in Canvas.
 
-<p class="learning-status">Development status: This is a proposed learning pathway. The Week 6 simulation is an interactive prototype; other lessons remain in development.</p>
+<p class="learning-status">Development status: This is a proposed learning pathway. Interactive lessons for Weeks 5–7 are available; additional lessons remain in development.</p>
 
 [Return to Teaching & Learning](../../teaching.qmd)

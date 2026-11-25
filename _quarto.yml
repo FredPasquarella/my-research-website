@@ -8,6 +8,9 @@ project:
     - assets/interactive/normal-probability-math.mjs
     - assets/interactive/normal-probability-lesson.mjs
     - assets/interactive/normal-probability-lesson.css
+    - assets/interactive/confidence-interval-math.mjs
+    - assets/interactive/confidence-interval-lesson.mjs
+    - assets/interactive/confidence-interval-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

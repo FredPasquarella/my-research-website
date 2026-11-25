@@ -11,6 +11,9 @@ project:
     - assets/interactive/confidence-interval-math.mjs
     - assets/interactive/confidence-interval-lesson.mjs
     - assets/interactive/confidence-interval-lesson.css
+    - assets/interactive/hypothesis-testing-math.mjs
+    - assets/interactive/hypothesis-testing-lesson.mjs
+    - assets/interactive/hypothesis-testing-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

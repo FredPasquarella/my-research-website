@@ -1,0 +1,180 @@
+---
+title: "Probability and the Normal Distribution"
+subtitle: "Elementary Statistics | Week 5 | Interactive lesson"
+toc: true
+toc-depth: 2
+---
+
+[Elementary Statistics](../index.qmd) / Normal probability
+
+## What does a probability tell us?
+
+Suppose scores on a **hypothetical attention test** follow a normal distribution with a mean of 50 and a standard deviation of 10. What fraction of scores would you expect to be above 60? If we randomly generated many scores, would the observed fraction match that prediction?
+
+This optional activity focuses on **normal probabilities and the connection between probability and repeated observations**, part of Week 5 in the proposed Elementary Statistics course. Conditional probability and independence will receive separate instruction.
+
+::: {.normal-overview}
+
+**Learning goals**
+
+After this activity, you should be able to:
+
+1. Interpret the shaded area under a normal curve as a probability.
+2. Express a score as a z-score in standard deviation units.
+3. Predict how changing a threshold changes a tail probability.
+4. Explain why observed frequencies from repeated random draws are close to, but not always equal to, theoretical probabilities.
+
+**Before starting:** Review the mean, standard deviation, and z-scores from Weeks 3 and 4.
+
+:::
+
+## Make a prediction
+
+In this model, which event is more likely: a score **below 50** or a score **above 65**? Choose an answer before exploring the curve.
+
+~~~{=html}
+<link rel="stylesheet" href="../../../assets/interactive/interactive-lessons.css">
+<link rel="stylesheet" href="../../../assets/interactive/normal-probability-lesson.css">
+
+<div id="normal-probability-activity" class="clt-lesson normal-lesson">
+  <fieldset class="clt-question">
+    <legend>Which event is more likely?</legend>
+    <label class="clt-choice"><input type="radio" name="normal-prediction" value="below50"> A randomly drawn score is below 50.</label>
+    <label class="clt-choice"><input type="radio" name="normal-prediction" value="above65"> A randomly drawn score is above 65.</label>
+    <label class="clt-choice"><input type="radio" name="normal-prediction" value="same"> Both events are equally likely.</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="prediction">Check prediction</button>
+    <p class="clt-feedback" data-output="prediction-feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <section class="normal-demo" aria-labelledby="normal-experiment-title">
+    <h2 id="normal-experiment-title">Explore normal probabilities</h2>
+    <p class="clt-lead">This is a theoretical normal population with mean 50 and SD 10. Change the score cutoff and choose which side you want to count.</p>
+
+    <div class="normal-controls">
+      <div>
+        <label for="normal-threshold">Score threshold: <output data-output="threshold-label" for="normal-threshold">60</output></label>
+        <input id="normal-threshold" type="range" min="30" max="70" step="1" value="60" data-control="threshold" aria-describedby="normal-threshold-help">
+        <span class="clt-help" id="normal-threshold-help">Use the slider or keyboard arrows to adjust the score from 30 to 70.</span>
+      </div>
+      <div>
+        <label for="normal-side">Probability region</label>
+        <select id="normal-side" data-control="side">
+          <option value="above" selected>Scores above the threshold</option>
+          <option value="below">Scores at or below the threshold</option>
+        </select>
+        <span class="clt-help">Changing either setting clears previous simulation results.</span>
+      </div>
+    </div>
+
+    <div class="normal-chart-panel">
+      <div data-chart="normal-curve"></div>
+      <p class="normal-legend"><span class="normal-legend-swatch" aria-hidden="true"></span> Shaded area represents probability. The dashed line marks the selected threshold.</p>
+      <p class="clt-help" data-output="shaded-description">Change the threshold to explore an area.</p>
+    </div>
+
+    <table class="normal-details">
+      <caption>Probability for a hypothetical normal population with mean 50 and SD 10</caption>
+      <tbody>
+        <tr><th scope="row">Event being studied</th><td data-output="event">Score above 60</td></tr>
+        <tr><th scope="row">Z-score of the threshold</th><td data-output="z">1.00</td></tr>
+        <tr><th scope="row">Theoretical probability</th><td data-output="probability">15.9%</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Compare with repeated random observations</h3>
+    <p>Draw independent scores from this same normal population. Watch their distribution build up, then compare the fraction in the selected region with its theoretical probability.</p>
+    <div class="clt-action-row" role="group" aria-label="Draw independent scores">
+      <button type="button" class="clt-btn clt-secondary" data-draw="1">Draw 1 score</button>
+      <button type="button" class="clt-btn" data-draw="100">Draw 100 scores</button>
+      <button type="button" class="clt-btn" data-draw="1000">Draw 1,000 scores</button>
+      <button type="button" class="clt-btn clt-secondary" data-action="reset">Reset</button>
+    </div>
+    <p class="clt-status" data-output="status" role="status" aria-live="polite"></p>
+
+    <table class="normal-details">
+      <caption>Accumulated independent draws for the currently selected threshold and region</caption>
+      <tbody>
+        <tr><th scope="row">Total scores drawn</th><td data-output="draws">0</td></tr>
+        <tr><th scope="row">Scores in the selected region</th><td data-output="matches">0</td></tr>
+        <tr><th scope="row">Observed percentage</th><td data-output="observed">Not yet available</td></tr>
+        <tr><th scope="row">Most recent simulated score</th><td data-output="latest">No draws yet</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Watch the simulated distribution take shape</h3>
+    <p>Each score adds one observation to the histogram. Compare how the shape changes after 1, 100, and 1,000 draws.</p>
+    <div class="normal-chart-panel normal-empirical-panel">
+      <div data-chart="empirical-histogram"></div>
+      <div class="normal-histogram-legend" aria-label="Histogram legend">
+        <span><i class="normal-swatch selected" aria-hidden="true"></i>Scores in the selected region</span>
+        <span><i class="normal-swatch other" aria-hidden="true"></i>Other scores</span>
+      </div>
+      <p class="clt-help" data-output="empirical-description" role="status" aria-live="polite">No scores yet. Draw observations to build a histogram.</p>
+    </div>
+    <p class="clt-caption">The plots share the same horizontal score scale, but have different vertical scales: the normal curve shows density; the histogram shows observed counts in five-point bins. The numerical probability uses all simulated scores, including any outside the displayed range of 10 to 90. More draws generally reveal the bell shape, but each batch can vary. A run is limited to 20,000 draws.</p>
+  </section>
+</div>
+<script type="module" src="../../../assets/interactive/normal-probability-lesson.mjs"></script>
+~~~
+
+## Interpret what you find
+
+1. Set the threshold to **60**, choose **above**, and draw 100 observations. Compare the observed percentage with the model's probability. Draw 1,000 more. Does it have to move closer every time?
+2. Keep **above** selected, then change the threshold to **65** and **70**. What happens to the shaded probability?
+3. Choose **below**, with the threshold at **50**. How does the normal curve's symmetry help you predict the probability?
+
+## What is the normal model telling us?
+
+For a normally distributed variable with mean $\mu$ and standard deviation $\sigma$, a score $x$ can be standardized as $z=(x-\mu)/\sigma$. In this model, a score of 60 has $z=(60-50)/10=1$, meaning it is one population standard deviation above the mean. The **area under the curve** to the right of 60 is approximately 15.9%, so $P(X>60)\approx0.159$.
+
+**Why this makes sense:** Scores near the middle are more common in this model than scores far into either tail. Early draws may look uneven, but as you add observations, the histogram generally starts to resemble the normal curve. The proportion of scores beyond the selected cutoff also tends toward the theoretical probability. Neither the shape nor that percentage has to improve after every new batch.
+
+The normal curve is a model, not a guarantee that real attention-test scores follow this shape. The simulation draws from the model deliberately so that the predicted and observed probabilities can be compared.
+
+## Check your understanding
+
+These four questions revisit the learning goals. Select an answer for each to receive immediate feedback.
+
+~~~{=html}
+<section id="normal-probability-check" class="clt-lesson normal-lesson" aria-label="Four learning objective questions">
+  <fieldset class="clt-question" data-question="area">
+    <legend>1. If the threshold is 60 and "above" is selected, what does the shaded area mean?</legend>
+    <label class="clt-choice"><input type="radio" name="normal-check-area" value="above"> The probability a random score is above 60</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-area" value="sixty"> A total of 60 simulated scores</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-area" value="mean"> The population mean</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="check-answer">Check answer</button>
+    <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="clt-question" data-question="z">
+    <legend>2. If the population mean is 50 and SD is 10, what is the z-score for a score of 60?</legend>
+    <label class="clt-choice"><input type="radio" name="normal-check-z" value="one"> +1, or one SD above the mean</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-z" value="ten"> +10, because the score is 10 points higher</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-z" value="negative"> -1, or one SD below the mean</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="check-answer">Check answer</button>
+    <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="clt-question" data-question="threshold">
+    <legend>3. As a threshold moves from 60 to 70, what happens to the probability of scoring above it?</legend>
+    <label class="clt-choice"><input type="radio" name="normal-check-threshold" value="smaller"> It becomes smaller.</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-threshold" value="same"> It stays the same.</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-threshold" value="larger"> It becomes larger.</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="check-answer">Check answer</button>
+    <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset class="clt-question" data-question="frequency">
+    <legend>4. Why might the observed percentage differ from the theoretical probability after only 100 draws?</legend>
+    <label class="clt-choice"><input type="radio" name="normal-check-frequency" value="model-wrong"> The normal model must be wrong.</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-frequency" value="close"> Random variation makes observed percentages fluctuate, especially with fewer draws.</label>
+    <label class="clt-choice"><input type="radio" name="normal-check-frequency" value="exact"> Every batch of 100 must match the probability exactly.</label>
+    <button type="button" class="clt-btn clt-secondary" data-action="check-answer">Check answer</button>
+    <p class="clt-feedback" data-output="feedback" role="status" aria-live="polite"></p>
+  </fieldset>
+</section>
+~~~
+
+All responses and simulation results stay in your browser. Nothing is saved or submitted.
+
+[Back to Elementary Statistics](../index.qmd)

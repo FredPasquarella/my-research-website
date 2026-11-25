@@ -5,6 +5,9 @@ project:
     - assets/interactive/sampling-math.mjs
     - assets/interactive/sampling-distributions.mjs
     - assets/interactive/interactive-lessons.css
+    - assets/interactive/normal-probability-math.mjs
+    - assets/interactive/normal-probability-lesson.mjs
+    - assets/interactive/normal-probability-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

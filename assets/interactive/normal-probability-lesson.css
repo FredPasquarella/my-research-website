@@ -1,0 +1,160 @@
+/* Week 5 normal probability exercise, reusing the established editorial
+   typography, controls, and accessible answer feedback from Week 6. */
+
+.normal-lesson {
+  --normal-ink: var(--site-ink, #26363e);
+  --normal-muted: var(--site-muted, #53656c);
+  --normal-border: var(--site-border, #dadfd9);
+  --normal-accent: var(--site-accent-dark, #30545b);
+}
+
+.normal-overview {
+  margin: 1rem 0 1.7rem;
+  border-left: 3px solid var(--normal-accent);
+  background: var(--site-tint, #eef4f3);
+  padding: 1.1rem 1.5rem;
+}
+.normal-overview p:last-child { margin-bottom: 0; }
+
+.normal-demo {
+  background: var(--site-paper, #fff);
+  border: 1px solid var(--normal-border);
+  padding: clamp(1rem, 2.5vw, 1.65rem);
+  border-radius: 4px;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.normal-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  column-gap: 1.4rem;
+  row-gap: 0.7rem;
+  align-items: start;
+}
+.normal-controls label {
+  font-weight: 650;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+.normal-controls input[type="range"] {
+  width: 100%;
+  margin: 0.55rem 0;
+  padding: 0;
+  cursor: pointer;
+  accent-color: #30545b;
+  background: transparent;
+  border: 0;
+  min-height: 30px;
+}
+.normal-controls select {
+  font: inherit;
+  padding: 0.55rem;
+  border: 1px solid #81969a;
+  border-radius: 3px;
+  background: #fff;
+  color: var(--normal-ink);
+  width: 100%;
+  margin: 0;
+}
+.normal-controls output {
+  font-weight: 700;
+  color: var(--normal-accent);
+  font-variant-numeric: tabular-nums;
+}
+.normal-chart-panel {
+  border: 1px solid var(--normal-border);
+  padding: 0.85rem;
+  margin: 1rem 0;
+  background: #fcfcfb;
+}
+.normal-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.normal-axis-label, .normal-axis-title, .normal-threshold-label {
+  fill: #53656c;
+  font-family: var(--site-sans, Arial, sans-serif);
+  font-size: 16px;
+}
+.normal-axis-title { font-size: 17px; font-weight: 600; }
+.normal-threshold-label { font-size: 15px; fill: #80521c; font-weight: 650; }
+
+.normal-legend {
+  color: var(--normal-muted);
+  font-size: 0.93rem;
+  margin: 0.3rem 0;
+}
+.normal-legend-swatch {
+  display: inline-block;
+  vertical-align: -0.15em;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.35rem;
+  background: #c4d7df;
+  border: 1px solid #819ca8;
+}
+.normal-details {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  margin: 0.8rem 0;
+}
+.normal-details th, .normal-details td {
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid var(--normal-border);
+  vertical-align: top;
+}
+.normal-details th { width: 66%; text-align: left; font-weight: 550; }
+.normal-details td { text-align: right; font-variant-numeric: tabular-nums; }
+.normal-details tr:first-child th { font-weight: 650; }
+
+.normal-intuition {
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  border-left: 3px solid var(--site-accent, #456f76);
+}
+
+.normal-empirical-panel {
+  margin-top: 0.75rem;
+}
+
+.normal-histogram-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.3rem;
+  color: var(--normal-muted);
+  margin: 0.3rem 0 0.65rem;
+  font-size: 0.93rem;
+}
+
+.normal-histogram-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.normal-swatch {
+  display: inline-block;
+  height: 0.82rem;
+  width: 0.82rem;
+  border-radius: 2px;
+}
+
+.normal-swatch.selected { background: #a66b24; }
+.normal-swatch.other { background: #8eabad; }
+
+.normal-lesson .clt-question { margin: 0.7rem 0 0.95rem; padding: 0.85rem 1.1rem; }
+.normal-lesson .clt-choice { margin: 0.4rem 0; }
+.normal-lesson .clt-question legend { margin-bottom: 0.35rem; }
+
+@media (max-width: 690px) {
+  .normal-controls { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .normal-demo { padding: 1rem 0.65rem; }
+  .normal-chart-panel { padding: 0.5rem 0.2rem; }
+  .normal-details { font-size: 0.87rem; }
+  .normal-details th { width: 58%; }
+  .normal-details th, .normal-details td { padding: 0.5rem 0.35rem; }
+  .normal-legend { font-size: 0.85rem; }
+}

@@ -17,6 +17,9 @@ project:
     - assets/interactive/statistical-power-math.mjs
     - assets/interactive/statistical-power-lesson.mjs
     - assets/interactive/statistical-power-lesson.css
+    - assets/interactive/descriptive-math.mjs
+    - assets/interactive/descriptive-lesson.mjs
+    - assets/interactive/descriptive-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

@@ -1,0 +1,20 @@
+.desc-lesson .desc-chart-wrap{border:1px solid var(--clt-border);background:#fcfcfb;padding:.6rem;margin:.65rem 0;min-width:0}
+.desc-lesson .desc-chart{display:block;width:100%;height:auto;max-width:760px;margin:auto;font-family:var(--site-sans,Arial,sans-serif)}
+.desc-lesson input[type=range]{width:100%;min-height:32px;accent-color:#30545b}
+.desc-lesson input[type=range]:focus-visible,.desc-lesson details summary:focus-visible{outline:3px solid #a66b24;outline-offset:3px}
+.desc-lesson .desc-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.desc-lesson .desc-metric{border:1px solid var(--clt-border);background:#fcfcfb;padding:.7rem;min-width:0}
+.desc-lesson .desc-metric span{display:block;font-size:.85rem;color:var(--clt-muted);line-height:1.3}
+.desc-lesson .desc-metric strong{display:block;font-size:clamp(1.2rem,3vw,1.65rem);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.desc-lesson .desc-legend{display:flex;gap:.55rem 1rem;flex-wrap:wrap;font-size:.9rem;margin:.5rem 0}
+.desc-lesson .desc-key{display:inline-block;vertical-align:middle;margin-right:.35rem;width:1.15rem;height:.75rem;background:#456f76;border-radius:2px}
+.desc-lesson .desc-key.selected{background:#a05b34}.desc-lesson .desc-key.mean{background:transparent;border-top:2px solid #30545b;height:1px}.desc-lesson .desc-key.median{background:transparent;border-top:2px dashed #80521c;height:1px}
+.desc-lesson .desc-data{background:var(--clt-tint);padding:.65rem .85rem;border-left:3px solid var(--clt-accent);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.desc-lesson .desc-data strong{color:#8a4a21}
+.desc-lesson .desc-table{width:100%;border-collapse:collapse;table-layout:fixed;font-variant-numeric:tabular-nums;font-size:.94rem}
+.desc-lesson .desc-table th,.desc-lesson .desc-table td{padding:.5rem .4rem;border-bottom:1px solid var(--clt-border);text-align:right;overflow-wrap:anywhere}
+.desc-lesson .desc-table th:first-child{text-align:left;width:40%}
+.desc-lesson details summary{cursor:pointer;color:var(--clt-accent);font-weight:650;margin:.6rem 0}
+.desc-lesson .desc-formula{background:var(--clt-tint);border-left:3px solid var(--clt-accent);padding:.8rem 1rem;margin:1rem 0}
+.desc-lesson .desc-reference{color:#8a4a21;font-weight:650}
+@media(max-width:575px){.desc-lesson .desc-metrics{grid-template-columns:1fr 1fr}.desc-lesson .desc-metric:last-child{grid-column:1/-1}.desc-lesson .desc-chart-wrap{padding:.2rem}.desc-lesson .desc-table{font-size:.85rem}}

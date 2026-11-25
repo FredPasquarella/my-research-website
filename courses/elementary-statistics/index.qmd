@@ -20,7 +20,7 @@ This sequence draws from my **proposed Elementary Statistics (PSYC 210) sample s
 
 ## Learning pathway
 
-The proposed 18-week syllabus is organized here into seven units. The week labels refer to the sample syllabus, not scheduled course dates. Interactive lessons for Weeks 5–8 are available; additional lessons remain in development.
+The proposed 18-week syllabus is organized here into seven units. The week labels refer to the sample syllabus, not scheduled course dates. Interactive lessons for Weeks 3–8 are available; additional lessons remain in development.
 
 ::: {.course-module}
 ::: {.course-module__number}
@@ -36,7 +36,9 @@ The proposed 18-week syllabus is organized here into seven units. The week label
 
 Populations and samples; observational and experimental research; variables, measurement, sampling, and bias; frequency distributions and graphs; center, variability, standard deviation, z-scores, outliers, and introductory scatterplots.
 
-**Planned demonstration:** Compare the effects of outliers and distribution shape on the mean, median, and variability.
+**Weeks 3–4 interactive lesson:** Compare distribution shapes, manipulate an observation, and explore the mean, median, variability, and standardized scores.
+
+[Explore Distributions, Center, and Variability](lessons/distributions-and-variability.qmd)
 
 :::
 :::
@@ -187,6 +189,6 @@ The sample syllabus identifies the freely available [OpenStax *Introductory Stat
 
 Browser-based activities will include explanatory text, keyboard-operable controls, and accessible alternatives as appropriate. Course announcements, graded assessments, and student records would remain in Canvas.
 
-<p class="learning-status">Development status: This is a proposed learning pathway. Interactive lessons for Weeks 5–8 are available; additional lessons remain in development.</p>
+<p class="learning-status">Development status: This is a proposed learning pathway. Interactive lessons for Weeks 3–8 are available; additional lessons remain in development.</p>
 
 [Return to Teaching & Learning](../../teaching.qmd)

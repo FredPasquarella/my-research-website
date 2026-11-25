@@ -1,0 +1,24 @@
+.ci-lesson .ci-metrics {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.ci-lesson .ci-metric {border:1px solid var(--clt-border);padding:.75rem;background:#fcfcfb;min-width:0}
+.ci-lesson .ci-metric span {display:block;color:var(--clt-muted);font-size:.85rem;line-height:1.3}
+.ci-lesson .ci-metric strong {display:block;font-size:clamp(1.15rem,3vw,1.6rem);font-variant-numeric:tabular-nums;margin:.15rem 0;overflow-wrap:anywhere}
+.ci-lesson .ci-bar {height:14px;display:flex;background:#e5e9e7;border:1px solid #c6d0cb;border-radius:3px;overflow:hidden;margin:.6rem 0}
+.ci-lesson .ci-bar span {height:100%;display:block}
+.ci-lesson .ci-covered {background:#456f76}
+.ci-lesson .ci-missed {background:#a05b34}
+.ci-lesson .ci-legend {display:flex;gap:.7rem 1.2rem;flex-wrap:wrap;font-size:.9rem;margin:.65rem 0}
+.ci-lesson .ci-key {display:inline-flex;align-items:center;gap:.4rem}
+.ci-lesson .ci-mark {width:1.5rem;border-top:3px solid #456f76}
+.ci-lesson .ci-mark.miss {border-top:3px dashed #a05b34}
+.ci-lesson .ci-mark.truth {border-top:2px dashed #80521c}
+.ci-lesson .ci-chart-wrap {background:#fcfcfb;border:1px solid var(--clt-border);padding:.5rem;margin:.7rem 0}
+.ci-lesson .ci-chart {display:block;width:100%;height:auto;max-width:800px;margin:0 auto;font-family:var(--site-sans,Arial,sans-serif)}
+.ci-lesson .ci-table-wrap {overflow-x:auto}
+.ci-lesson .ci-table {width:100%;border-collapse:collapse;font-size:.9rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ci-lesson .ci-table th,.ci-lesson .ci-table td {padding:.4rem .55rem;border-bottom:1px solid var(--clt-border);text-align:left}
+.ci-lesson details summary {cursor:pointer;font-weight:650;color:var(--clt-accent);padding:.5rem 0}
+.ci-lesson details summary:focus-visible {outline:3px solid #a66b24;outline-offset:3px}
+.ci-lesson .ci-result {font-weight:650;color:#30545b}
+.ci-lesson .ci-result[data-result="miss"] {color:#8a4a21}
+.ci-lesson .ci-formula {padding:.8rem 1rem;background:var(--clt-tint);border-left:3px solid var(--clt-accent);font-variant-numeric:tabular-nums;line-height:1.7}
+@media(max-width:575px){.ci-lesson .ci-metrics{grid-template-columns:1fr 1fr}.ci-lesson .ci-metric:last-child{grid-column:1/-1}.ci-lesson .ci-chart-wrap{padding:.2rem}}

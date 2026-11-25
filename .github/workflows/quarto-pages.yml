@@ -48,6 +48,8 @@ jobs:
           node --check assets/interactive/confidence-interval-lesson.mjs
           node --check assets/interactive/hypothesis-testing-math.mjs
           node --check assets/interactive/hypothesis-testing-lesson.mjs
+          node --check assets/interactive/statistical-power-math.mjs
+          node --check assets/interactive/statistical-power-lesson.mjs
           node --test tests/*.test.mjs
 
       - name: Set up Quarto
@@ -78,6 +80,13 @@ jobs:
           test -s docs/courses/elementary-statistics/lessons/normal-probability.html
           test -s docs/courses/elementary-statistics/lessons/confidence-intervals.html
           test -s docs/courses/elementary-statistics/lessons/hypothesis-testing.html
+          test -s docs/courses/elementary-statistics/lessons/statistical-power.html
+          test -s docs/assets/interactive/statistical-power-math.mjs
+          test -s docs/assets/interactive/statistical-power-lesson.mjs
+          test -s docs/assets/interactive/statistical-power-lesson.css
+          grep -Fq 'power-lesson' docs/courses/elementary-statistics/lessons/statistical-power.html
+          grep -Fq 'power-knowledge-check' docs/courses/elementary-statistics/lessons/statistical-power.html
+          grep -Fq 'statistical-power.html' docs/courses/elementary-statistics/index.html
           test -s docs/assets/interactive/hypothesis-testing-math.mjs
           test -s docs/assets/interactive/hypothesis-testing-lesson.mjs
           test -s docs/assets/interactive/hypothesis-testing-lesson.css

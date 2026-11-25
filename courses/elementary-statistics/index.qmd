@@ -88,7 +88,9 @@ Point estimates, confidence intervals, precision, hypothesis testing, p-values, 
 
 [Explore Hypothesis Testing and P-values](lessons/hypothesis-testing.qmd)
 
-**Planned demonstration:** Investigate how sample size, variability, and effect size influence statistical power.
+**Week 8 interactive lesson:** Investigate Type I and Type II errors, statistical power, and the influence of sample size, variability, and effect size.
+
+[Explore Statistical Power and Decision Errors](lessons/statistical-power.qmd)
 
 :::
 :::

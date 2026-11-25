@@ -65,6 +65,10 @@ Basic and conditional probability, independence, normal distributions, sampling 
 
 [Explore Probability and the Normal Distribution](lessons/normal-probability.qmd)
 
+**Week 5 interactive lesson:** Explore conditional probabilities, contingency tables, independence, and mutually exclusive events.
+
+[Explore Conditional Probability and Independence](lessons/conditional-probability.qmd)
+
 **Week 6 interactive lesson:** Draw repeated random samples, compare sample means, and investigate how sample size affects the variability and shape of the sampling distribution.
 
 [Explore the sampling distributions lesson](lessons/sampling-distributions.qmd)

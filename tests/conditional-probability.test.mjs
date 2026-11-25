@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {makeTable,evaluate,isIndependent,drawCategory,QUERIES} from '../assets/interactive/conditional-probability-math.mjs';
+test('default table',()=>assert.deepEqual(makeTable(30),[30,10,20,40]));
+test('all 41 possible overlaps preserve margins',()=>{for(let k=0;k<=40;k++){const t=makeTable(k);assert.equal(t.reduce((s,v)=>s+v,0),100);assert.equal(t[0]+t[1],40);assert.equal(t[0]+t[2],50);assert.ok(t.every(v=>v>=0));}});
+test('condition changes denominator and direction',()=>{const t=makeTable(30);assert.deepEqual(evaluate(t,'bGivenA'),{numerator:30,denominator:40,probability:.75});assert.equal(evaluate(t,'aGivenB').probability,.6);assert.equal(evaluate(t,'bGivenNotA').probability,1/3);});
+test('union counts intersection once',()=>{for(let k=0;k<=40;k++)assert.equal(evaluate(makeTable(k),'either').numerator,90-k)});
+test('unique independence point',()=>{for(let k=0;k<=40;k++){const t=makeTable(k);assert.equal(isIndependent(t),k===20);assert.equal(evaluate(t,'bGivenA').probability===.5,k===20);}});
+test('mutual exclusion is not independence with positive margins',()=>{const t=makeTable(0);assert.equal(evaluate(t,'both').probability,0);assert.equal(isIndependent(t),false);});
+test('all 287 query combinations valid',()=>{for(let k=0;k<=40;k++)for(const key of Object.keys(QUERIES)){const d=evaluate(makeTable(k),key);assert.ok(d.numerator<=d.denominator);assert.ok(d.probability>=0&&d.probability<=1);}});
+test('conditional denominator zero returns undefined, not zero',()=>{assert.equal(evaluate([0,0,10,90],'bGivenA').probability,null);assert.equal(evaluate([0,0,0,0],'b').probability,null);});
+test('draw category boundary and empty cells',()=>{const t=makeTable(30);assert.equal(drawCategory(t,()=>0),0);assert.equal(drawCategory(t,()=>.3),1);assert.equal(drawCategory(t,()=>.4),2);assert.equal(drawCategory(t,()=>.6),3);assert.equal(drawCategory(makeTable(0),()=>0),1);});
+test('invalid inputs rejected',()=>{assert.throws(()=>makeTable(41));assert.throws(()=>makeTable(.5));assert.throws(()=>evaluate([1,2,3,-1],'b'));assert.throws(()=>drawCategory([0,0,0,0]));});
+function rng(seed=1){let s=seed>>>0;return ()=>{s=(s+0x6D2B79F5)>>>0;let t=s;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;};}
+for(const k of [0,10,20,30,40])test(`empirical frequencies, overlap ${k}`,()=>{const table=makeTable(k),observed=[0,0,0,0],random=rng(95+k);for(let j=0;j<20000;j++)observed[drawCategory(table,random)]++;for(let i=0;i<4;i++)assert.ok(Math.abs(observed[i]/20000-table[i]/100)<.012);for(const key of Object.keys(QUERIES))assert.ok(Math.abs(evaluate(observed,key).probability-evaluate(table,key).probability)<.025);});

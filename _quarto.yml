@@ -20,6 +20,9 @@ project:
     - assets/interactive/descriptive-math.mjs
     - assets/interactive/descriptive-lesson.mjs
     - assets/interactive/descriptive-lesson.css
+    - assets/interactive/sampling-bias-math.mjs
+    - assets/interactive/sampling-bias-lesson.mjs
+    - assets/interactive/sampling-bias-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

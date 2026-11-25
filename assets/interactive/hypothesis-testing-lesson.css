@@ -1,0 +1,15 @@
+.ht-lesson .ht-chart{display:block;width:100%;height:auto;max-width:760px;margin:auto;font-family:var(--site-sans,Arial,sans-serif)}
+.ht-lesson .ht-chart-wrap{border:1px solid var(--clt-border);padding:.55rem;background:#fcfcfb;margin:.7rem 0}
+.ht-lesson .ht-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.ht-lesson .ht-metric{border:1px solid var(--clt-border);background:#fcfcfb;padding:.7rem;min-width:0}
+.ht-lesson .ht-metric span{display:block;font-size:.88rem;color:var(--clt-muted);line-height:1.35}
+.ht-lesson .ht-metric strong{display:block;font-size:clamp(1.05rem,3vw,1.6rem);overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.ht-lesson .ht-legend{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;font-size:.9rem}
+.ht-lesson .ht-key{display:inline-block;width:1.2rem;height:.75rem;margin-right:.4rem;border:1px solid #53656c;vertical-align:middle}
+.ht-lesson .ht-tail{background:#bd815c}.ht-lesson .ht-other{background:#9db4b7}
+.ht-lesson input[type=range]{width:100%;accent-color:#30545b;min-height:32px}
+.ht-lesson input[type=range]:focus-visible{outline:3px solid #a66b24;outline-offset:3px}
+.ht-lesson .ht-decision{border-left:3px solid #547187;background:#edf3f6;padding:.7rem 1rem;font-weight:650}
+.ht-lesson .ht-decision[data-result=reject]{background:#fbf2e9;border-color:#b2784d;color:#8a4a21}
+.ht-lesson .ht-formula{background:var(--clt-tint);border-left:3px solid var(--clt-accent);padding:.8rem 1rem}
+@media(max-width:575px){.ht-lesson .ht-metrics{grid-template-columns:1fr 1fr}.ht-lesson .ht-metric:last-child{grid-column:1/-1}.ht-lesson .ht-chart-wrap{padding:.2rem}}

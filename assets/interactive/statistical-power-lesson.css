@@ -1,0 +1,19 @@
+.power-lesson .power-chart-wrap{border:1px solid var(--clt-border);background:#fcfcfb;padding:.5rem;margin:.6rem 0}
+.power-lesson .power-chart{display:block;width:100%;height:auto;max-width:760px;margin:auto;font-family:var(--site-sans,Arial,sans-serif)}
+.power-lesson .power-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.power-lesson .power-metric{border:1px solid var(--clt-border);background:#fcfcfb;padding:.75rem;min-width:0}
+.power-lesson .power-metric span{display:block;font-size:.88rem;color:var(--clt-muted);line-height:1.4}
+.power-lesson .power-metric strong{display:block;font-size:clamp(1.1rem,3vw,1.7rem);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.power-lesson .power-key{display:inline-block;width:1.15rem;height:.8rem;border:1px solid #53656c;vertical-align:middle;margin-right:.35rem}
+.power-lesson .power-good{background:#72969a}.power-lesson .power-error{background:#bd815c}
+.power-lesson .power-legend{display:flex;gap:.6rem 1.2rem;flex-wrap:wrap;font-size:.9rem;margin:.5rem 0}
+.power-lesson .power-bar{height:16px;background:#e5e9e7;display:flex;border:1px solid #c6d0cb;overflow:hidden;border-radius:3px;margin:.55rem 0}
+.power-lesson .power-bar span{height:100%;display:block}
+.power-lesson .power-result{border:1px solid var(--clt-border);padding:.85rem;margin:.8rem 0;background:#fcfcfb}
+.power-lesson .power-result h4{margin:.1rem 0 .5rem;font-size:1.1rem;font-weight:650}
+.power-lesson .power-result p{margin:.4rem 0}
+.power-lesson .power-formula{padding:.8rem 1rem;background:var(--clt-tint);border-left:3px solid var(--clt-accent)}
+.power-lesson .power-decision-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.93rem}
+.power-lesson .power-decision-table th,.power-lesson .power-decision-table td{padding:.6rem .45rem;border:1px solid var(--clt-border);overflow-wrap:anywhere;text-align:left;vertical-align:top}
+.power-lesson .power-decision-table td[data-error]{background:#fbf2e9;color:#713b1b}.power-lesson .power-decision-table td[data-correct]{background:#edf3f6;color:#304d63}
+@media(max-width:575px){.power-lesson .power-metrics{grid-template-columns:1fr 1fr}.power-lesson .power-metric:last-child{grid-column:1/-1}.power-lesson .power-chart-wrap{padding:.2rem}.power-lesson .power-decision-table{font-size:.84rem}}

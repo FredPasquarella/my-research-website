@@ -14,6 +14,9 @@ project:
     - assets/interactive/hypothesis-testing-math.mjs
     - assets/interactive/hypothesis-testing-lesson.mjs
     - assets/interactive/hypothesis-testing-lesson.css
+    - assets/interactive/statistical-power-math.mjs
+    - assets/interactive/statistical-power-lesson.mjs
+    - assets/interactive/statistical-power-lesson.css
 website:
   title: "Fred J. Pasquarella"
   search: true

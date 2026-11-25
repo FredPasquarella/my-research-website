@@ -43,6 +43,8 @@ jobs:
           node --check assets/interactive/statistical-power-lesson.mjs
           node --check assets/interactive/descriptive-math.mjs
           node --check assets/interactive/descriptive-lesson.mjs
+          node --check assets/interactive/sampling-bias-math.mjs
+          node --check assets/interactive/sampling-bias-lesson.mjs
           node --test tests/*.test.mjs
 
       - name: Set up Quarto
@@ -74,6 +76,13 @@ jobs:
           test -s docs/courses/elementary-statistics/lessons/hypothesis-testing.html
           test -s docs/courses/elementary-statistics/lessons/statistical-power.html
           test -s docs/courses/elementary-statistics/lessons/distributions-and-variability.html
+          test -s docs/courses/elementary-statistics/lessons/sampling-bias.html
+          test -s docs/assets/interactive/sampling-bias-math.mjs
+          test -s docs/assets/interactive/sampling-bias-lesson.mjs
+          test -s docs/assets/interactive/sampling-bias-lesson.css
+          grep -Fq 'bias-lesson' docs/courses/elementary-statistics/lessons/sampling-bias.html
+          grep -Fq 'bias-knowledge-check' docs/courses/elementary-statistics/lessons/sampling-bias.html
+          grep -Fq 'sampling-bias.html' docs/courses/elementary-statistics/index.html
           test -s docs/assets/interactive/descriptive-math.mjs
           test -s docs/assets/interactive/descriptive-lesson.mjs
           test -s docs/assets/interactive/descriptive-lesson.css

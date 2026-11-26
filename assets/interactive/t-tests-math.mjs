@@ -1,0 +1,17 @@
+// Numerical routines for Student's t distribution and introductory t tests.
+// Regularized incomplete beta via a continued fraction; log-gamma via Lanczos.
+function logGamma(z){const c=[676.5203681218851,-1259.1392167224028,771.3234287776531,-176.6150291621406,12.507343278686905,-.13857109526572012,9.984369578019572e-6,1.5056327351493116e-7];if(z<.5)return Math.log(Math.PI)-Math.log(Math.sin(Math.PI*z))-logGamma(1-z);z-=1;let x=.99999999999980993;for(let i=0;i<c.length;i++)x+=c[i]/(z+i+1);let t=z+c.length-.5;return .5*Math.log(2*Math.PI)+(z+.5)*Math.log(t)-t+Math.log(x);}
+function fraction(a,b,x){const tiny=1e-300;let qab=a+b,qap=a+1,qam=a-1,c=1,d=1-qab*x/qap;if(Math.abs(d)<tiny)d=tiny;d=1/d;let h=d;for(let m=1;m<=300;m++){let m2=2*m,aa=m*(b-m)*x/((qam+m2)*(a+m2));d=1+aa*d;if(Math.abs(d)<tiny)d=tiny;c=1+aa/c;if(Math.abs(c)<tiny)c=tiny;d=1/d;h*=d*c;aa=-(a+m)*(qab+m)*x/((a+m2)*(qap+m2));d=1+aa*d;if(Math.abs(d)<tiny)d=tiny;c=1+aa/c;if(Math.abs(c)<tiny)c=tiny;d=1/d;const del=d*c;h*=del;if(Math.abs(del-1)<3e-14)return h;}throw new Error('Beta fraction did not converge');}
+function beta(x,a,b){if(x<=0)return 0;if(x>=1)return 1;const f=Math.exp(logGamma(a+b)-logGamma(a)-logGamma(b)+a*Math.log(x)+b*Math.log1p(-x));return x<(a+1)/(a+b+2)?f*fraction(a,b,x)/a:1-f*fraction(b,a,1-x)/b;}
+function checkDf(df){if(!Number.isFinite(df)||df<=0)throw new RangeError('Degrees of freedom must be positive');}
+export function tDensity(t,df){checkDf(df);return Math.exp(logGamma((df+1)/2)-logGamma(df/2)-.5*Math.log(df*Math.PI)-(df+1)/2*Math.log1p(t*t/df));}
+export function tP(t,df){checkDf(df);if(!Number.isFinite(t))throw new RangeError('t must be finite');return Math.max(0,Math.min(1,beta(df/(df+t*t),df/2,.5)));}
+export function tCritical(df,alpha=.05){checkDf(df);if(!(alpha>0&&alpha<1))throw new RangeError('Invalid alpha');let lo=0,hi=1;while(tP(hi,df)>alpha)hi*=2;for(let i=0;i<70;i++){const mid=(lo+hi)/2;if(tP(mid,df)>alpha)lo=mid;else hi=mid;}return (lo+hi)/2;}
+export function describe(data){if(data.length<2||data.some(v=>!Number.isFinite(v)))throw new RangeError('Two or more finite values required');const n=data.length,mean=data.reduce((s,v)=>s+v,0)/n,variance=data.reduce((s,v)=>s+(v-mean)**2,0)/(n-1);return {n,mean,variance,sd:Math.sqrt(variance)};}
+function result(estimate,se,df,alpha){if(!Number.isFinite(se)||se<=0)throw new RangeError('Positive standard error required');const t=estimate/se,p=tP(t,df),critical=tCritical(df,alpha);return {estimate,se,df,t,p,critical,lower:estimate-critical*se,upper:estimate+critical*se,reject:p<=alpha};}
+export function oneSample(data,reference=50,alpha=.05){const s=describe(data);return result(s.mean-reference,s.sd/Math.sqrt(s.n),s.n-1,alpha);}
+export function paired(a,b,alpha=.05){if(a.length!==b.length)throw new RangeError('Pairs must be complete');return oneSample(b.map((v,i)=>v-a[i]),0,alpha);}
+export function welch(a,b,alpha=.05){const A=describe(a),B=describe(b),u=A.variance/A.n,v=B.variance/B.n;const df=(u+v)**2/(u*u/(A.n-1)+v*v/(B.n-1));return result(B.mean-A.mean,Math.sqrt(u+v),df,alpha);}
+export const BASE=Object.freeze([42,45,46,48,49,51,52,54,55,58]);
+const NOISE=[-2,1,0,2,-1,1,-2,0,2,-1];
+export function example(delta,pattern='aligned'){if(!Number.isFinite(delta)||delta<-6||delta>8||!['aligned','reversed'].includes(pattern))throw new RangeError('Invalid example');const a=[...BASE],b=a.map((v,i)=>v+delta+NOISE[i]);if(pattern==='reversed')b.reverse();return {a,b};}

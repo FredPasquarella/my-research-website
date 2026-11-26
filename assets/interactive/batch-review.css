@@ -1,0 +1,33 @@
+/* Scoped activity styling; base lesson styles supplied by interactive-lessons.css. */
+.batch-lesson .controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin:1rem 0}
+.batch-lesson .controls label{display:block;font-weight:600}
+.batch-lesson .controls select,.batch-lesson .controls input[type=range]{display:block;width:100%;accent-color:#30545b;font:inherit;min-height:38px}
+.batch-lesson .controls select{border:1px solid #81969a;padding:.4rem;border-radius:4px;background:white;color:#26363e}
+.batch-lesson .plot{border:1px solid #dadfd9;background:#fcfcfb;padding:.4rem;margin:1rem 0}
+.batch-lesson .plot svg{display:block;width:100%;height:auto;max-width:650px;margin:auto}
+.batch-lesson .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:.6rem;margin:.8rem 0}
+.batch-lesson .metric{border:1px solid #dadfd9;background:#fcfcfb;padding:.7rem;min-width:0}
+.batch-lesson .metric span{display:block;color:#53656c;font-size:.86rem;line-height:1.4}
+.batch-lesson .metric strong{display:block;font-size:1.35rem;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.batch-lesson .data-table{width:100%;border-collapse:collapse;table-layout:fixed;font-variant-numeric:tabular-nums;font-size:.92rem}
+.batch-lesson .data-table th,.batch-lesson .data-table td{border-bottom:1px solid #dadfd9;padding:.45rem .35rem;text-align:right;overflow-wrap:anywhere}
+.batch-lesson .data-table th:first-child{text-align:left}
+.batch-lesson .note{font-size:.9rem;color:#53656c}
+.batch-lesson .formula{background:#eef4f3;border-left:3px solid #30545b;padding:.8rem 1rem;margin:.8rem 0}
+.batch-lesson .clt-question input{accent-color:#30545b}
+.batch-lesson .nav{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;align-items:center;padding:1rem 0}
+.batch-lesson .review-index{display:grid;gap:.8rem}
+.batch-lesson .review-card{border:1px solid #dadfd9;padding:1rem;border-radius:4px}
+.batch-lesson .review-card h3{margin:.2rem 0}
+.batch-lesson .review-card p{margin:.35rem 0}
+.batch-lesson .phase{font-size:.8rem;color:#53656c;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.batch-lesson button:disabled{opacity:.5;cursor:not-allowed}
+.batch-lesson details summary{cursor:pointer;font-weight:600;color:#30545b}
+.batch-lesson textarea{width:100%;font:inherit;min-height:90px;border:1px solid #81969a;padding:.6rem}
+.batch-lesson .progress{font-weight:600;color:#30545b}
+@media(max-width:575px){.batch-lesson .metrics{grid-template-columns:1fr 1fr}
+.batch-lesson .controls{grid-template-columns:1fr}
+.batch-lesson .data-table{font-size:.82rem}
+.batch-lesson .data-table th,.batch-lesson .data-table td{padding:.35rem .22rem}}
+.batch-lesson .controls{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.batch-lesson .plot{min-width:0}

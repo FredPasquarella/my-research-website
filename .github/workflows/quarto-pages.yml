@@ -56,6 +56,10 @@ jobs:
           node --check assets/interactive/sampling-bias-lesson.mjs
           node --check assets/interactive/conditional-probability-math.mjs
           node --check assets/interactive/conditional-probability-lesson.mjs
+          node --check assets/interactive/t-tests-math.mjs
+          node --check assets/interactive/t-tests-lesson.mjs
+          node --check assets/interactive/batch-review-math.mjs
+          node --check assets/interactive/batch-review.mjs
           node --test tests/*.test.mjs
 
       - name: Set up Quarto
@@ -138,6 +142,29 @@ jobs:
           grep -Fq 'sampling-distributions.mjs' docs/courses/elementary-statistics/lessons/sampling-distributions.html
           grep -Fq 'clt-lab' docs/courses/elementary-statistics/lessons/sampling-distributions.html
           grep -Fq 'clt-knowledge-check' docs/courses/elementary-statistics/lessons/sampling-distributions.html
+          # Verify all 16 resources, their index links, and the full previous/next chain.
+          for lesson in sampling-bias distributions-and-variability normal-probability conditional-probability sampling-distributions confidence-intervals hypothesis-testing statistical-power t-tests anova assumptions chi-square correlation regression method-selection interpretation-review; do
+            test -s "docs/courses/elementary-statistics/lessons/${lesson}.html"
+            grep -Fq "${lesson}.html" docs/courses/elementary-statistics/index.html
+            grep -Fq 'All lessons' "docs/courses/elementary-statistics/lessons/${lesson}.html"
+          done
+          test -s docs/assets/interactive/t-tests-math.mjs
+          test -s docs/assets/interactive/t-tests-lesson.mjs
+          test -s docs/assets/interactive/t-tests-lesson.css
+          test -s docs/assets/interactive/batch-review-math.mjs
+          test -s docs/assets/interactive/batch-review.mjs
+          test -s docs/assets/interactive/batch-review.css
+          lessons=(sampling-bias distributions-and-variability normal-probability conditional-probability sampling-distributions confidence-intervals hypothesis-testing statistical-power t-tests anova assumptions chi-square correlation regression method-selection interpretation-review)
+          for i in "${!lessons[@]}"; do
+            page="docs/courses/elementary-statistics/lessons/${lessons[$i]}.html"
+            if (( i > 0 )); then grep -Fq "${lessons[$((i-1))]}.html" "$page"; fi
+            if (( i < ${#lessons[@]}-1 )); then grep -Fq "${lessons[$((i+1))]}.html" "$page"; fi
+          done
+          for lesson in anova assumptions chi-square correlation regression method-selection interpretation-review; do
+            grep -Fq 'batch-review.mjs' "docs/courses/elementary-statistics/lessons/${lesson}.html"
+            grep -Fq 'knowledge-check' "docs/courses/elementary-statistics/lessons/${lesson}.html"
+          done
+          grep -Fq 't-tests-lesson.mjs' docs/courses/elementary-statistics/lessons/t-tests.html
           # Verify that the published artifact uses the approved stylesheet.
           test -s docs/styles.css
           cmp styles.css docs/styles.css

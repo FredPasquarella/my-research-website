@@ -44,3 +44,9 @@ toc-depth: 2
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 7 of 16** · [All lessons](../index.qmd)
+
+[Previous: Confidence Intervals and Coverage](confidence-intervals.qmd) · [Next: Statistical Power and Decision Errors](statistical-power.qmd)

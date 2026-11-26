@@ -1,0 +1,18 @@
+.tt-lesson .tt-chart-wrap{border:1px solid var(--clt-border);background:#fcfcfb;padding:.55rem;margin:.65rem 0;min-width:0}
+.tt-lesson svg{display:block;width:100%;height:auto;max-width:740px;margin:auto;font-family:var(--site-sans,Arial,sans-serif)}
+.tt-lesson .tt-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.tt-lesson .tt-metric{border:1px solid var(--clt-border);background:#fcfcfb;padding:.7rem;min-width:0}
+.tt-lesson .tt-metric span{display:block;color:var(--clt-muted);font-size:.86rem;line-height:1.3}
+.tt-lesson .tt-metric strong{display:block;font-size:clamp(1.05rem,3vw,1.6rem);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tt-lesson .tt-table{width:100%;border-collapse:collapse;table-layout:fixed;font-variant-numeric:tabular-nums;font-size:.9rem}
+.tt-lesson .tt-table th,.tt-lesson .tt-table td{padding:.4rem .3rem;border-bottom:1px solid var(--clt-border);text-align:right;overflow-wrap:anywhere}
+.tt-lesson .tt-table th:first-child{text-align:left}
+.tt-lesson .tt-legend{display:flex;gap:.5rem 1rem;flex-wrap:wrap;font-size:.88rem;margin:.6rem 0}
+.tt-lesson .tt-key{display:inline-block;width:1.2rem;margin-right:.4rem;vertical-align:middle;border-top:3px solid #30545b}
+.tt-lesson .tt-key.normal{border-top:2px dashed #80521c}.tt-lesson .tt-key.tail{height:.75rem;border:1px solid #a05b34;background:#bd815c}
+.tt-lesson .tt-key.second{border-color:#a05b34}.tt-lesson input[type=range]{width:100%;min-height:32px;accent-color:#30545b}
+.tt-lesson input[type=range]:focus-visible,.tt-lesson summary:focus-visible{outline:3px solid #a66b24;outline-offset:3px}
+.tt-lesson .tt-result,.tt-lesson .tt-formula{padding:.8rem 1rem;background:var(--clt-tint);border-left:3px solid var(--clt-accent);margin:1rem 0}
+.tt-lesson summary{cursor:pointer;font-weight:650;color:var(--clt-accent);margin:.6rem 0}
+.tt-lesson [hidden]{display:none!important}
+@media(max-width:575px){.tt-lesson .tt-metrics{grid-template-columns:1fr 1fr}.tt-lesson .tt-metric:last-child{grid-column:1/-1}.tt-lesson .tt-chart-wrap{padding:.2rem}.tt-lesson .tt-table{font-size:.85rem}}

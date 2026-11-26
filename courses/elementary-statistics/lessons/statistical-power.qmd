@@ -47,3 +47,9 @@ toc-depth: 2
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 8 of 16** · [All lessons](../index.qmd)
+
+[Previous: Hypothesis Testing and P-values](hypothesis-testing.qmd) · [Next: The t-Distribution and Comparing Means](t-tests.qmd)

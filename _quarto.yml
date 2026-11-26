@@ -26,6 +26,12 @@ project:
     - assets/interactive/conditional-probability-math.mjs
     - assets/interactive/conditional-probability-lesson.mjs
     - assets/interactive/conditional-probability-lesson.css
+    - assets/interactive/t-tests-math.mjs
+    - assets/interactive/t-tests-lesson.mjs
+    - assets/interactive/t-tests-lesson.css
+    - assets/interactive/batch-review-math.mjs
+    - assets/interactive/batch-review.mjs
+    - assets/interactive/batch-review.css
 website:
   title: "Fred J. Pasquarella"
   search: true

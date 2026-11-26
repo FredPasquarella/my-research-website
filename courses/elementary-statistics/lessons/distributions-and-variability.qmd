@@ -47,3 +47,9 @@ toc-depth: 2
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 2 of 16** · [All lessons](../index.qmd)
+
+[Previous: Sampling Methods and Bias](sampling-bias.qmd) · [Next: Probability and the Normal Distribution](normal-probability.qmd)

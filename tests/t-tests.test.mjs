@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {tDensity,tP,tCritical,describe,oneSample,paired,welch,example} from '../assets/interactive/t-tests-math.mjs';
+const close=(a,b,e=1e-9)=>assert.ok(Math.abs(a-b)<e,`${a} != ${b}`);
+test('critical values',()=>{close(tCritical(1),12.706204736432095,1e-8);close(tCritical(5),2.570581835636314);close(tCritical(9),2.2621571628540993);close(tCritical(30),2.0422724563012373);});
+test('t tail probabilities and symmetry',()=>{close(tP(0,9),1);close(tP(2.2621571628540993,9),.05);close(tP(2,1),.2951672353008664);close(tP(-2,1),tP(2,1));});
+test('t density approaches normal',()=>{assert.ok(tDensity(0,5)<tDensity(0,30));assert.ok(tDensity(3,5)>tDensity(3,30));});
+test('summary',()=>{const a=describe([1,2,3,4,5]);assert.equal(a.mean,3);assert.equal(a.variance,2.5);});
+test('paired differences are a one-sample test',()=>{const {a,b}=example(3);assert.deepEqual(paired(a,b),oneSample(b.map((v,i)=>v-a[i]),0));});
+test('same margins, different paired variability',()=>{const x=example(3,'aligned'),y=example(3,'reversed');assert.equal(describe(x.b).mean,describe(y.b).mean);close(describe(x.b).sd,describe(y.b).sd);assert.ok(paired(x.a,x.b).se<paired(y.a,y.b).se);close(welch(x.a,x.b).p,welch(y.a,y.b).p);});
+test('Welch agrees with hand calculation for equal variances',()=>{const r=welch([1,2,3],[3,4,5]);close(r.estimate,2);close(r.se,Math.sqrt(2/3));close(r.df,4);});
+test('confidence interval and decision agree away from boundary',()=>{for(let delta=-6;delta<=8;delta++)for(const pattern of ['aligned','reversed'])for(const alpha of [.01,.05,.1]){const {a,b}=example(delta,pattern);for(const r of [oneSample(b,50,alpha),paired(a,b,alpha),welch(a,b,alpha)]){assert.equal(r.reject,r.lower>0||r.upper<0);assert.ok(r.p>=0&&r.p<=1);close(r.estimate,delta);}}});
+test('zero variance and invalid settings rejected',()=>{assert.throws(()=>oneSample([1,1]));assert.throws(()=>paired([1,2],[2]));assert.throws(()=>tP(1,0));assert.throws(()=>example(100));});

@@ -18,3 +18,9 @@ toc: false
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 11 of 16** · [All lessons](../index.qmd)
+
+[Previous: One-Way ANOVA](anova.qmd) · [Next: Chi-Square Tests](chi-square.qmd)

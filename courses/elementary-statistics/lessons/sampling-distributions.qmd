@@ -189,3 +189,9 @@ These four questions revisit the learning goals. Select one answer for each, the
 All calculations and responses stay in your browser. Nothing is submitted or stored by this activity.
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 5 of 16** · [All lessons](../index.qmd)
+
+[Previous: Conditional Probability and Independence](conditional-probability.qmd) · [Next: Confidence Intervals and Coverage](confidence-intervals.qmd)

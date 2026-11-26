@@ -47,3 +47,9 @@ toc-depth: 2
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 1 of 16** · [All lessons](../index.qmd)
+
+[Next: Distributions, Center, and Variability](distributions-and-variability.qmd)

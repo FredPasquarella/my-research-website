@@ -178,3 +178,9 @@ These four questions revisit the learning goals. Select an answer for each to re
 All responses and simulation results stay in your browser. Nothing is saved or submitted.
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 3 of 16** · [All lessons](../index.qmd)
+
+[Previous: Distributions, Center, and Variability](distributions-and-variability.qmd) · [Next: Conditional Probability and Independence](conditional-probability.qmd)

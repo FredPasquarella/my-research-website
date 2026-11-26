@@ -47,3 +47,9 @@ toc-depth: 2
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 4 of 16** · [All lessons](../index.qmd)
+
+[Previous: Probability and the Normal Distribution](normal-probability.qmd) · [Next: Sampling Distributions and CLT](sampling-distributions.qmd)

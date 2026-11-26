@@ -18,3 +18,9 @@ toc: false
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 16 of 16** · [All lessons](../index.qmd)
+
+[Previous: Choosing a Statistical Method](method-selection.qmd)

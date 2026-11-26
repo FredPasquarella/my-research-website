@@ -18,3 +18,9 @@ toc: false
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 10 of 16** · [All lessons](../index.qmd)
+
+[Previous: The t-Distribution and Comparing Means](t-tests.qmd) · [Next: Assumptions and Analysis Sensitivity](assumptions.qmd)

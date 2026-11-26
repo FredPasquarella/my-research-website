@@ -18,3 +18,9 @@ toc: false
 ~~~
 
 [Back to Elementary Statistics](../index.qmd)
+
+---
+
+**Lesson 13 of 16** · [All lessons](../index.qmd)
+
+[Previous: Chi-Square Tests](chi-square.qmd) · [Next: Simple Linear Regression](regression.qmd)

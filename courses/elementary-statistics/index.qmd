@@ -20,7 +20,9 @@ This sequence draws from my **proposed Elementary Statistics (PSYC 210) sample s
 
 ## Learning pathway
 
-The proposed 18-week syllabus is organized here into seven units. The week labels refer to the sample syllabus, not scheduled course dates. Interactive lessons for Weeks 2–8 are available; additional lessons remain in development.
+The proposed 18-week syllabus is organized here into seven units. The week labels refer to the sample syllabus, not scheduled course dates. All 16 interactive learning resources for Weeks 2–18 are available for instructional review. The eight resources for Weeks 9–18 are marked as working drafts; all materials may be revised.
+
+[Start the interactive learning pathway](lessons/sampling-bias.qmd). Each lesson includes links to the previous and next resource and back to this overview.
 
 ::: {.course-module}
 ::: {.course-module__number}
@@ -119,7 +121,17 @@ Point estimates, confidence intervals, precision, hypothesis testing, p-values, 
 
 The Week 9 midterm covers Weeks 1 to 8. Instruction then moves to the t-distribution and one-sample t-test, followed by independent-samples and paired-samples t-tests, one-way ANOVA, assumptions, and selected nonparametric alternatives.
 
-**Planned practice:** Select a group comparison method and explain the assumptions and limitations of the resulting inference.
+**Weeks 9–10 interactive lesson (working draft):** Compare Student’s t and normal distributions, one-sample, independent-samples, and paired-samples t-tests.
+
+[Explore The t-Distribution and Comparing Means](lessons/t-tests.qmd)
+
+**Week 11 interactive lesson (working draft):** Explore between-group and within-group variability, the F-statistic, and effect size.
+
+[Explore One-Way ANOVA](lessons/anova.qmd)
+
+**Week 12 interactive lesson (working draft):** Examine unusual observations, assumptions, and sensitivity to analysis choices.
+
+[Explore Assumptions and Analysis Sensitivity](lessons/assumptions.qmd)
 
 :::
 :::
@@ -138,7 +150,9 @@ The Week 9 midterm covers Weeks 1 to 8. Instruction then moves to the t-distribu
 
 Chi-square goodness-of-fit and independence tests, observed and expected counts, and categorical association.
 
-**Planned practice:** Analyze a contingency table and interpret what the data support.
+**Week 13 interactive lesson (working draft):** Compare observed and expected counts in goodness-of-fit and independence tests.
+
+[Explore Chi-Square Tests](lessons/chi-square.qmd)
 
 :::
 :::
@@ -157,7 +171,13 @@ Chi-square goodness-of-fit and independence tests, observed and expected counts,
 
 Correlation, direction and strength, outliers, restricted range, confounding and causation; simple linear regression, slopes, residuals, prediction, and limits of extrapolation.
 
-**Planned demonstration:** Explore how changing observations affects correlation and a regression line.
+**Week 14 interactive lesson (working draft):** Investigate direction, strength, outliers, and restricted range in scatterplots.
+
+[Explore Correlation and Scatterplots](lessons/correlation.qmd)
+
+**Week 15 interactive lesson (working draft):** Fit a regression line, examine residuals, and explore prediction and extrapolation.
+
+[Explore Simple Linear Regression](lessons/regression.qmd)
 
 :::
 :::
@@ -176,7 +196,13 @@ Correlation, direction and strength, outliers, restricted range, confounding and
 
 Week 16 focuses on integrating methods, analysis selection, effect size, power, practical importance, and preliminary project results. Week 17 covers communicating findings, project presentations, and cumulative review. The cumulative final examination occurs in Week 18.
 
-**Planned practice:** Translate statistical output into a clear explanation of findings, uncertainty, and limitations.
+**Week 16 interactive lesson (working draft):** Choose an analytical method for applied research scenarios and explain why it fits.
+
+[Explore Choosing a Statistical Method](lessons/method-selection.qmd)
+
+**Weeks 17–18 interactive lesson (working draft):** Interpret results, communicate uncertainty and limitations, and practice cumulative statistical reasoning.
+
+[Explore Communicating Results and Cumulative Review](lessons/interpretation-review.qmd)
 
 :::
 :::
@@ -197,6 +223,6 @@ The sample syllabus identifies the freely available [OpenStax *Introductory Stat
 
 Browser-based activities will include explanatory text, keyboard-operable controls, and accessible alternatives as appropriate. Course announcements, graded assessments, and student records would remain in Canvas.
 
-<p class="learning-status">Development status: This is a proposed learning pathway. Interactive lessons for Weeks 2–8 are available; additional lessons remain in development.</p>
+<p class="learning-status">Development status: All 16 interactive resources are available for review. The proposed course and lesson narratives remain under development; this is not a currently running course.</p>
 
 [Return to Teaching & Learning](../../teaching.qmd)
